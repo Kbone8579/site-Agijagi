@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -556,24 +558,8 @@ video {
   display: none;
 }
 
-.mt-\[40px\]{
-  margin-top: 40px;
-}
-
-.block{
-  display: block;
-}
-
 .flex{
   display: flex;
-}
-
-.h-\[100vh\]{
-  height: 100vh;
-}
-
-.h-\[45px\]{
-  height: 45px;
 }
 
 .h-\[665px\]{
@@ -588,48 +574,28 @@ video {
   height: 100%;
 }
 
-.h-\[50px\]{
-  height: 50px;
-}
-
-.w-\[140px\]{
-  width: 140px;
-}
-
-.w-\[600px\]{
-  width: 600px;
-}
-
-.w-\[709px\]{
-  width: 709px;
-}
-
-.w-full{
-  width: 100%;
-}
-
-.w-\[518px\]{
-  width: 518px;
-}
-
-.w-\[520px\]{
-  width: 520px;
-}
-
-.w-\[530px\]{
-  width: 530px;
-}
-
-.w-\[540px\]{
-  width: 540px;
+.w-\[510px\]{
+  width: 510px;
 }
 
 .w-\[550px\]{
   width: 550px;
 }
 
-.w-\[50px\]{
-  width: 50px;
+.w-\[590px\]{
+  width: 590px;
+}
+
+.w-\[600px\]{
+  width: 600px;
+}
+
+.w-\[710px\]{
+  width: 710px;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-col{
@@ -640,16 +606,12 @@ video {
   align-items: flex-end;
 }
 
-.items-center{
-  align-items: center;
-}
-
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
+}
+
+.gap-\[158px\]{
+  gap: 158px;
 }
 
 .gap-\[192px\]{
@@ -660,66 +622,96 @@ video {
   gap: 40px;
 }
 
-.gap-\[24px\]{
-  gap: 24px;
-}
-
-.gap-\[158px\]{
-  gap: 158px;
-}
-
-.rounded-xl{
-  border-radius: 0.75rem;
-}
-
-.rounded-full{
-  border-radius: 9999px;
-}
-
-.border-\[1px\]{
-  border-width: 1px;
-}
-
-.border-\[2px\]{
-  border-width: 2px;
-}
-
-.border-gray-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity, 1));
-}
-
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-red-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#EDEDED\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 237 237 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.text-\[18px\]{
-  font-size: 18px;
-}
-
-.text-\[24px\]{
-  font-size: 24px;
-}
-
-/* 커스텀 CSS(폰트, 기타 등등) */
-
 html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
 
+/* section1 font */
+
+.section1 h2 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 24px;
+  display: block;
+}
+
+.section1 h3 {
+  font-size: 18px;
+  display: block;
+}
+
+/* section2 font */
+
+/* section3 font */
+
+/* section4 font */
+
+/* section1 */
+
+.section1 .fage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+}
+
+.text-02 a {
+  display: flex;
+  width: 140px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border: 1px solid #333;
+  border-radius: 30px;
+}
+
+.text-02 a:hover {
+  background-color: white;
+  border: 0px;
+  transition: 0.3s;
+}
+
+.text-box > .number-btn {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 24px;
+  font-size: 24px;
+  color: #747474;
+  font-weight: 600;
+}
+
+.text-box > .number-btn > li > a {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d0d0d0;
+  border-radius: 100%;
+}
+
+.text-box > .number-btn > li:hover > a {
+  background-color: #d0d0d0;
+  transition: all 0.3s;
+}
+
+.text-box > .number-btn.s1 > li:first-child > a {
+  background-color: white;
+  border: 0px;
+}
+
+.text-box > .number-btn.s2 > li:nth-child(2) > a {
+  background-color: white;
+  border: 0px;
+}
+
+.text-box > .number-btn.s3 > li:last-child > a {
+  background-color: white;
+  border: 0px;
+}
