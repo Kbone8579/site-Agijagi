@@ -556,8 +556,182 @@ video {
   display: none;
 }
 
+.mt-\[40px\]{
+  margin-top: 40px;
+}
+
+.mb-\[40px\]{
+  margin-bottom: 40px;
+}
+
+.mb-\[50px\]{
+  margin-bottom: 50px;
+}
+
+.mb-\[px\]{
+  margin-bottom: px;
+}
+
+.block{
+  display: block;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-\[665px\]{
+  height: 665px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[100vh\]{
+  height: 100vh;
+}
+
+.h-\[full\]{
+  height: full;
+}
+
+.h-\[45px\]{
+  height: 45px;
+}
+
+.w-\[709px\]{
+  width: 709px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-\[602px\]{
+  width: 602px;
+}
+
+.w-\[600px\]{
+  width: 600px;
+}
+
+.w-\[140px\]{
+  width: 140px;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-end{
+  align-items: flex-end;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.gap-\[192px\]{
+  gap: 192px;
+}
+
+.gap-\[40px\]{
+  gap: 40px;
+}
+
+.gap-\[10px\]{
+  gap: 10px;
+}
+
+.rounded-\[100\%\]{
+  border-radius: 100%;
+}
+
+.rounded-\[50\%\]{
+  border-radius: 50%;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-\[2px\]{
+  border-width: 2px;
+}
+
+.border-\[1px\]{
+  border-width: 1px;
+}
+
+.border-red-100{
+  --tw-border-opacity: 1;
+  border-color: rgb(254 226 226 / var(--tw-border-opacity, 1));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+}
+
+.border-gray-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity, 1));
+}
+
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+.py-\[40px\]{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pb-\[40px\]{
+  padding-bottom: 40px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
+}
+
 /* 커스텀 CSS(폰트, 기타 등등) */
 
 html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
+
