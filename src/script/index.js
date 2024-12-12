@@ -39,19 +39,4 @@ window.onload = function(){
         window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
       });
     });
-  }
-
-  $(function(){
-    $("#video1").bind("ended", function(){
-      document.getElementById("video2").onplay();
-    });
-    $("#video2").bind("ended", function(){
-      document.getElementById("video3").onplay();
-    });
-    $("#video3").bind("ended", function(){
-      document.getElementById("video4").onplay();
-    });
-    $("#video4").bind("ended", function(){
-      document.getElementById("video1").onplay();
-    });
-  });
+  };

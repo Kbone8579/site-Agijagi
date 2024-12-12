@@ -7,29 +7,30 @@
 
     <!-- css -->
     <link rel="stylesheet" href="output.css">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- script -->
      <script src="script/index.js"></script>
-    <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
 
 </head>
 <body>
     <div class="section2">
         <div class="fage s1">
-            <video muted autoplay id="video1">
+            <video id="video1" autoplay muted controls>
                 <source src="video/1.mp4" type="video/mp4">
             </video>
-            <video muted autoplay id="video2">
-                <source src="video/2.mp4" type="video/mp4">
+            <video id="video2" autoplay muted controls>
+                <source src="video/2.mp4" type="video/mp4" style="display: none;">
             </video>
-            <video muted autoplay id="video3">
-                <source src="video/3.mp4" type="video/mp4">
+            <video id="video3" autoplay muted controls>
+                <source src="video/3.mp4" type="video/mp4" style="display: none;">
             </video>
-            <video muted autoplay id="video4">
-                <source src="video/4.mp4" type="video/mp4">
+            <video id="video4" autoplay muted controls>
+                <source src="video/4.mp4" type="video/mp4" style="display: none;">
             </video>
         </div>
     </div>
-    
 </body>
+
 </html>

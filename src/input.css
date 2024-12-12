@@ -90,7 +90,9 @@ html > body {
 /* section2 */
 .section2 .fage {
 	height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: #ededed;
+}
+
+/* section4 */
+.section4 .fage {
+	height: 100vh;
 }
