@@ -1,4 +1,5 @@
 window.onload = function(){
+    // 한 페이지씩
     const elm = document.querySelectorAll('.fage');
     const elmCount = elm.length;
     elm.forEach(function(item, index){
@@ -39,3 +40,18 @@ window.onload = function(){
       });
     });
   }
+
+  $(function(){
+    $("#video1").bind("ended", function(){
+      document.getElementById("video2").onplay();
+    });
+    $("#video2").bind("ended", function(){
+      document.getElementById("video3").onplay();
+    });
+    $("#video3").bind("ended", function(){
+      document.getElementById("video4").onplay();
+    });
+    $("#video4").bind("ended", function(){
+      document.getElementById("video1").onplay();
+    });
+  });

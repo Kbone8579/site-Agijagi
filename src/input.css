@@ -15,10 +15,17 @@ html > body {
   display: block;
 }
 .section1 h3 {
+  font-family: "Pretendard Variable", sans-serif;
   font-size: 18px;
   display: block;
 }
 /* section2 font */
+.section1 h1 {
+
+}
+.section1 h2 {
+
+}
 /* section3 font */
 /* section4 font */
 
@@ -78,4 +85,12 @@ html > body {
 .text-box > .number-btn.s3 > li:last-child > a {
   background-color: white;
   border: 0px;
+}
+
+/* section2 */
+.section2 .fage {
+	height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
 }
