@@ -1,5 +1,6 @@
 window.onload = function(){
-    // 한 페이지씩
+
+    // 한 페이지씩 이동
     const elm = document.querySelectorAll('.fage');
     const elmCount = elm.length;
     elm.forEach(function(item, index){
@@ -39,4 +40,17 @@ window.onload = function(){
         window.scrollTo({top:moveTop, left:0, behavior:'smooth'});
       });
     });
+
+    // 클릭시 해당 페이지로 이동
+    document.querySelector(".btn1").addEventListener("click", (e) => {
+      document.querySelector(".fage.s1").scrollIntoView({ behavior: "smooth"});
+    });
+    document.querySelector(".btn2").addEventListener("click", (e) => {
+      document.querySelector(".fage.s2").scrollIntoView({ behavior: "smooth"});
+    });
+    document.querySelector(".btn3").addEventListener("click", (e) => {
+      document.querySelector(".fage.s3").scrollIntoView({ behavior: "smooth"});
+    });
+    
   };
+

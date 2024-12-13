@@ -566,20 +566,12 @@ video {
   left: 14px;
 }
 
-.left-\[18px\]{
-  left: 18px;
+.left-\[50px\]{
+  left: 50px;
 }
 
 .top-0{
   top: 0px;
-}
-
-.left-\[30px\]{
-  left: 30px;
-}
-
-.left-\[50px\]{
-  left: 50px;
 }
 
 .flex{
@@ -606,12 +598,12 @@ video {
   width: 239px;
 }
 
-.w-\[242px\]{
-  width: 242px;
-}
-
 .w-\[274px\]{
   width: 274px;
+}
+
+.w-\[350px\]{
+  width: 350px;
 }
 
 .w-\[510px\]{
@@ -638,16 +630,8 @@ video {
   width: 100%;
 }
 
-.w-\[300px\]{
-  width: 300px;
-}
-
-.w-\[280px\]{
-  width: 280px;
-}
-
-.w-\[350px\]{
-  width: 350px;
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .flex-col{
@@ -769,7 +753,7 @@ html > body {
   width: 510px;
 }
 
-.text-box > .number-btn > li > a {
+.text-box > .number-btn > li > div {
   display: flex;
   width: 50px;
   height: 50px;
@@ -779,22 +763,22 @@ html > body {
   border-radius: 100%;
 }
 
-.text-box > .number-btn > li:hover > a {
+.text-box > .number-btn > li:hover > div {
   background-color: #d0d0d0;
   transition: all 0.3s;
 }
 
-.text-box > .number-btn.s1 > li:first-child > a {
+.text-box > .number-btn.s1 > li:first-child > div {
   background-color: white;
   border: 0px;
 }
 
-.text-box > .number-btn.s2 > li:nth-child(2) > a {
+.text-box > .number-btn.s2 > li:nth-child(2) > div {
   background-color: white;
   border: 0px;
 }
 
-.text-box > .number-btn.s3 > li:last-child > a {
+.text-box > .number-btn.s3 > li:last-child > div {
   background-color: white;
   border: 0px;
 }
