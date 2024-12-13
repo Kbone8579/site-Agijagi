@@ -563,11 +563,6 @@ video {
   margin-right: auto;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .flex{
   display: flex;
 }
@@ -576,20 +571,12 @@ video {
   height: 665px;
 }
 
-.h-\[920px\]{
-  height: 920px;
-}
-
 .h-\[full\]{
   height: full;
 }
 
 .h-full{
   height: 100%;
-}
-
-.w-\[1730px\]{
-  width: 1730px;
 }
 
 .w-\[510px\]{
@@ -647,21 +634,6 @@ video {
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1));
 }
 
 html > body {
@@ -770,4 +742,49 @@ html > body {
 
 .section4 .fage {
   height: 100vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 40px;
+  width: 1730px;
+  border: 1px solid black;
+}
+
+.gallery-item {
+  position: relative;
+  height: 920px;
+  width: 850px;
+  transition: all 0.5s ease;
+  border: 2px solid red;
+}
+
+.gallery-item:hover {
+  width: 100%;
+}
+
+/* .gallery-item:not(:hover) {
+  width: 400px;
+} */
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-item .title {
+  position: absolute;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 500;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .title {
+  opacity: 0;
 }
