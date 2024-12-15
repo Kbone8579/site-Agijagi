@@ -856,6 +856,7 @@ html > body {
 
 .text-box > .number-btn.s2 {
   width: 510px;
+  justify-content: start;
 }
 
 .text-box > .number-btn > li > div {
@@ -903,10 +904,6 @@ html > body {
   justify-content: center;
 }
 
-/* .section4 .fage.s1 {
-  display: none;
-} */
-
 /* section4 fage s1 */
 
 .img-container {
@@ -939,10 +936,6 @@ html > body {
 .img-item .filter:hover {
   background-color: rgba(0, 0, 0, 0);
 }
-
-/* .gallery-item:not(:hover) {
-  width: 400px;
-} */
 
 .img-item img {
   width: 100%;

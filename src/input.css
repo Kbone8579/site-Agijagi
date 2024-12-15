@@ -80,6 +80,7 @@ html > body {
 }
 .text-box > .number-btn.s2 {
   width: 510px;
+  justify-content: start;
 }
 .text-box > .number-btn > li > div {
   display: flex;
