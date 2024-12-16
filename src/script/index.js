@@ -64,4 +64,26 @@ window.onload = function(){
       document.querySelector(".fage.s2").scrollIntoView({ behavior: "smooth"});
     });
   };
+  $(document).ready(function(){
+    // 클릭시 해당 지속가능성 들어가기
+    $(".img-item.s1").click(function(){
+      $(".fage.s1").fadeOut(500);
+      $(".fage.s2").fadeIn(500);
+    });
+    $(".img-item.s2").click(function(){
+      $(".fage.s1").fadeOut(500);
+      $(".fage.s3").fadeIn(500);
+    });
+    $(".img-item.s3").click(function(){
+      $(".fage.s1").fadeOut(500);
+      $(".fage.s4").fadeIn(500);
+    });
+    // 뒤로가기
+    $(".back-btn-2").click(function(){
+      $(".fage.s1").fadeIn(500);
+      $(".fage.s2").fadeOut(0);
+      $(".fage.s3").fadeOut(0);
+      $(".fage.s4").fadeOut(0);
+    });
+  });
 

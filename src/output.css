@@ -904,6 +904,11 @@ html > body {
   justify-content: center;
 }
 
+.section4 .fage.s2, .fage.s3, .fage.s4 {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* section4 fage s1 */
 
 .img-container {
@@ -933,7 +938,7 @@ html > body {
   transition: all 0.5s ease;
 }
 
-.img-item .filter:hover {
+.img-item:hover  .filter{
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -950,11 +955,11 @@ html > body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 46px;
+  font-size: 40px;
   font-weight: 500;
   opacity: 1;
   transition: opacity 0.3s ease;
-  font-family: "Noto Serif KR", serif;
+  font-family: "Pretendard Variable", sans-serif;
 }
 
 .img-item:hover .title {
@@ -974,6 +979,27 @@ html > body {
   width: 850px;
   height: 100%;
   background-color: gray;
+  position: relative;
+}
+
+.img-box .back-btn-1, .back-btn-2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.back-btn-2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+.back-btn-2:hover {
+  display: block;
+  opacity: 1;
 }
 
 .box13 .text-box {
@@ -986,6 +1012,6 @@ html > body {
 }
 
 .symbol {
-  opacity: 0.05;
+  opacity: 0.04;
   z-index: -10;
 }
