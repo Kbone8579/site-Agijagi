@@ -34,13 +34,6 @@ html > body {
 }
 /* section3 font */
 /* section4 font */
-.section4 .img-item .title {
-  font-family: "Noto Serif KR", serif;
-  font-size: 72px;
-  font-weight: 100;
-  color: white;
-  letter-spacing: 7.2px;
-}
 .section4 h1 {
   font-family: "Noto Serif KR", serif;
   font-size: 50px;
@@ -140,10 +133,6 @@ html > body {
   align-items: center;
   justify-content: center;
 }
-.section4  .fage.s2, .fage.s3, .fage.s4 {
-  /* opacity: 0;
-  visibility: hidden; */
-}
 /* section4 fage s1 */
 .img-container {
   display: flex;
@@ -189,14 +178,14 @@ html > body {
   opacity: 1;
 }
 
-/* section4 fage s2, s3, s4 */
-.section4 .box13 {
+/* section4 fage s1, s2, s3 */
+.section4 .box1 {
   width: 1730px;
   height: 920px;
   display: flex;
   justify-content: space-between;
 }
-.box13 .img-box {
+.box1 .img-box {
   width: 850px;
   height: 100%;
   background-color: gray;
@@ -219,7 +208,7 @@ html > body {
   display: block;
   opacity: 1;
 }
-.box13 .text-box {
+.box1 .text-box {
   width: 830px;
   height: 100%;
   display: flex;

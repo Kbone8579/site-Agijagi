@@ -111,7 +111,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -618,6 +618,10 @@ video {
   display: flex;
 }
 
+.h-\[21px\]{
+  height: 21px;
+}
+
 .h-\[49px\]{
   height: 49px;
 }
@@ -646,8 +650,8 @@ video {
   height: 100%;
 }
 
-.h-\[21px\]{
-  height: 21px;
+.w-\[150px\]{
+  width: 150px;
 }
 
 .w-\[239px\]{
@@ -714,10 +718,6 @@ video {
   width: 100%;
 }
 
-.w-\[150px\]{
-  width: 150px;
-}
-
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -776,10 +776,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.p-\[110px\]{
-  padding: 110px;
-}
-
 .px-\[110px\]{
   padding-left: 110px;
   padding-right: 110px;
@@ -792,10 +788,6 @@ video {
 
 .text-right{
   text-align: right;
-}
-
-.filter{
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 html > body {
@@ -833,14 +825,6 @@ html > body {
 /* section3 font */
 
 /* section4 font */
-
-.section4 .img-item .title {
-  font-family: "Noto Serif KR", serif;
-  font-size: 72px;
-  font-weight: 100;
-  color: white;
-  letter-spacing: 7.2px;
-}
 
 .section4 h1 {
   font-family: "Noto Serif KR", serif;
@@ -953,11 +937,6 @@ html > body {
   justify-content: center;
 }
 
-.section4  .fage.s2, .fage.s3, .fage.s4 {
-  /* opacity: 0;
-  visibility: hidden; */
-}
-
 /* section4 fage s1 */
 
 .img-container {
@@ -1011,16 +990,16 @@ html > body {
   opacity: 1;
 }
 
-/* section4 fage s2, s3, s4 */
+/* section4 fage s1, s2, s3 */
 
-.section4 .box13 {
+.section4 .box1 {
   width: 1730px;
   height: 920px;
   display: flex;
   justify-content: space-between;
 }
 
-.box13 .img-box {
+.box1 .img-box {
   width: 850px;
   height: 100%;
   background-color: gray;
@@ -1047,7 +1026,7 @@ html > body {
   opacity: 1;
 }
 
-.box13 .text-box {
+.box1 .text-box {
   width: 830px;
   height: 100%;
   display: flex;

@@ -66,31 +66,31 @@ window.onload = function(){
   };
 
   // section4 클릭 애니메이션
-  $(document).ready(function(){
-    // 기본 페이지 안 보이게 하기
-      $(".fage.s2").fadeOut(500);
-      $(".fage.s3").fadeOut(500);
-      $(".fage.s4").fadeOut(500);
+  // $(document).ready(function(){
+  //   // 기본 페이지 안 보이게 하기
+  //     $(".fage.s2").fadeOut(500);
+  //     $(".fage.s3").fadeOut(500);
+  //     $(".fage.s4").fadeOut(500);
     
-     // 클릭시 해당 지속가능성 들어가기 
-    $(".img-item.s1").click(function(){
-      $(".fage.s1").fadeOut(500);
-      $(".fage.s2").fadeIn(500);
-    });
-    $(".img-item.s2").click(function(){
-      $(".fage.s1").fadeOut(500);
-      $(".fage.s3").fadeIn(500);
-    });
-    $(".img-item.s3").click(function(){
-      $(".fage.s1").fadeOut(500);
-      $(".fage.s4").fadeIn(500);
-    });
-    // 뒤로가기
-    $(".back-btn-2").click(function(){
-      $(".fage.s1").fadeIn(500);
-      $(".fage.s2").fadeOut(500);
-      $(".fage.s3").fadeOut(500);
-      $(".fage.s4").fadeOut(500);
-    });
-  });
+  //    // 클릭시 해당 지속가능성 들어가기 
+  //   $(".img-item.s1").click(function(){
+  //     $(".fage.s1").fadeOut(500);
+  //     $(".fage.s2").fadeIn(500);
+  //   });
+  //   $(".img-item.s2").click(function(){
+  //     $(".fage.s1").fadeOut(500);
+  //     $(".fage.s3").fadeIn(500);
+  //   });
+  //   $(".img-item.s3").click(function(){
+  //     $(".fage.s1").fadeOut(500);
+  //     $(".fage.s4").fadeIn(500);
+  //   });
+  //   // 뒤로가기
+  //   $(".back-btn-2").click(function(){
+  //     $(".fage.s1").fadeIn(500);
+  //     $(".fage.s2").fadeOut(500);
+  //     $(".fage.s3").fadeOut(500);
+  //     $(".fage.s4").fadeOut(500);
+  //   });
+  // });
 
