@@ -34,6 +34,13 @@ html > body {
 }
 /* section3 font */
 /* section4 font */
+.section4 .img-item .title {
+  font-family: "Noto Serif KR", serif;
+  font-size: 72px;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 7.2px;
+}
 .section4 h1 {
   font-family: "Noto Serif KR", serif;
   font-size: 50px;
@@ -157,11 +164,11 @@ html > body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   transition: all 0.5s ease;
 }
 .img-item:hover  .filter{
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .img-item img {
   width: 100%;
@@ -174,15 +181,11 @@ html > body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 40px;
-  font-weight: 500;
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s ease;
-  font-family: "Pretendard Variable", sans-serif;
 }
 .img-item:hover .title {
-  opacity: 0;
+  opacity: 1;
 }
 
 /* section4 fage s2, s3, s4 */
