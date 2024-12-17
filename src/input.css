@@ -78,8 +78,16 @@ html > body {
   color: #747474;
   font-weight: 600;
 }
+.text-box > .number-btn.s1 {
+  width: 550px;
+  justify-content: start;
+}
 .text-box > .number-btn.s2 {
   width: 510px;
+  justify-content: flex-end;
+}
+.text-box > .number-btn.s3 {
+  width: 580px;
   justify-content: start;
 }
 .text-box > .number-btn > li > div {
@@ -124,9 +132,9 @@ html > body {
   align-items: center;
   justify-content: center;
 }
-.section4 .fage.s2, .fage.s3, .fage.s4 {
-  opacity: 0;
-  visibility: hidden;
+.section4  .fage.s2, .fage.s3, .fage.s4 {
+  /* opacity: 0;
+  visibility: hidden; */
 }
 /* section4 fage s1 */
 .img-container {
