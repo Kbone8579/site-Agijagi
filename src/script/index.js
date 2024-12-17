@@ -64,6 +64,7 @@ window.onload = function(){
       document.querySelector(".fage.s2").scrollIntoView({ behavior: "smooth"});
     });
   };
+
   // section4 클릭 애니메이션
   $(document).ready(function(){
     // 기본 페이지 안 보이게 하기

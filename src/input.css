@@ -44,16 +44,17 @@ html > body {
 .section4 h1 {
   font-family: "Noto Serif KR", serif;
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 400;
   color: #333;
+  line-height: 84px;
 }
 .section4 span {
-  font-family: "Pretendard Variable", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  font-weight: 100;
   color: #5e5e5e;
-  line-height: 1.9;
-  letter-spacing: -0.025em;
+  line-height: 2;
+  letter-spacing: -0.02em;
 }
 
 
