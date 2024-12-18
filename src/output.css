@@ -1048,7 +1048,6 @@ html > body {
   height: 700px;
   background-color: #FDFDFD;
   border: 1px solid red;
-  position: relative;
 }
 
 .fage.s11 .img-holder {
@@ -1057,5 +1056,6 @@ html > body {
   background-image: url(img/section5/section5.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   border: 1px solid red;
 }
