@@ -794,6 +794,10 @@ html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
 
+a {
+  display: block;
+}
+
 /* section1 font */
 
 .section1 h2 {
@@ -852,6 +856,24 @@ html > body {
   color: #fff;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+/* fage s12 font */
+
+.fage.s12 span , .serviceBox > ul > li > span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: -0.04em;
+}
+
+.serviceBox > ul > li > ul a {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: #959595;
+  letter-spacing: -0.04em;
 }
 
 /* section1 */
@@ -941,7 +963,7 @@ html > body {
 
 /* section4 */
 
-.section4 .fage {
+.fage.s8, .fage.s9, .fage.s10 {
   height: 100vh;
   display: flex;
   background-color: #FDFDFD;
@@ -949,96 +971,24 @@ html > body {
   justify-content: center;
 }
 
-/* section4 fage s1 */
+/* section4 fage s8, s9, s10 */
 
-.img-container {
-  display: flex;
-  gap: 40px;
-  width: 1730px;
-}
-
-.img-item {
-  position: relative;
-  height: 920px;
-  width: 850px;
-  transition: all 0.5s ease;
-}
-
-.img-item:hover {
-  width: 100%;
-}
-
-.img-item .filter {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0);
-  transition: all 0.5s ease;
-}
-
-.img-item:hover  .filter{
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.img-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.img-item .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.img-item:hover .title {
-  opacity: 1;
-}
-
-/* section4 fage s1, s2, s3 */
-
-.section4 .box1 {
+.s8 .box1, .s9 .box1, .s10 .box1 {
   width: 1730px;
   height: 920px;
   display: flex;
   justify-content: space-between;
+  z-index: 5;
 }
 
-.box1 .img-box {
+.s8 .box1 .img-box, .s9 .box1 .img-box, .s10 .box1 .img-box {
   width: 850px;
   height: 100%;
   background-color: gray;
   position: relative;
 }
 
-.img-box .back-btn-1, .back-btn-2 {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  cursor: pointer;
-}
-
-.back-btn-2 {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  opacity: 0;
-  transition: all 0.1s;
-}
-
-.back-btn-2:hover {
-  display: block;
-  opacity: 1;
-}
-
-.box1 .text-box {
+.s8 .box1 .text-box, .s9 .box1 .text-box, .s10 .box1 .text-box {
   width: 830px;
   height: 100%;
   display: flex;
@@ -1047,9 +997,16 @@ html > body {
   align-items: center;
 }
 
-.symbol {
+.s8 .symbol, .s9 .symbol, .s10 .symbol {
   opacity: 0.04;
-  z-index: -10;
+}
+
+/* section5 + footer */
+
+.fage.s11s12 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* section5 */
@@ -1057,8 +1014,7 @@ html > body {
 .fage.s11 {
   width: 100%;
   height: 635px;
-  background-color: #FDFDFD;
-  border: 1px solid red;
+  background-color: #F4F4F4;
   display: flex;
   align-items: end;
 }
@@ -1070,8 +1026,7 @@ html > body {
   background-image: url(img/section5/img-1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: bottom;
-  border: 1px solid red;
+  background-position: top;
   display: flex;
 }
 
@@ -1083,3 +1038,83 @@ html > body {
   right: 120px;
   transform: translateY(-50%);
 }
+
+/* footer */
+
+.fage.s12 {
+  width: 100%;
+  height: 445px;
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fage.s12 .textbox {
+  width: 1735px;
+  height: 310px;
+  display: flex;
+  gap: 165px;
+}
+
+/* footer box1 */
+
+.fage.s12 .box1 {
+  width: 149px;
+  height: 36px;
+}
+
+/* footer box2 */
+
+.fage.s12 .box2 {
+  width: 1143px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2 .snsBox {
+  width: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box2 .snsBox > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2 .snsBox > ul > li > a {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.box2 .serviceBox {
+  width: 560px;
+}
+
+.box2 .serviceBox > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box2 .serviceBox > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.box2 .serviceBox > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.box2 .serviceBox > ul > li > ul > li:hover > a {
+  text-decoration: underline;
+  color: #555;
+}
+
+/* footer box3 */
