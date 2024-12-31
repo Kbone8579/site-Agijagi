@@ -790,6 +790,11 @@ video {
   text-align: right;
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
@@ -845,6 +850,27 @@ a {
   color: #5e5e5e;
   line-height: 2;
   letter-spacing: -0.02em;
+}
+
+/* section5 font */
+
+.fage.s5 .text01 span {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 100;
+  font-size: 50px;
+  color: white;
+}
+
+.fage.s5 .text01 a {
+  font-size: 18px;
+  color: white;
+}
+
+.fage.s5 .text02 span{
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: white;
 }
 
 /* fage s11 font */
@@ -966,6 +992,7 @@ a {
 .fage.s5, .fage.s6, .fage.s7 {
   height: 100vh;
   background-color: #FDFDFD;
+  position: relative;
 }
 
 .list-box {
@@ -974,14 +1001,54 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.list-box .list-box-filter {
+  width: 584px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   opacity: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .list-box .all-box {
   width: 384px;
   height: 780px;
-  border: 1px solid red;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list-box .all-box .text-box .text01 {
+  gap: 28px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.list-box .all-box .text-box .text01 img {
+  width: 123px;
+  opacity: 0.6;
+}
+
+.list-box .all-box .text-box .text01 a {
+  border: 1px solid white;
+  border-radius: 200px;
+  width: 140px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-box .all-box .text-box .text01 a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .all-box > .number-btn {
