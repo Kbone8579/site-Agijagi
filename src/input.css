@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,24 +30,37 @@ a {
   line-height: 1.6;
 }
 /* section2 font */
-.section1 h1 {
-
+.fage.s4 h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 34px;
+  font-weight: 500;
+  color: white;
 }
-.section1 h2 {
-
+.fage.s4 h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.fage.s4 span {
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: -0.02em;
 }
 /* section3 font */
-.section3 .text01 span {
+.fage.s5 .text01 span, .fage.s6 .text01 span, .fage.s7 .text01 span {
   font-family: "Noto Serif KR", serif;
   font-weight: 100;
   font-size: 50px;
   color: white;
 }
-.section3 .text01 a {
+.fage.s5 .text01 a, .fage.s6 .text01 a, .fage.s7 .text01 a {
   font-size: 18px;
   color: white;
 }
-.section3 .text02 span{
+.fage.s5 .text02 span, .fage.s6 .text02, .fage.s7 .text02 {
   font-family: "Noto Serif KR", serif;
   font-size: 18px;
   line-height: 1.8;
@@ -179,14 +193,22 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  height: 100vh;
 }
 .content-box .content-list {
   width: 288px;
-  border: 1px solid red;
-  margin-top: 100px;
+  z-index: 10;
 }
 .content-box .content-list .back-btn {
   margin-bottom: 346px;
+}
+.content-box .content-list .text-list h2 {
+  margin-bottom: 14px;
+}
+.content-box .content-list .text-list h1 {
+  margin-bottom: 40px;
 }
 .content-box .img-box > ul {
   display: flex;
@@ -194,6 +216,7 @@ a {
 .content-box .img-box > ul > li {
   width: 110px;
   height: 110px;
+  border: 1px solid red;
 }
 .content-box .img-box > ul > li > a {}
 .content-box-filter {
