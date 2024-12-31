@@ -36,6 +36,22 @@ a {
 
 }
 /* section3 font */
+.section3 .text01 span {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 100;
+  font-size: 50px;
+  color: white;
+}
+.section3 .text01 a {
+  font-size: 18px;
+  color: white;
+}
+.section3 .text02 span{
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: white;
+}
 /* section4 font */
 .fage.s8 h1, .fage.s9 h1, .fage.s10 h1 {
   font-family: "Noto Serif KR", serif;
@@ -53,22 +69,6 @@ a {
   letter-spacing: -0.02em;
 }
 /* section5 font */
-.fage.s5 .text01 span {
-  font-family: "Noto Serif KR", serif;
-  font-weight: 100;
-  font-size: 50px;
-  color: white;
-}
-.fage.s5 .text01 a {
-  font-size: 18px;
-  color: white;
-}
-.fage.s5 .text02 span{
-  font-family: "Noto Serif KR", serif;
-  font-size: 18px;
-  line-height: 1.8;
-  color: white;
-}
 /* fage s11 font */
 .fage.s11 span {
   font-family: "Noto Serif KR", serif;
@@ -176,7 +176,7 @@ a {
 }
 .BgImg {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -226,6 +226,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 }
 .list-box .all-box .text-box .text01 a:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -264,18 +265,7 @@ a {
   background-color: #d0d0d0;
   transition: all 0.3s;
 }
-.all-box > .number-btn.s4 > li:first-child > div {
-  background-color: white;
-  border: 0px;
-}
-.all-box > .number-btn.s5 > li:nth-child(2) > div {
-  background-color: white;
-  border: 0px;
-}
-.all-box > .number-btn.s6 > li:last-child > div {
-  background-color: white;
-  border: 0px;
-}
+
 
 /* section4 */
 .fage.s8, .fage.s9, .fage.s10 {
