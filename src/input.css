@@ -180,14 +180,22 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.content-list {
+.content-box .content-list {
   width: 288px;
   border: 1px solid red;
   margin-top: 100px;
 }
-.content-list .back-btn {
+.content-box .content-list .back-btn {
   margin-bottom: 346px;
 }
+.content-box .img-box > ul {
+  display: flex;
+}
+.content-box .img-box > ul > li {
+  width: 110px;
+  height: 110px;
+}
+.content-box .img-box > ul > li > a {}
 .content-box-filter {
   width: 100%;
   height: 100vh;
