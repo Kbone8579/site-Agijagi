@@ -29,6 +29,27 @@ html > body {
 a {
   display: block;
 }
+/* slider */
+.fage.s0 h1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 64px;
+  font-weight: 100;
+  letter-spacing: 8px;
+  line-height: 1.71875;
+}
+.fage.s0 .slide.s3 h1 {
+  color: white;
+}
+.fage.s0 span {
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  color: #3A3A3A;
+  font-weight: 100;
+  letter-spacing: -0.02em;
+}
+.fage.s0 .slide.s3 span {
+  color: #e8e8e8;
+}
 /* section1 font */
 .fage.s1 h2, .fage.s2 h2, .fage.s3 h2 {
   font-family: "Noto Serif KR", serif;
@@ -126,6 +147,51 @@ a {
 }
 
 
+/* slider */
+.fage.s0 {
+  position: relative;
+}
+.slide-box {
+  display: flex;
+  width: 300%;
+}
+.slide {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide img {
+  width: 100%;
+}
+.slide.s1 .text-box {
+  position: absolute;
+  top: 410px;
+  left: 181px;
+}
+.slide.s2 .text-box {
+  position: absolute;
+  top: 302px;
+  left: 271px;
+}
+.slide.s3 .text-box {
+  position: absolute;
+  top: 274px;
+  left: 172px;
+}
+.fage.s0 .top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.fage.s0 .text-box h1 {
+  margin-bottom: 40px;
+}
 /* section1 */
 .fage.s1, .fage.s2, .fage.s3 {
 	height: 100vh;
