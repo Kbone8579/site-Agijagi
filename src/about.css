@@ -62,6 +62,32 @@
     line-height: 1.7;
     color: #5E5854;
 }
+/* fage.a4 */
+.fage.a4 .main-title h1 {
+    font-family: "EB Garamond", Italic;
+    font-size: 120px;
+    font-style: italic;
+    font-weight: 800;
+    color: #C2B7A3;
+    opacity: 15%;
+    text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
+    line-height: normal;
+}
+.fage.a4 .sub-title h2 {
+    font-family: "Noto Serif KR", serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 2;
+    color: #47423E;
+}
+.fage.a4 .sub-text span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5E5854;
+}
+
 
 
 /* fage a1 */
@@ -148,7 +174,6 @@
   .fage.a3 .text-box3 .text-all {
     width: 641px;
   }
-  /* About */
   .fage.a3 .text-box3 .text-all .main-title { 
     margin-top: 114px;
   }
@@ -162,4 +187,37 @@
     margin-bottom: 14px;
     display: block;
     text-align: end;
+  }
+  /* fage.a4 */
+  .fage.a4 {
+    display: flex;
+  }
+  .fage.a4 .img-box4 {
+    width: 960px;
+    height: 100vh;
+    background-color: #d9d9d9;
+  }
+  .fage.a4 .text-box4 {
+    width: 960px;
+    height: 100vh;
+    background-color: #E8E4DF;
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  .fage.a4 .text-box4 .text-all {
+    width: 641px;
+  }
+  .fage.a4 .text-box4 .text-all .main-title { 
+    margin-top: 80px;
+  }
+  .fage.a4 .text-box4 .text-all .main-title h1 {
+    text-align: end;
+  }
+  .fage.a4 .text-box4 .text-all .main-text .sub-title {
+    margin-bottom: 32px;
+  }
+  .fage.a4 .text-box4 .text-all .main-text .sub-text span {
+    margin-bottom: 14px;
+    display: block;
   }
