@@ -86,3 +86,52 @@ window.addEventListener('DOMContentLoaded', function(){
     });
 });
 
+
+
+// about 페이지
+$(document).ready(function(){
+  // 모든 이미지를 숨기고 검정 필터 적용하는 함수
+  function hideAllImages() {
+    $(".fage.a6 .img img").hide().css({
+      'filter': 'brightness(0)',
+      'transition': 'filter 2s ease'
+    });
+  }
+  
+  // 초기 설정
+  hideAllImages();
+  
+  $(".fage.a6 .section.s1 .circle").hover(
+    function(){
+      hideAllImages();
+      const img = $(".fage.a6 .img.s1 img");
+      img.show();
+      // 약간의 지연 후 밝기 변경 (애니메이션이 보이도록)
+      setTimeout(function() {
+        img.css('filter', 'brightness(1)');
+      }, 10);
+    }
+  );
+  
+  $(".fage.a6 .section.s2 .circle").hover(
+    function(){
+      hideAllImages();
+      const img = $(".fage.a6 .img.s2 img");
+      img.show();
+      setTimeout(function() {
+        img.css('filter', 'brightness(1)');
+      }, 10);
+    }
+  );
+  
+  $(".fage.a6 .section.s3 .circle").hover(
+    function(){
+      hideAllImages();
+      const img = $(".fage.a6 .img.s3 img");
+      img.show();
+      setTimeout(function() {
+        img.css('filter', 'brightness(1)');
+      }, 10);
+    }
+  );
+});

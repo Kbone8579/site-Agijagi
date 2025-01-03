@@ -1,3 +1,12 @@
+@keyframes ani {
+  0% {
+    stroke-dashoffset: 770;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
 /* font */
 /* fage.a1 */
 .fage.a1 h1 {
@@ -392,18 +401,10 @@
   height: 242px;
 }
 .section .circle:hover svg {
-  animation: ani 5s linear forwards;
+  animation: ani 2s linear forwards;
   stroke-dasharray: 770;
   transform: rotate(-90deg);
   stroke: white;
-}
-@keyframes ani {
-  0% {
-    stroke-dashoffset: 770;
-  }
-  50% {
-    stroke-dashoffset: 0;
-  }
 }
 .section .circle h2, .section .circle span {
   transition: all 0.3s;
@@ -445,12 +446,19 @@
   top: 0;
   left: 0;
 }
+.fage.a6 .img-box .img img {
+  width: 100%;
+  display: none;
+}
 /* .fage.a6 .img-box img {
   vertical-align: top;
   position: absolute;
   top: 0;
   left: 0;
 } */
+.fage.a6 .img img {
+  transition: filter 3s ease;
+}
 
 /* fage.a7 */
 .fage.a7 {
