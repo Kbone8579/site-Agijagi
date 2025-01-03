@@ -1,91 +1,91 @@
 /* font */
 /* fage.a1 */
 .fage.a1 h1 {
-    font-family: "Noto Serif KR", serif;
-    font-size: 48px;
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    color: white;
+  font-family: "Noto Serif KR", serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: white;
 }
 .fage.a1 span {
-    font-family: "Pretendard Variable", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    line-height: 1.7;
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.7;
 }
 /* fage.a2 */
 .fage.a2 .main-title h1 {
-    font-family: "EB Garamond", Italic;
-    font-size: 120px;
-    font-style: italic;
-    font-weight: 800;
-    color: #C2B7A3;
-    opacity: 15%;
-    text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
+  font-family: "EB Garamond", Italic;
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 800;
+  color: #c2b7a3;
+  opacity: 15%;
+  text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
 }
 .fage.a2 .sub-title h2 {
-    font-family: "Noto Serif KR", serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 2;
-    color: #47423E;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 2;
+  color: #47423e;
 }
 .fage.a2 .sub-text span {
-    font-family: "Pretendard Variable", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #5E5854;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5e5854;
 }
 /* fage.a3 */
 .fage.a3 .main-title h1 {
-    font-family: "EB Garamond", Italic;
-    font-size: 120px;
-    font-style: italic;
-    font-weight: 800;
-    color: #C2B7A3;
-    opacity: 15%;
-    text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
+  font-family: "EB Garamond", Italic;
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 800;
+  color: #c2b7a3;
+  opacity: 15%;
+  text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
 }
 .fage.a3 .sub-title h2 {
-    font-family: "Noto Serif KR", serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 2;
-    color: #47423E;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 2;
+  color: #47423e;
 }
 .fage.a3 .sub-text span {
-    font-family: "Pretendard Variable", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #5E5854;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5e5854;
 }
 /* fage.a4 */
 .fage.a4 .main-title h1 {
-    font-family: "EB Garamond", Italic;
-    font-size: 120px;
-    font-style: italic;
-    font-weight: 800;
-    color: #C2B7A3;
-    opacity: 15%;
-    text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
-    line-height: normal;
+  font-family: "EB Garamond", Italic;
+  font-size: 120px;
+  font-style: italic;
+  font-weight: 800;
+  color: #c2b7a3;
+  opacity: 15%;
+  text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
+  line-height: normal;
 }
 .fage.a4 .sub-title h2 {
-    font-family: "Noto Serif KR", serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 2;
-    color: #47423E;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 2;
+  color: #47423e;
 }
 .fage.a4 .sub-text span {
-    font-family: "Pretendard Variable", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #5E5854;
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5e5854;
 }
 /* fage.a5 */
 .fage.a5 .main-title h1 {
@@ -93,200 +93,351 @@
   font-size: 120px;
   font-style: italic;
   font-weight: 800;
-  color: #C2B7A3;
+  color: #c2b7a3;
   opacity: 15%;
   line-height: normal;
   text-shadow: 0px -2px 1px rgba(0, 0, 0, 2.5);
 }
+.fage.a5 .text-box h1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 36px;
+  line-height: 100%;
+  color: #47423e;
+}
+.fage.a5 .text-box span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #5e5854;
+}
+/* fage a6 */
+.fage.a6 .list-box span {
+  font-family: "EB Garamond", Italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: white;
+  opacity: 80%;
+}
 
-
+.fage.a6 .all-box .title h1 {
+  font-family: "EB Garamond", Italic;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: white;
+  opacity: 60%;
+}
+.section .text-box h2 {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.55;
+  color: white;
+  opacity: 60%;
+}
+.section .text-box span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: white;
+  opacity: 60%;
+}
 /* fage a1 */
 .fage.a1 {
-    position: relative;
+  position: relative;
 }
 .fage.a1 .top-bar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-  }
-  .fage.a1 .img-box1 {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .fage.a1 .img-box1 img {
-    width: 100%;
-    height: 100vh;
-    vertical-align: top;
-  }
-  .fage.a1 .text-box1 {
-    position: absolute;
-    top: 375px;
-    left: 306px;
-  }
-  .fage.a1 .text-box1 h1 {
-    margin-bottom: 32px;
-  }
-  /* fage a2 */
-  .fage.a2 {
-    display: flex;
-  }
-  .fage.a2 .img-box2 {
-    width: 960px;
-    height: 100vh;
-    background-color: #d9d9d9;
-    overflow: hidden;
-  }
-  .fage.a2 .text-box2 {
-    width: 960px;
-    height: 100vh;
-    background-color: #E8E4DF;
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-  }
-  .fage.a2 .text-box2 .text-all {
-    width: 641px;
-  }
-  .fage.a2 .text-box2 .text-all .main-title { 
-    margin-bottom: 81px;
-  }
-  .fage.a2 .text-box2 .text-all .main-title h1 {
-    text-align: end;
-  }
-  .fage.a2 .text-box2 .text-all .main-text .sub-title {
-    margin-bottom: 32px;
-  }
-  .fage.a2 .text-box2 .text-all .main-text .sub-text span {
-    margin-bottom: 14px;
-    display: block;
-  }
-  /* fage.a3 */
-  .fage.a3 {
-    display: flex;
-  }
-  .fage.a3 .img-box3 {
-    width: 960px;
-    height: 100vh;
-    background-color: #d9d9d9;
-    overflow: hidden;
-  }
-  .fage.a3 .text-box3 {
-    width: 960px;
-    height: 100vh;
-    background-color: #E8E4DF;
-    padding-top: 340px;
-    display: flex;
-    justify-content: center;
-  }
-  .fage.a3 .text-box3 .text-all {
-    width: 641px;
-  }
-  .fage.a3 .text-box3 .text-all .main-title { 
-    margin-top: 114px;
-  }
-  .fage.a3 .text-box3 .text-all .main-text .sub-title {
-    margin-bottom: 32px;
-  }
-  .fage.a3 .text-box3 .text-all .main-text .sub-title h2 {
-    text-align: end;
-  }
-  .fage.a3 .text-box3 .text-all .main-text .sub-text span {
-    margin-bottom: 14px;
-    display: block;
-    text-align: end;
-  }
-  /* fage.a4 */
-  .fage.a4 {
-    display: flex;
-  }
-  .fage.a4 .img-box4 {
-    width: 960px;
-    height: 100vh;
-    background-color: #d9d9d9;
-    overflow: hidden;
-  }
-  .fage.a4 .text-box4 {
-    width: 960px;
-    height: 100vh;
-    background-color: #E8E4DF;
-    padding-top: 250px;
-    display: flex;
-    justify-content: center;
-  }
-  .fage.a4 .text-box4 .text-all {
-    width: 641px;
-  }
-  .fage.a4 .text-box4 .text-all .main-title { 
-    margin-top: 80px;
-  }
-  .fage.a4 .text-box4 .text-all .main-title h1 {
-    text-align: end;
-  }
-  .fage.a4 .text-box4 .text-all .main-text .sub-title {
-    margin-bottom: 32px;
-  }
-  .fage.a4 .text-box4 .text-all .main-text .sub-text span {
-    margin-bottom: 14px;
-    display: block;
-  }
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.fage.a1 .img-box1 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.fage.a1 .img-box1 img {
+  width: 100%;
+  height: 100vh;
+  vertical-align: top;
+}
+.fage.a1 .text-box1 {
+  position: absolute;
+  top: 375px;
+  left: 306px;
+}
+.fage.a1 .text-box1 h1 {
+  margin-bottom: 32px;
+}
 
-  /* fage.a5 */
-  .fage.a5 {
-    width: 100%;
-    height: 100vh;
-    background-color: #E8E4DF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .fage.a5 .all-box {
-    border: 1px solid red;
-    width: 1243px;
-    height: 747px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .fage.a5 .all-box .box1 {
-    border: 1px solid red;
-    width: 610px;
-    height: 747px;
-    padding-top: 120px;
+/* fage a2 */
+.fage.a2 {
+  display: flex;
+}
+.fage.a2 .img-box2 {
+  width: 960px;
+  height: 100vh;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+.fage.a2 .text-box2 {
+  width: 960px;
+  height: 100vh;
+  background-color: #e8e4df;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+}
+.fage.a2 .text-box2 .text-all {
+  width: 641px;
+}
+.fage.a2 .text-box2 .text-all .main-title {
+  margin-bottom: 81px;
+}
+.fage.a2 .text-box2 .text-all .main-title h1 {
+  text-align: end;
+}
+.fage.a2 .text-box2 .text-all .main-text .sub-title {
+  margin-bottom: 32px;
+}
+.fage.a2 .text-box2 .text-all .main-text .sub-text span {
+  margin-bottom: 14px;
+  display: block;
+}
 
+/* fage.a3 */
+.fage.a3 {
+  display: flex;
+}
+.fage.a3 .img-box3 {
+  width: 960px;
+  height: 100vh;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+.fage.a3 .text-box3 {
+  width: 960px;
+  height: 100vh;
+  background-color: #e8e4df;
+  padding-top: 340px;
+  display: flex;
+  justify-content: center;
+}
+.fage.a3 .text-box3 .text-all {
+  width: 641px;
+}
+.fage.a3 .text-box3 .text-all .main-title {
+  margin-top: 114px;
+}
+.fage.a3 .text-box3 .text-all .main-text .sub-title {
+  margin-bottom: 32px;
+}
+.fage.a3 .text-box3 .text-all .main-text .sub-title h2 {
+  text-align: end;
+}
+.fage.a3 .text-box3 .text-all .main-text .sub-text span {
+  margin-bottom: 14px;
+  display: block;
+  text-align: end;
+}
+
+/* fage.a4 */
+.fage.a4 {
+  display: flex;
+}
+.fage.a4 .img-box4 {
+  width: 960px;
+  height: 100vh;
+  background-color: #d9d9d9;
+  overflow: hidden;
+}
+.fage.a4 .text-box4 {
+  width: 960px;
+  height: 100vh;
+  background-color: #e8e4df;
+  padding-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+.fage.a4 .text-box4 .text-all {
+  width: 641px;
+}
+.fage.a4 .text-box4 .text-all .main-title {
+  margin-top: 80px;
+}
+.fage.a4 .text-box4 .text-all .main-title h1 {
+  text-align: end;
+}
+.fage.a4 .text-box4 .text-all .main-text .sub-title {
+  margin-bottom: 32px;
+}
+.fage.a4 .text-box4 .text-all .main-text .sub-text span {
+  margin-bottom: 14px;
+  display: block;
+}
+
+/* fage.a5 */
+.fage.a5 {
+  width: 100%;
+  height: 100vh;
+  background-color: #e8e4df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fage.a5 .all-box {
+  width: 1243px;
+  display: flex;
+  justify-content: space-between;
+}
+.fage.a5 .all-box .box1 {
+  width: 610px;
+  padding-top: 120px;
+}
+.fage.a5 .all-box .box1 .img-box {
+  height: 430px;
+  margin-bottom: 25px;
+}
+.fage.a5 .all-box .box1 .text-box h1 {
+  margin-bottom: 30px;
+}
+.fage.a5 .all-box .box2 {
+  width: 500px;
+}
+.fage.a5 .all-box .box2 .img-box {
+  height: 500px;
+  margin-bottom: 25px;
+}
+.fage.a5 .all-box .box2 .text-box h1 {
+  margin-bottom: 30px;
+}
+.fage.a5 .all-box .box2 {
+  width: 500px;
+  height: 747px;
+}
+.fage.a5 .main-title {
+  position: absolute;
+  top: 5px;
+  left: 236px;
+}
+
+/* fage.a6 */
+.fage.a6 {
+  width: 100%;
+  height: 100vh;
+  background-color: #e8e4df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fage.a6 .list-box {
+  width: 737px;
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -300px;
+}
+.fage.a6 .list-box span {
+  display: flex;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.fage.a6 .list-box span:hover {
+  opacity: 100%;
+  font-weight: 700;
+}
+.fage.a6 .all-box {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+.section.s1 {
+  width: 240px;
+}
+.section .circle {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3;
+}
+.section .circle .title {
+  width: 239px;
+  height: 239px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+/* .section .circle .title svg circle {
+  cursor: pointer;
+} */
+.section .circle:hover circle {
+  fill: white;
+  fill-opacity: 20%;
+}
+.section .circle:hover .title > h1 {
+  opacity: 100%;
+  font-weight: 500;
+}
+.section .circle svg {
+  width: 242px;
+  height: 242px;
+  transition: all 0.3;
+}
+.section .circle:hover svg {
+  animation: ani 5s linear forwards;
+  stroke-dasharray: 770;
+  transform: rotate(-90deg);
+  stroke: white;
+}
+@keyframes ani {
+  0% {
+    stroke-dashoffset: 770;
   }
-  .fage.a5 .all-box .box1 .img-box {
-    height: 430px;
-    border: 1px solid blue;
-    margin-bottom: 25px;
+  50% {
+    stroke-dashoffset: 0;
   }
-  .fage.a5 .all-box .box1 .text-box h1 {
-    margin-bottom: 30px;
-  }
-  .fage.a5 .all-box .box2 {
-    border: 1px solid red;
-    width: 500px;
-    height: 747px;
-  }
-  .fage.a5 .all-box .box2 .img-box {
-    height: 500px;
-    border: 1px solid blue;
-    margin-bottom: 25px;
-  }
-  .fage.a5 .all-box .box2 .text-box h1 {
-    margin-bottom: 30px;
-  }
-  .fage.a5 .all-box .box2 {
-    border: 1px solid red;
-    width: 500px;
-    height: 747px;
-  }
-  .fage.a5 .main-title {
-    position: absolute;
-    top: 5px;
-    left: 236px;
-  }
+}
+.section .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section .text-box h2 {
+  display: block;
+  margin-top: 38px;
+}
+.section .text-box span {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+}
+
+
+.fage.a6 .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* .fage.a6 .img-box img {
+  vertical-align: top;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
