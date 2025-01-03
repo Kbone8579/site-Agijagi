@@ -778,11 +778,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
 .px-\[110px\]{
   padding-left: 110px;
   padding-right: 110px;
@@ -800,22 +795,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-opacity-100{
-  --tw-text-opacity: 1;
-}
-
-.\!text-opacity-100{
-  --tw-text-opacity: 1 !important;
-}
-
-.opacity-100{
-  opacity: 1;
-}
-
-.opacity-60{
-  opacity: 0.6;
 }
 
 @keyframes fadeout {
@@ -1575,24 +1554,4 @@ a {
 
 .hover\:visible:hover{
   visibility: visible;
-}
-
-.hover\:text-opacity-60:hover{
-  --tw-text-opacity: 0.6;
-}
-
-.hover\:opacity-60:hover{
-  opacity: 0.6;
-}
-
-.hover\:opacity-100:hover{
-  opacity: 1;
-}
-
-.group:hover .group-hover\:opacity-60{
-  opacity: 0.6;
-}
-
-.group:hover .group-hover\:opacity-100{
-  opacity: 1;
 }
