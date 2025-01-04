@@ -128,6 +128,28 @@
   color: white;
   opacity: 80%;
 }
+/* fage a7 */
+.fage.a7 .text-box .content01 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 16px;
+}
+.fage.a7 .text-box .content02 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  color: #969BA4;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+.fage.a7 .text-box .content03 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 400;
+  color: #C3C6CA;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+}
+/* //font */
 
 .fage.a6 .all-box .title h1 {
   font-family: "EB Garamond", Italic;
@@ -464,14 +486,13 @@
 .fage.a7 {
   width: 100%;
   height: 150px;
-  background-color: #e8e4df;
+  background-color: #fdfdfd;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .fage.a7 .all-box {
   width: 1705px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -483,7 +504,6 @@
 }
 .fage.a7 .all-box .text-box ul {
   display: flex;
-  border: 1px solid red;
   gap: 30px;
 }
 .fage.a7 .all-box .text-box .content02 {
