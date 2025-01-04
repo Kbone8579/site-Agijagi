@@ -400,6 +400,12 @@
   width: 242px;
   height: 242px;
 }
+/* .section .circle svg {
+  animation: ani 2s linear forwards;
+  stroke-dasharray: 770;
+  transform: rotate(-90deg);
+  stroke: rgba(255, 255, 255, 0.6);
+} */
 .section .circle:hover svg {
   animation: ani 2s linear forwards;
   stroke-dasharray: 770;
@@ -450,12 +456,6 @@
   width: 100%;
   display: none;
 }
-/* .fage.a6 .img-box img {
-  vertical-align: top;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
 .fage.a6 .img img {
   transition: filter 3s ease;
 }
@@ -465,4 +465,67 @@
   width: 100%;
   height: 150px;
   background-color: #e8e4df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fage.a7 .all-box {
+  width: 1705px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+/* .text-box */
+.fage.a7 .all-box .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fage.a7 .all-box .text-box ul {
+  display: flex;
+  border: 1px solid red;
+  gap: 30px;
+}
+.fage.a7 .all-box .text-box .content02 {
+  display: flex;
+  gap: 30px;
+}
+.fage.a7 .all-box .text-box .content02 .list1 {
+  display: flex;
+  gap: 15px;
+}
+.fage.a7 .all-box .text-box .content02 .list2 {
+  display: flex;
+  gap: 15px;
+}
+.fage.a7 .all-box .text-box .content02 .list3 {
+  display: flex;
+  gap: 15px;
+}
+/* .sns-box */
+.fage.a7 .sns-box {
+  display: flex;
+}
+.fage.a7 .sns-box ul {
+  display: flex;
+  width: 122px;
+  justify-content: space-between;
+  align-items: end;
+}
+.fage.a7 .sns-box ul li a {
+  width: 26px;
+  height: 26px;
+  background-color: #47423e;
+  border-radius: 100%;
+}
+
+/* top-btn */
+.top-btn {
+  display: flex;
+  align-items: center;
+}
+.top-btn a {
+  width: 86px;
+  height: 84px;
+  background-color: #47423e;
 }
