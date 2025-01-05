@@ -137,3 +137,7 @@ $(document).ready(function(){
 });
 
 new WOW().init();
+
+setTimeout(function () {
+  $(".sub-title").addClass("animated");
+}, 800);
