@@ -136,8 +136,12 @@ $(document).ready(function(){
   );
 });
 
-new WOW().init();
-
-setTimeout(function () {
-  $(".sub-title").addClass("animated");
-}, 800);
+// product kategorie btn 
+$(document).ready(function(){
+  $(".kategorie .main-items.s1").click(function(){
+    $(".kategorie .sub-items.s1").toggle();
+  });
+  $(".kategorie .main-items.s2").click(function(){
+    $(".kategorie .sub-items.s2").toggle();
+  });
+});

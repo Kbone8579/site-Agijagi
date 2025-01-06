@@ -312,13 +312,6 @@
   margin-bottom: 14px;
   display: block;
 }
-.fage.a4 .sub-title {
-  transition: all 1s;
-  transform: translateX(10%);
-}
-.fage.a4 .sub-title.animated {
-  transform: translate(0);
-}
 
 /* fage.a5 */
 .fage.a5 {
@@ -513,6 +506,9 @@
   display: flex;
   gap: 30px;
 }
+.fage.a7 .all-box .text-box .content01 > li:hover > a {
+  font-weight: 500;
+} 
 .fage.a7 .all-box .text-box .content02 {
   display: flex;
   gap: 30px;
