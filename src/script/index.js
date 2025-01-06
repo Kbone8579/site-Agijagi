@@ -145,3 +145,10 @@ $(document).ready(function(){
     $(".kategorie .sub-items.s2").toggle();
   });
 });
+
+//dropbtn
+$(document).ready(function(){
+  $(".dropbtn").click(function(){
+    $(".dropdown-content").toggle();
+  });
+});
