@@ -202,7 +202,6 @@ a, span {
     justify-content: space-between;
     cursor: pointer;
     gap:4px;
-    margin-bottom: 10px;
 }
 .product .content-box .title-box .dropbtn::after {
     content: "";
@@ -215,6 +214,7 @@ a, span {
     background-color: #fdfdfd;
     border: 2px solid black;
     width: 140%;
+    top: 32px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
