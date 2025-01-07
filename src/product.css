@@ -44,6 +44,10 @@ a, span {
 }
 
 /* kategorie */
+.kategorie {
+    position: sticky;
+    top: 0;
+}
 .kategorie .all-items {
     font-family: "Pretendard Variable", sans-serif;
     font-size: 18px;
@@ -113,6 +117,7 @@ a, span {
 }
 .product .content-box {
     display: flex;
+    margin: auto;
     align-items: start;
     flex-direction: row;
     height: 100%;
@@ -141,13 +146,6 @@ a, span {
     justify-content: space-between;
     margin-bottom: 32px;
     cursor: pointer;  
-}
-
-.kategorie .all-items::after {
-    content: "";
-    width: 24px;
-    height: 24px;
-    border: 1px solid black;
 }
 .kategorie > ul > li > ul {
     display: flex;
@@ -231,6 +229,63 @@ a, span {
     border: 1px solid red;
     background-repeat: no-repeat; 
     background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+}
+.product .content-box .items .img-box.s1 {
+    background-image: url(img/product/1.jpg);
+}
+.product .content-box .items .img-box.s1:hover {
+    background-image: url(img/product/1-1.jpg);
+}
+.product .content-box .items .img-box.s2 {
+    background-image: url(img/product/2.jpg);
+}
+.product .content-box .items .img-box.s2:hover {
+    background-image: url(img/product/2-1.jpg);
+}
+.product .content-box .items .img-box.s3 {
+    background-image: url(img/product/3.jpg);
+}
+.product .content-box .items .img-box.s3:hover {
+    background-image: url(img/product/3-1.jpg);
+}
+
+.product .content-box .items .img-box.s4 {
+    background-image: url(img/product/4.jpg);
+}
+.product .content-box .items .img-box.s4:hover {
+    background-image: url(img/product/4-1.jpg);
+}
+.product .content-box .items .img-box.s5 {
+    background-image: url(img/product/5.jpg);
+}
+.product .content-box .items .img-box.s5:hover {
+    background-image: url(img/product/5-1.jpg);
+}
+.product .content-box .items .img-box.s6 {
+    background-image: url(img/product/6.jpg);
+}
+.product .content-box .items .img-box.s6:hover {
+    background-image: url(img/product/6-1.jpg);
+}
+.product .content-box .items .img-box.s7 {
+    background-image: url(img/product/7.jpg);
+}
+.product .content-box .items .img-box.s7:hover {
+    background-image: url(img/product/7-1.jpg);
+}
+.product .content-box .items .img-box.s8 {
+    background-image: url(img/product/8.jpg);
+}
+.product .content-box .items .img-box.s8:hover {
+    background-image: url(img/product/8-1.jpg);
+}
+.product .content-box .items .img-box.s9 {
+    background-image: url(img/product/9.jpg);
+}
+.product .content-box .items .img-box.s9:hover {
+    background-image: url(img/product/9-1.jpg);
 }
 .product .content-box .items .img-box .text-box {
     display: flex;
