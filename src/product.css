@@ -128,6 +128,7 @@ a, span {
     width: 217px;
     position: sticky;
     top: 0;
+    white-space: nowrap;
 }
 .product .content-box .kategorie .logo {
     margin-top: 50px;
@@ -144,6 +145,9 @@ a, span {
     margin-bottom: 32px;
     cursor: pointer;  
 }
+.kategorie .items-list > li.active > span:not(:only-child) {
+    font-weight: 600;
+}
 .kategorie > ul > li > ul {
     display: flex;
     flex-direction: column;
@@ -153,13 +157,17 @@ a, span {
     justify-content: space-between;
     cursor: pointer;
 }
-.kategorie .main-items::after {
-    content: "";
+.kategorie ul ul > li > .main-items:not(:only-child)::after {
+    content: "[+]";
     width: 24px;
     height: 24px;
-    border: 1px solid black;
 }
-.kategorie > ul > li > ul > li > ul {
+.kategorie ul ul > li.active > .main-items:not(:only-child)::after {
+    content: "[-]";
+    width: 24px;
+    height: 24px;
+}
+.kategorie > ul ul ul {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -167,6 +175,9 @@ a, span {
 }
 .kategorie > ul ul > li {
     margin-bottom: 24px;
+}
+.kategorie > ul ul > li:hover > span {
+    font-weight: 600;
 }
 .kategorie > ul ul ul > li {
     margin-top: 18px;
@@ -291,7 +302,6 @@ a, span {
 }
 .content-box .items .items-list > li > ul {
     display: grid;
-    grid-column: 3;
     column-gap: 30px;
     row-gap: 32px;
 }

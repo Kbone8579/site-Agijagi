@@ -144,6 +144,32 @@ $(document).ready(function(){
   $(".kategorie .main-items.s2").click(function(){
     $(".kategorie .sub-items.s2").toggle();
   });
+  // 모바일 사이드바의 메뉴 아이템이 클릭되면 해야할 일
+$(".kategorie ul ul > li").click(function () {
+  // 클릭된 li 요소
+  const $this = $(this);
+
+  // 클릭된 요소의 형제의 후손중에서 활성화된 li 요소들 비활성화
+  $this.siblings(".active").find(".active").removeClass("active");
+  // 클릭된 요소의 형제를 비활성화
+  $this.siblings(".active").removeClass("active");
+
+  // 현재(클릭된) li가 활성화 되었다면
+  if ($this.hasClass("active")) {
+    // 현재 li의 후손들 중 활성화된 요소를 비활성화
+    $this.find(".active").removeClass("active");
+    // 현재 li를 비활성화
+    $this.removeClass("active");
+  } else {
+    // 현재 li를 활성화
+    $this.addClass("active");
+  }
+});
+
+// 서브 메뉴가 클릭되어도 해당 서브메뉴가 닫히지 않도록 설정
+$(".kategorie ul ul").click(function () {
+  return false;
+});
 });
 
 //dropbtn
@@ -152,3 +178,6 @@ $(document).ready(function(){
     $(".dropdown-content").toggle();
   });
 });
+
+
+
