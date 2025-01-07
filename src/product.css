@@ -44,10 +44,6 @@ a, span {
 }
 
 /* kategorie */
-.kategorie {
-    position: sticky;
-    top: 0;
-}
 .kategorie .all-items {
     font-family: "Pretendard Variable", sans-serif;
     font-size: 18px;
@@ -130,7 +126,8 @@ a, span {
 }
 .product .content-box .kategorie {
     width: 217px;
-    border: 1px solid blue;
+    position: sticky;
+    top: 0;
 }
 .product .content-box .kategorie .logo {
     margin-top: 50px;
