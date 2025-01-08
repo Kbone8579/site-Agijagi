@@ -179,5 +179,17 @@ $(document).ready(function(){
   });
 });
 
+// page-btn
+$(document).ready(function(){
+  $(".page-btn > .page.b2").click(function(){
+    $(".items.s1").hide()
+    $(".items.s2").show()
+  });
+  $(".page-btn > .page.b1").click(function(){
+    $(".items.s2").hide()
+    $(".items.s1").show()
+  });
+});
+
 
 
