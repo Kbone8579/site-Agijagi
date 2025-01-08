@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>상세페이지</title>
+    <title>서브페이지</title>
 
     <!-- css -->
     <link rel="stylesheet" href="output.css" />
@@ -20,18 +20,18 @@
   <body>
     <div class="product">
       <div class="top-bar px-[110px] py-[46px]">
-        <a href="#" class="logo flex w-[150px] h-[21px]">
+        <a href="http://127.0.0.1:5500/src/index.html" class="logo flex w-[150px] h-[21px]">
           <img src="img/slide/logo.png" alt="" />
         </a>
-        <ul class="flex gap-[54px]">
-          <li><a href="#">SHOP</a></li>
-          <li><a href="#">ABOUT</a></li>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/src/product.html">SHOP</a></li>
+          <li><a href="http://127.0.0.1:5500/src/about.html">ABOUT</a></li>
           <li><a href="#">COLLECTION</a></li>
           <li>
-            <a href="#"><img src="" alt="사용자" /></a>
+            <a href="#" class="user"><img src="img/btn/user.png" alt="마이페이지" /></a>
           </li>
           <li>
-            <a href="#"><img src="" alt="장바구니" /></a>
+            <a href="#" class="shoppingcart"><img src="img/btn/ShoppingCart.png" alt="장바구니" /></a>
           </li>
         </ul>
       </div>
@@ -50,7 +50,7 @@
           <ul>
             <li>
               <span class="all-items">
-                <a href="#">전체상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">전체상품</a>
               </span>
               <ul class="items-list">
                 <li>
@@ -58,9 +58,9 @@
                     <a href="javascript:void(0);" onclick="clicktest();">홈 프래그런스</a>
                   </span>
                   <ul class="sub-items s1">
-                    <li><a href="javascript:void(0);" onclick="clicktest();">인센스 홀더</a></li>
-                    <li><a href="javascript:void(0);" onclick="clicktest();">디퓨저 홀더</a></li>
-                    <li><a href="javascript:void(0);" onclick="clicktest();">캔들 홀더</a></li>
+                    <li class="l1"><a href="javascript:void(0);" onclick="clicktest();">인센스 홀더</a></li>
+                    <li class="l2"><a href="javascript:void(0);" onclick="clicktest();">디퓨저 홀더</a></li>
+                    <li class="l3"><a href="javascript:void(0);" onclick="clicktest();">캔들 홀더</a></li>
                   </ul>
                 </li>
                 <li>
@@ -68,8 +68,8 @@
                     <a href="javascript:void(0);" onclick="clicktest();">인테리어</a>
                   </span>
                   <ul class="sub-items s2">
-                    <li><a href="javascript:void(0);" onclick="clicktest();">꽃병</a></li>
-                    <li><a href="javascript:void(0);" onclick="clicktest();">악세사리 걸이</a></li>
+                    <li class="l1"><a href="javascript:void(0);" onclick="clicktest();">꽃병</a></li>
+                    <!-- <li><a href="javascript:void(0);" onclick="clicktest();">악세사리 걸이</a></li> -->
                   </ul>
                 </li>
               </ul>
@@ -100,7 +100,7 @@
                       ></div>
                       <div class="text-box">
                         <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>₩ 18,000</span>
                       </div>
                     </a>
                   </li>
@@ -110,8 +110,8 @@
                         class="img-box s2"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>모던 화이트 원형 인센스 홀더</span>
+                        <span>₩ 11,000</span>
                       </div>
                     </a>
                   </li>
@@ -121,8 +121,8 @@
                         class="img-box s3"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>모던 블랙 디퓨저 홀더</span>
+                        <span>₩ 23,000</span>
                       </div>
                     </a>
                   </li>
@@ -132,8 +132,8 @@
                         class="img-box s4"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 디퓨저 홀더 01</span>
+                        <span>₩ 33,000</span>
                       </div>
                     </a>
                   </li>
@@ -143,8 +143,8 @@
                         class="img-box s5"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 디퓨저 홀더 02</span>
+                        <span>₩ 23,000</span>
                       </div>
                     </a>
                   </li>
@@ -154,8 +154,8 @@
                         class="img-box s6"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 꽃병 01</span>
+                        <span>₩ 18,000</span>
                       </div>
                     </a>
                   </li>
@@ -165,8 +165,8 @@
                         class="img-box s7"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 꽃병 02</span>
+                        <span>₩ 38,000</span>
                       </div>
                     </a>
                   </li>
@@ -176,8 +176,8 @@
                         class="img-box s8"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>소담 인센스 홀더 01</span>
+                        <span>₩ 11,000</span>
                       </div>
                     </a>
                   </li>
@@ -187,8 +187,8 @@
                         class="img-box s9"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>소담 인센스 홀더 02</span>
+                        <span>₩ 8,000</span>
                       </div>
                     </a>
                   </li>
@@ -225,8 +225,8 @@
                         class="img-box s10"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 꽃병 03</span>
+                        <span>₩ 28,000</span>
                       </div>
                     </a>
                   </li>
@@ -236,8 +236,8 @@
                         class="img-box s11"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 센트 캔들 홀더 01</span>
+                        <span>₩ 22,000</span>
                       </div>
                     </a>
                   </li>
@@ -247,8 +247,8 @@
                         class="img-box s12"
                       ></div>
                       <div class="text-box">
-                        <span>모던 센트 캔들 홀더</span>
-                        <span>₩ 10,000</span>
+                        <span>온빛 센트 캔들 홀더 02</span>
+                        <span>₩ 18,000</span>
                       </div>
                     </a>
                   </li>
@@ -257,11 +257,422 @@
             </ul>
           </div>
           <div class="page-btn">
-            <!-- <div class="fage b1">1</div>
-            <div class="fage b2">2</div> -->
             <a href="#" class="page b1">1</a>
             <a href="#" class="page b2">2</a>
-            <!-- <div class="fage b3">3</div> -->
+          </div>
+        </div>
+        <div class="items s3 hidden">
+          <div class="title-box">
+            <span>홈 프래그런스</span>
+            <div class="dropdown">
+              <button class="dropbtn">상품정렬</button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="clicktest();">신상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">낮은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">높은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">조회수</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <ul class="items-list s1">
+              <li>
+                <ul class="sm:grid-cols-2 md:grid-cols-3">
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s1"
+                      ></div>
+                      <div class="text-box">
+                        <span>모던 센트 캔들 홀더</span>
+                        <span>₩ 18,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s2"
+                      ></div>
+                      <div class="text-box">
+                        <span>모던 화이트 원형 인센스 홀더</span>
+                        <span>₩ 21,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s3"
+                      ></div>
+                      <div class="text-box">
+                        <span>모던 블랙 디퓨저 홀더</span>
+                        <span>₩ 23,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s4"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 디퓨저 홀더 01</span>
+                        <span>₩ 33,000 </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s5"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 디퓨저 홀더 02</span>
+                        <span>₩ 23,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s8"
+                      ></div>
+                      <div class="text-box">
+                        <span>소담 인센스 홀더 01</span>
+                        <span>₩ 11,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s9"
+                      ></div>
+                      <div class="text-box">
+                        <span>소담 인센스 홀더 02</span>
+                        <span>₩ 8,000</span> 
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s11"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 센트 캔들 홀더 01</span>
+                        <span>₩ 22,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s12"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 센트 캔들 홀더 02</span>
+                        <span>₩ 18,000</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="page-btn">
+            <a href="#" class="page b1">1</a>
+          </div>
+        </div>
+        <div class="items s4 hidden">
+          <div class="title-box">
+            <span>인센스 홀더</span>
+            <div class="dropdown">
+              <button class="dropbtn">상품정렬</button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="clicktest();">신상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">낮은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">높은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">조회수</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <ul class="items-list s1">
+              <li>
+                <ul class="sm:grid-cols-2 md:grid-cols-3">
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s2"
+                      ></div>
+                      <div class="text-box">
+                        <span>소담 인센스 홀더 02</span>
+                        <span>₩ 8,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s8"
+                      ></div>
+                      <div class="text-box">
+                        <span>모던 화이트 원형 인센스 홀더</span>
+                        <span>₩ 21,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s9"
+                      ></div>
+                      <div class="text-box">
+                        <span>소담 인센스 홀더 01</span>
+                        <span>₩ 11,000 </span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="page-btn">
+            <a href="#" class="page b1">1</a>
+          </div>
+        </div>
+        <div class="items s5 hidden"> 
+          <div class="title-box">
+            <span>디퓨저 홀더</span>
+            <div class="dropdown">
+              <button class="dropbtn">상품정렬</button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="clicktest();">신상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">낮은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">높은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">조회수</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <ul class="items-list s1">
+              <li>
+                <ul class="sm:grid-cols-2 md:grid-cols-3">
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s3"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 디퓨저 홀더 01</span>
+                        <span>₩ 33,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s4"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 디퓨저 홀더 02</span>
+                        <span>₩ 23,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s5"
+                      ></div>
+                      <div class="text-box">
+                        <span>모던 블랙 디퓨저 홀더</span>
+                        <span>₩ 23,000</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="page-btn">
+            <a href="#" class="page b1">1</a>
+          </div>
+        </div>
+        <div class="items s6 hidden">
+          <div class="title-box">
+            <span>캔들 홀더</span>
+            <div class="dropdown">
+              <button class="dropbtn">상품정렬</button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="clicktest();">신상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">낮은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">높은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">조회수</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <ul class="items-list s1">
+              <li>
+                <ul class="sm:grid-cols-2 md:grid-cols-3">
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s1"
+                      ></div>
+                      <div class="text-box">
+                        <span>모던 센트 캔들 홀더</span>
+                        <span>₩ 18,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s11"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 센트 캔들 홀더 01</span>
+                        <span>₩ 22,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s12"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 센트 캔들 홀더 02</span>
+                        <span>₩ 18,000</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="page-btn">
+            <a href="#" class="page b1">1</a>
+          </div>
+        </div>
+        <div class="items s7 hidden">
+          <div class="title-box">
+            <span>인테리어</span>
+            <div class="dropdown">
+              <button class="dropbtn">상품정렬</button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="clicktest();">신상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">낮은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">높은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">조회수</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <ul class="items-list s1">
+              <li>
+                <ul class="sm:grid-cols-2 md:grid-cols-3">
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s6"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 꽃병 02</span>
+                        <span>₩ 38,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s7"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 꽃병 01</span>
+                        <span>₩ 18,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s10"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 꽃병 03</span>
+                        <span>₩ 28,000</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="page-btn">
+            <a href="#" class="page b1">1</a>
+          </div>
+        </div>
+        <div class="items s8 hidden">
+          <div class="title-box">
+            <span>꽃병</span>
+            <div class="dropdown">
+              <button class="dropbtn">상품정렬</button>
+              <div class="dropdown-content">
+                <a href="javascript:void(0);" onclick="clicktest();">신상품</a>
+                <a href="javascript:void(0);" onclick="clicktest();">낮은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">높은가격</a>
+                <a href="javascript:void(0);" onclick="clicktest();">조회수</a>
+              </div>
+            </div>
+          </div>
+          <div class="items-box">
+            <ul class="items-list s1">
+              <li>
+                <ul class="sm:grid-cols-2 md:grid-cols-3">
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s10"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 꽃병 01</span>
+                        <span>₩ 18,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s6"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 꽃병 02</span>
+                        <span>₩ 38,000</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div
+                        class="img-box s7"
+                      ></div>
+                      <div class="text-box">
+                        <span>온빛 꽃병 03</span>
+                        <span>₩ 28,000</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="page-btn">
+            <a href="#" class="page b1">1</a>
           </div>
         </div>
       </div>

@@ -48,7 +48,7 @@ span {
 .kategorie .all-items {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: -0.04em;
 }
@@ -92,9 +92,9 @@ span {
 /* items */
 .items .title-box span {
   font-family: "Pretendard Variable", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   color: #000;
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: -0.04em;
 }
 .items .title-box .dropbtn {
@@ -164,7 +164,6 @@ span {
   padding-left: 110px;
   padding-right: 110px;
   margin-bottom: 156px;
-  border: 1px solid red;
 }
 .product .content-box .kategorie {
   width: 217px;
@@ -187,6 +186,12 @@ span {
   margin-bottom: 32px;
   cursor: pointer;
 }
+.kategorie .all-items:hover {
+  font-weight: 600;
+}
+.kategorie .all-items.active {
+  font-weight: 600;
+}
 .kategorie .items-list > li.active > span:not(:only-child) {
   font-weight: 600;
 }
@@ -199,12 +204,12 @@ span {
   justify-content: space-between;
   cursor: pointer;
 }
-.kategorie ul ul > li > .main-items:not(:only-child)::after {
+.kategorie ul ul > li > .main-items::after {
   content: "[+]";
   width: 24px;
   height: 24px;
 }
-.kategorie ul ul > li.active > .main-items:not(:only-child)::after {
+.kategorie ul ul > li.active > .main-items::after {
   content: "[-]";
   width: 24px;
   height: 24px;
@@ -233,10 +238,8 @@ span {
 /* items */
 .product .content-box .items {
   width: 1433px;
-  border: 1px solid blue;
 }
 .product .content-box .title-box {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
@@ -251,11 +254,18 @@ span {
   cursor: pointer;
   gap: 4px;
 }
-.product .content-box .title-box .dropbtn::after {
-  content: "";
+.product .dropdown:hover .dropbtn {
+  font-weight: 500;
+}
+.product .content-box .title-box .dropdown .dropbtn::after {
+  content: "[+]";
   width: 24px;
   height: 24px;
-  border: 1px solid black;
+}
+.product .content-box .title-box .dropdown.active .dropbtn::after {
+  content: "[-]";
+  width: 24px;
+  height: 24px;
 }
 .product .dropdown-content {
   position: absolute;
@@ -276,7 +286,6 @@ span {
   width: 100%;
   height: 545px;
   margin-bottom: 20px;
-  border: 1px solid red;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -393,22 +402,10 @@ span {
   font-size: 24px;
   font-weight: 300;
 }
-.content-box .page-btn .page:hover {
-  border: 1px solid #c6b49c;
-  color: #b9a891;
+.product .content-box .page-btn > .page.on {
+  border: 1px solid #C6B49C;
+  color: #B9A891;
 }
-.content-box .page-btn .page.active {
-  border: 1px solid #c6b49c;
-  color: #b9a891;
-}
-.content-box .page-btn > .page.b1 {
-    border: 1px solid #c6b49c;
-    color: #b9a891;
-  }
-  .content-box .page-btn > .page.b1.active {
-    border: 1px solid #d0d0d0;
-    color: #b6b6b6;
-  }
 /* footer */
 .footer {
   width: 100%;

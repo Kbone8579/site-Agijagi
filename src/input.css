@@ -151,6 +151,7 @@ a {
 /* slider */
 .fage.s0 {
   position: relative;
+  overflow: hidden;
 }
 .slide-box {
   display: flex;
@@ -189,6 +190,17 @@ a {
   top: 0;
   left: 0;
   z-index: 10;
+}
+.top-bar > ul {
+  display: flex;
+  gap: 54px;
+  align-items: center;
+}
+.top-bar .user img {
+  height: 24px;
+}
+.top-bar .shoppingcart img {
+  height: 30px;
 }
 .fage.s0 .text-box h1 {
   margin-bottom: 40px;
