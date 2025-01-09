@@ -30,8 +30,37 @@ a {
   display: block;
 }
 /* slider */
-.fage.s0 .slide.s1 .text-box h1, .fage.s0 .slide.s2 .text-box h1, {
-  
+.fage.s0 .slide.s1 .text-box h1, .fage.s0 .slide.s2 .text-box h1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 64px;
+  font-weight: 100;
+  color: #1a1a1a;
+  letter-spacing: 0.1em;
+  line-height: 1.725;
+}
+.fage.s0 .slide.s1 .text-box span, .fage.s0 .slide.s2 .text-box span {
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #3a3a3a;
+  letter-spacing: -0.02em;
+  line-height: 1.7;
+}
+.fage.s0 .slide.s3 .text-box h1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 64px;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 0.1em;
+  line-height: 1.725;
+}
+.fage.s0 .slide.s3 .text-box span {
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #E8E8E8;
+  letter-spacing: -0.02em;
+  line-height: 1.7;
 }
 /* section1 font */
 .fage.s1 h2,
@@ -236,7 +265,6 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 10;
   width: 100%;
   height: 100%;
   stroke-width: 1px;
@@ -255,12 +283,16 @@ a {
   height: 51px;
   display: flex;
   justify-content: center;
+  transition: all 0.5s;
 }
-.autoplay-progress .btns button {
-  cursor: pointer;
+.autoplay-progress:hover .btns {
+  background-color: white;
+  opacity: 0.3;
+}
+.autoplay-progress .btns .play {
+  color: white;
   z-index: 20;
 }
-
 /* top-bar */
 .top-bar > ul {
   display: flex;
