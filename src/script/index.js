@@ -294,7 +294,7 @@ $(document).ready(function(){
   const playButton = document.querySelector(".play");
   let isPlaying = true;
   let currentProgress = 0;
-  const SLIDE_DELAY = 5000;
+  const SLIDE_DELAY = 6000;
   
   var swiper = new Swiper(".swiper-box-1 .swiper", {
     spaceBetween: 30,

@@ -1094,6 +1094,33 @@ a {
   background-size: cover;
 }
 
+.swiper-slide .text-box img, .swiper-slide .text-box h1 {
+  visibility: invisible;
+  opacity: 0;
+  filter: blur(2px);
+}
+
+.swiper-slide-active .text-box img, .swiper-slide-active .text-box h1 {
+  filter: blur(0);
+  transition: all 2.5s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-slide .text-box span {
+  display: block;
+  transform: translateY(-40%);
+  visibility: invisible;
+  opacity: 0;
+}
+
+.swiper-slide-active .text-box span {
+  transition: all 2s;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 .swiper-pagination {
   display: flex;
   flex-direction: column;
