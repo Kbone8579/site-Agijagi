@@ -1,74 +1,102 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>slider</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css" />
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- script -->
-     <script src="script/index.js"></script>
+    <script src="script/index.js"></script>
 
-</head>
-<body>
-    <div class="slider">  
-        <div class="fage s0">
-            <div class="top-bar px-[110px] py-[46px]">
-                <a href="#" class="logo flex w-[150px] h-[21px]">
-                    <img src="img/slide/logo.png" alt="">
-                </a>
-                <ul class="flex gap-[54px]">
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">COLLECTION</a></li>
-                <li><a href="#"><img src="" alt="사용자"></a></li>
-                <li><a href="#"><img src="" alt="장바구니"></a></li>
-                </ul>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  </head>
+  <body>
+    <div class="fage s0">
+      <div class="top-bar px-[110px] py-[46px]">
+        <a
+          href="http://127.0.0.1:5500/src/index.html"
+          class="logo flex w-[150px] h-[21px]"
+        >
+          <img
+            src="img/logotype/logotype-white.png"
+            alt="소개페이지 탑바 로고"
+          />
+        </a>
+        <ul class="flex gap-[54px] text-white">
+          <li><a href="http://127.0.0.1:5500/src/product.html#">SHOP</a></li>
+          <li><a href="http://127.0.0.1:5500/src/about.html#">ABOUT</a></li>
+          <li><a href="#">COLLECTION</a></li>
+          <li>
+            <a href="#" class="user"
+              ><img src="img/btn/user-white.png" alt="사용자"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="shoppingcart"
+              ><img src="img/btn/ShoppingCart-white.png" alt="장바구니"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-box-1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide s1">
+                <div class="text-box">
+                    <h1>도자기와 함께하는
+                        <br>조화로운 향기의 시간</h1>
+                    <span>천연 흙으로 빚어진 도자기 인센스 홀더와 디퓨저가 향기로운 공간을 완성합니다.
+                        <br>감각적인 디자인과 은은한 향기가 어우러져, 일상 속 여유와 힐링의 순간을 마주해 보세요.</span>
+                </div>
+              </div>
             </div>
-            <div class="slide-box">
-                <a href="#" class="slide s1">
-                    <img src="img/slide/img-1.jpg" alt="slid img-1">
-                    <div class="text-box">
-                        <h1>도자기와 함께하는
-                            <br>조화로운 향기의 시간
-                        </h1>
-                        <span>
-                            천연 흙으로 빚어진 도자기 인센스 홀더와 디퓨저가 향기로운 공간을 완성합니다.
-                            <br>감각적인 디자인과 은은한 향기가 어우러져, 일상 속 여유와 힐링의 순간을 마주해 보세요.
-                        </span>
-                    </div>
-                </a>
-                <a href="#" class="slide s2">
-                    <img src="img/slide/img-2.jpg" alt="slid img-1">
-                    <div class="text-box">
-                        <h1>감각적인 현대 도예를
-                            <br>경험하세요
-                        </h1>
-                        <span>
-                            아기자기 도자기가 현대적 감각을 만나 예술적인 공간을 완성합니다.
-                            <br>전통의 깊이와 모던한 디자인이 어우러져, 일상 속 특별한 순간을 선사합니다.
-                            <br>아기자기의 도예 작품은 실용성과 감성을 겸비한 현대 인테리어의 새로운 기준을 제시합니다.
-                        </span>
-                    </div>
-                </a>
-                <a href="#" class="slide s3">
-                    <img src="img/slide/img-3.jpg" alt="slid img-1">
-                    <div class="text-box">
-                        <h1>
-                            작은 흙이 만드는 큰 감동,
-                            <br>아기자기 공방 이야기
-                        </h1>
-                        <span>
-                            흙 한 줌에서 시작된 이야기가 당신의 공간을 채우는 예술로 피어납니다.
-                            <br>작은 아이디어가 공간을 채우는 예술로 변화하는 순간을 직접 경험해보세요.
-                        </span>
-                    </div>
-                </a>
+            <div class="swiper-slide">
+              <div class="slide s2">
+                <div class="text-box">
+                    <h1>감각적인 현대 도예를
+                        <br>경험하세요</h1>
+                    <span>아기자기 도자기가 현대적 감각을 만나 예술적인 공간을 완성합니다.
+                        <br>전통의 깊이와 모던한 디자인이 어우러져, 일상 속 특별한 순간을 선사합니다.
+                        <br>아기자기의 도예 작품은 실용성과 감성을 겸비한 현대 인테리어의 새로운 기준을 제시합니다.</span>
+                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="slide s3">
+                <div class="text-box">
+                    <h1>작은 흙이 만드는 큰 감동,
+                        <br>아기자기 공방 이야기</h1>
+                    <span>흙 한 줌에서 시작된 이야기가 당신의 공간을 채우는 예술로 피어납니다.
+                        <br>작은 아이디어가 공간을 채우는 예술로 변화하는 순간을 직접 경험해보세요.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <span class="btns">
+              <button class="play"></button>
+              <button class="stop active"></button>
+            </span>
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
