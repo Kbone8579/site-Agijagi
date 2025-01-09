@@ -259,16 +259,50 @@ $(document).ready(function () {
 
 
 // 스와이퍼
+// $(document).ready(function(){
+//   const progressCircle = document.querySelector(".autoplay-progress svg");
+//   const progressContent = document.querySelector(".autoplay-progress span");
+//   var swiper = new Swiper(".swiper-box-1 .swiper", {
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     direction: "vertical",
+//     effect:'fade',
+//     autoplay: {
+//       delay: 5000,
+//       disableOnInteraction: false
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       bulletActiveClass: 'on',
+//       clickable: true
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev"
+//     },
+//     on: {
+//       autoplayTimeLeft(s, time, progress) {
+//         progressCircle.style.setProperty("--progress", 1 - progress);
+//         // progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+//       }
+//     }
+//   });
+// });
+
 $(document).ready(function(){
   const progressCircle = document.querySelector(".autoplay-progress svg");
-  const progressContent = document.querySelector(".autoplay-progress span");
+  const playButton = document.querySelector(".play");
+  let isPlaying = true;
+  let currentProgress = 0;
+  const SLIDE_DELAY = 5000;
+  
   var swiper = new Swiper(".swiper-box-1 .swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     direction: "vertical",
-    effect:'fade',
+    effect: 'fade',
     autoplay: {
-      delay: 5000,
+      delay: SLIDE_DELAY,
       disableOnInteraction: false
     },
     pagination: {
@@ -282,9 +316,47 @@ $(document).ready(function(){
     },
     on: {
       autoplayTimeLeft(s, time, progress) {
-        progressCircle.style.setProperty("--progress", 1 - progress);
-        // progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        // SVG 원형 진행상태 업데이트
+        currentProgress = 1 - progress;
+        progressCircle.style.setProperty("--progress", currentProgress);
+      },
+      slideChange() {
+        // 새로운 슬라이드마다 SVG 원형 초기화
+        currentProgress = 0;
+        progressCircle.style.setProperty("--progress", 0);
+        // 새로운 슬라이드는 항상 5000ms로 시작
+        swiper.params.autoplay.delay = SLIDE_DELAY;
       }
     }
+  });
+
+  playButton.addEventListener('click', function() {
+    if (isPlaying) {
+      // 일시정지
+      swiper.autoplay.stop();
+      swiper.params.autoplay.disableOnInteraction = true;
+      
+      // 현재 진행 상태 유지
+      progressCircle.style.setProperty("--progress", currentProgress);
+      
+      // 버튼 상태 변경
+      playButton.querySelector('img').style.opacity = '0.5';
+      playButton.classList.add('paused');
+    } else {
+      // 재생 시작
+      swiper.params.autoplay.disableOnInteraction = false;
+      
+      // 남은 시간 계산하여 현재 슬라이드의 딜레이 설정
+      const remainingTime = SLIDE_DELAY * (1 - currentProgress);
+      swiper.params.autoplay.delay = remainingTime;
+      
+      swiper.autoplay.start();
+      
+      // 버튼 상태 복구
+      playButton.querySelector('img').style.opacity = '1';
+      playButton.classList.remove('paused');
+    }
+    
+    isPlaying = !isPlaying;
   });
 });

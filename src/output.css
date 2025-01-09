@@ -1031,16 +1031,34 @@ a {
   left: 181px;
 }
 
+.fage.s0 .slide.s1 .text-box img {
+  position: absolute;
+  top: 114px;
+  left: 28px;
+}
+
 .fage.s0 .slide.s2 .text-box {
   position: absolute;
   top: 302px;
   left: 271px;
 }
 
+.fage.s0 .slide.s2 .text-box img {
+  position: absolute;
+  top: -8px;
+  left: 28px;
+}
+
 .fage.s0 .slide.s3 .text-box {
   position: absolute;
   top: 274px;
   left: 172px;
+}
+
+.fage.s0 .slide.s3 .text-box img {
+  position: absolute;
+  top: -8px;
+  right: 60px;
 }
 
 .swiper {
