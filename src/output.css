@@ -1139,13 +1139,17 @@ a {
 }
 
 .autoplay-progress:hover .btns {
-  background-color: white;
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .autoplay-progress .btns .play {
   color: white;
   z-index: 20;
+}
+
+.autoplay-progress .btns .play img {
+  width: 12px;
+  height: 14px;
 }
 
 /* top-bar */
