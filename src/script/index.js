@@ -466,3 +466,69 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('Initializing video sequence');
   stopVideoSequence();
 });
+
+
+
+
+// 해당 비디오 클릭
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all video containers and video elements
+const videoContainers = document.querySelectorAll('.video-container');
+const videos = document.querySelectorAll('.video-container video');
+const thumbnails = document.querySelectorAll('.img-box ul li a');
+
+// Current video index tracker
+let currentVideoIndex = 0;
+
+// Hide all videos except the first one initially
+videoContainers.forEach((container, index) => {
+    if (index !== 0) {
+        container.classList.remove('active');
+    }
+});
+
+// Function to play next video
+function playNextVideo() {
+    // Hide current video
+    videoContainers[currentVideoIndex].classList.remove('active');
+    
+    // Update index for next video
+    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+    
+    // Show and play next video
+    videoContainers[currentVideoIndex].classList.add('active');
+    videos[currentVideoIndex].currentTime = 0;
+    videos[currentVideoIndex].play();
+}
+
+// Function to switch to specific video
+function switchToVideo(index) {
+    // Stop and hide current video
+    videos[currentVideoIndex].pause();
+    videoContainers[currentVideoIndex].classList.remove('active');
+    
+    // Update current index
+    currentVideoIndex = index;
+    
+    // Show and play new video
+    videoContainers[currentVideoIndex].classList.add('active');
+    videos[currentVideoIndex].currentTime = 0;
+    videos[currentVideoIndex].play();
+}
+
+// Add click event listeners to thumbnails
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', (e) => {
+        e.preventDefault();
+        switchToVideo(index);
+    });
+});
+
+// Add ended event listeners to all videos for infinite loop
+videos.forEach(video => {
+    video.addEventListener('ended', playNextVideo);
+});
+
+// Start playing the first video
+videos[0].play();
+});
