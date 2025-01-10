@@ -288,7 +288,6 @@ $(document).ready(function () {
 //     }
 //   });
 // });
-
 $(document).ready(function(){
   const progressCircle = document.querySelector(".autoplay-progress svg");
   const playButton = document.querySelector(".play");

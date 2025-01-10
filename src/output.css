@@ -1691,6 +1691,8 @@ a {
 
 /* footer box3 */
 
+/* video */
+
 /* #video1 {
   width: 100%;
   display: block;
@@ -1728,6 +1730,7 @@ a {
   animation-fill-mode: forwards;
   animation-delay: 10s;
   overflow: hidden;
+  display: none;
 }
 
 #video2 .video2 {
@@ -1745,6 +1748,7 @@ a {
   animation-fill-mode: forwards;
   animation-delay: 10s;
   overflow: hidden;
+  display: none;
 }
 
 #video3 .video3 {
@@ -1762,6 +1766,7 @@ a {
   animation-fill-mode: forwards;
   animation-delay: 10s;
   overflow: hidden;
+  display: none;
 }
 
 #video4 .video4 {
