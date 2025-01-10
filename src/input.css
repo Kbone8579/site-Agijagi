@@ -419,15 +419,30 @@ a {
   border: 0px;
 }
 
-/* section2 */
+/* .fage.s4 */
 .fage.s4 {
   position: relative;
   height: 100vh;
 }
+.fage.s4 .img-box li a {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  transition: all 0.3s;
+}
+.fage.s4 .img-box li:hover a {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.fage.s4 .img-box li a img {
+  z-index: -1;
+}
+
 .fage.s4 .side-sub {
   width: 440px;
   height: 100vh;
-  border: 1px solid red;
   position: absolute;
   top: 0;
   right: 0;
@@ -497,7 +512,6 @@ a {
 .content-box .img-box > ul > li {
   width: 110px;
   height: 110px;
-  border: 1px solid red;
 }
 .content-box .img-box > ul > li > a {
   display: flex;
