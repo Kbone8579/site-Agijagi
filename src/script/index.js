@@ -258,7 +258,7 @@ $(document).ready(function () {
 });
 
 
-// 스와이퍼
+// slider 스와이퍼
 // $(document).ready(function(){
 //   const progressCircle = document.querySelector(".autoplay-progress svg");
 //   const progressContent = document.querySelector(".autoplay-progress span");
@@ -358,4 +358,111 @@ $(document).ready(function(){
     
     isPlaying = !isPlaying;
   });
+});
+
+
+
+
+// .fage.s4 비디오 플레이어 초기화 및 설정
+document.addEventListener('DOMContentLoaded', function() {
+  // 비디오와 컨테이너 요소들을 가져옴
+  const videos = [
+      document.getElementById('video-1'),
+      document.getElementById('video-2'),
+      document.getElementById('video-3'),
+      document.getElementById('video-4')
+  ];
+  
+  const containers = [
+      document.getElementById('video1'),
+      document.getElementById('video2'),
+      document.getElementById('video3'),
+      document.getElementById('video4')
+  ];
+  
+  let currentVideoIndex = 0;
+  let isPlaying = false;
+
+  // 다음 비디오 재생 함수
+  function playNextVideo() {
+      if (!isPlaying) return;
+      
+      // 현재 비디오 숨기기
+      containers[currentVideoIndex].classList.remove('active');
+      
+      // 다음 비디오 인덱스로 이동
+      currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+      
+      // 다음 비디오 보이기 및 재생
+      containers[currentVideoIndex].classList.add('active');
+      videos[currentVideoIndex].currentTime = 0;
+      videos[currentVideoIndex].play();
+  }
+
+  // 비디오 시퀀스 시작 함수
+  function startVideoSequence() {
+      if (isPlaying) return;
+      
+      isPlaying = true;
+      
+      // 모든 비디오 초기화
+      videos.forEach((video, index) => {
+          video.currentTime = 0;
+          containers[index].classList.remove('active');
+      });
+      
+      // 첫 번째 비디오부터 시작
+      currentVideoIndex = 0;
+      containers[0].classList.add('active');
+      videos[0].play();
+  }
+
+  // 비디오 시퀀스 정지 함수
+  function stopVideoSequence() {
+      isPlaying = false;
+      videos.forEach(video => {
+          video.pause();
+          video.currentTime = 0;
+      });
+  }
+
+  // Intersection Observer 설정
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          // 섹션이 화면에 들어오면 비디오 시작
+          if (entry.isIntersecting) {
+              console.log('Section is visible - starting video');
+              startVideoSequence();
+          } else {
+              // 섹션이 화면에서 벗어나면 비디오 정지
+              console.log('Section is hidden - stopping video');
+              stopVideoSequence();
+          }
+      });
+  }, {
+      threshold: 0.3  // 30% 이상 보일 때 실행
+  });
+
+  // 섹션 관찰 시작
+  const section = document.querySelector('.fage.s4');
+  if (section) {
+      observer.observe(section);
+      console.log('Observing section');
+  } else {
+      console.log('Section not found');
+  }
+
+  // 각 비디오에 종료 이벤트 리스너 추가
+  videos.forEach(video => {
+      if (video) {
+          video.addEventListener('ended', () => {
+              console.log('Video ended - playing next');
+              playNextVideo();
+          });
+      }
+  });
+
+  // 초기 상태 설정
+  console.log('Initializing video sequence');
+  stopVideoSequence();
 });
