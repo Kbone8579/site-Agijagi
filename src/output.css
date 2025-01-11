@@ -610,10 +610,6 @@ video {
   visibility: visible;
 }
 
-.invisible{
-  visibility: hidden;
-}
-
 .absolute{
   position: absolute;
 }
@@ -1934,10 +1930,6 @@ a {
 }
 
 /* footer box3 */
-
-.hover\:visible:hover{
-  visibility: visible;
-}
 
 @media (min-width: 640px){
   .sm\:grid-cols-2{
