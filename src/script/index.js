@@ -469,66 +469,132 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-// 해당 비디오 클릭
+// fage.s4 해당 비디오 클릭시 해당 비디오 재생
 document.addEventListener('DOMContentLoaded', function() {
   // Get all video containers and video elements
-const videoContainers = document.querySelectorAll('.video-container');
-const videos = document.querySelectorAll('.video-container video');
-const thumbnails = document.querySelectorAll('.img-box ul li a');
+  const videoContainers = document.querySelectorAll('.video-container');
+  const videos = document.querySelectorAll('.video-container video');
+  
+  // Get both sets of thumbnails
+  const mainThumbnails = document.querySelectorAll('.side-sub .img-box ul li a');
+  const smallThumbnails = document.querySelectorAll('.side-sub-small .img-box ul li a');
 
-// Current video index tracker
-let currentVideoIndex = 0;
+  // Current video index tracker
+  let currentVideoIndex = 0;
 
-// Hide all videos except the first one initially
-videoContainers.forEach((container, index) => {
-    if (index !== 0) {
-        container.classList.remove('active');
-    }
+  // Hide all videos except the first one initially
+  videoContainers.forEach((container, index) => {
+      if (index !== 0) {
+          container.classList.remove('active');
+      }
+  });
+
+  // Function to play next video
+  function playNextVideo() {
+      // Hide current video
+      videoContainers[currentVideoIndex].classList.remove('active');
+      
+      // Update index for next video
+      currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+      
+      // Show and play next video
+      videoContainers[currentVideoIndex].classList.add('active');
+      videos[currentVideoIndex].currentTime = 0;
+      videos[currentVideoIndex].play();
+  }
+
+  // Function to switch to specific video
+  function switchToVideo(index) {
+      // Stop and hide current video
+      videos[currentVideoIndex].pause();
+      videoContainers[currentVideoIndex].classList.remove('active');
+      
+      // Update current index
+      currentVideoIndex = index;
+      
+      // Show and play new video
+      videoContainers[currentVideoIndex].classList.add('active');
+      videos[currentVideoIndex].currentTime = 0;
+      videos[currentVideoIndex].play();
+  }
+
+  // Add click event listeners to main thumbnails
+  mainThumbnails.forEach((thumbnail, index) => {
+      thumbnail.addEventListener('click', (e) => {
+          e.preventDefault();
+          switchToVideo(index);
+      });
+  });
+
+  // Add click event listeners to small thumbnails
+  smallThumbnails.forEach((thumbnail, index) => {
+      thumbnail.addEventListener('click', (e) => {
+          e.preventDefault();
+          switchToVideo(index);
+      });
+  });
+
+  // Add ended event listeners to all videos for infinite loop
+  videos.forEach(video => {
+      video.addEventListener('ended', playNextVideo);
+  });
+
+  // Start playing the first video
+  videos[0].play();
 });
 
-// Function to play next video
-function playNextVideo() {
-    // Hide current video
-    videoContainers[currentVideoIndex].classList.remove('active');
-    
-    // Update index for next video
-    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
-    
-    // Show and play next video
-    videoContainers[currentVideoIndex].classList.add('active');
-    videos[currentVideoIndex].currentTime = 0;
-    videos[currentVideoIndex].play();
-}
 
-// Function to switch to specific video
-function switchToVideo(index) {
-    // Stop and hide current video
-    videos[currentVideoIndex].pause();
-    videoContainers[currentVideoIndex].classList.remove('active');
-    
-    // Update current index
-    currentVideoIndex = index;
-    
-    // Show and play new video
-    videoContainers[currentVideoIndex].classList.add('active');
-    videos[currentVideoIndex].currentTime = 0;
-    videos[currentVideoIndex].play();
-}
+// side-sub 확대 축소
+document.addEventListener('DOMContentLoaded', function() {
+  const sideSubMain = document.querySelector('.side-sub');
+  const sideSubSmall = document.querySelector('.side-sub-small');
+  const backBtn = document.querySelector('.side-sub .back-btn');
+  const menuBtn = document.querySelector('.side-sub-small .menu-btn');
 
-// Add click event listeners to thumbnails
-thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener('click', (e) => {
-        e.preventDefault();
-        switchToVideo(index);
-    });
-});
+  // Function to handle transition end
+  function handleTransitionEnd(element) {
+      if (element.classList.contains('slide-out-right') || 
+          element.classList.contains('slide-out-left')) {
+          element.classList.add('hidden');
+          element.classList.remove('slide-out-right', 'slide-out-left');
+      }
+  }
 
-// Add ended event listeners to all videos for infinite loop
-videos.forEach(video => {
-    video.addEventListener('ended', playNextVideo);
-});
+  // Add transition end listeners
+  sideSubMain.addEventListener('animationend', () => handleTransitionEnd(sideSubMain));
+  sideSubSmall.addEventListener('animationend', () => handleTransitionEnd(sideSubSmall));
 
-// Start playing the first video
-videos[0].play();
+  // Back button click handler
+  backBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Animate main sidebar out
+      sideSubMain.classList.add('slide-out-right');
+      
+      // Show and animate small sidebar in
+      sideSubSmall.classList.remove('hidden');
+      sideSubSmall.classList.add('slide-in-right');
+      
+      // Remove animation classes after completion
+      setTimeout(() => {
+          sideSubSmall.classList.remove('slide-in-right');
+      }, 500);
+  });
+
+  // Menu button click handler
+  menuBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Animate small sidebar out
+      sideSubSmall.classList.add('slide-out-left');
+      
+      // Show and animate main sidebar in
+      sideSubMain.classList.remove('hidden');
+      sideSubMain.classList.add('slide-in-left');
+      
+      // Remove animation classes after completion
+      setTimeout(() => {
+          sideSubMain.classList.remove('slide-in-left');
+      }, 500);
+  });
 });
