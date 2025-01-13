@@ -609,5 +609,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // 오브젝트 애니메이션 AOS
 $(document).ready(function(){
-  AOS.init();
+  new WOW().init();
 });
