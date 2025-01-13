@@ -334,7 +334,7 @@
   margin-bottom: 32px;
   opacity: 0;
   transition: all 2s 0.8s;
-  transform: translateY(-20%);
+  transform: translateY(-16%);
 }
 .fage.a4 .text-box4 .text-all .main-text .sub-text.animated {
   opacity: 1;
