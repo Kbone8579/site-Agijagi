@@ -1396,6 +1396,94 @@ a {
   border: 0px;
 }
 
+/* section1 wow */
+
+.fage.s1 .img-box, .fage.s2 .img-box, .fage.s3 .img-box {
+  filter: blur(2px);
+  opacity: 0;
+  transition: opacity 0.8s 0.3s, filter 0.8s 0.8s;
+}
+
+.fage.s1 .img-box.animated, .fage.s2 .img-box.animated, .fage.s3 .img-box.animated {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.number-btn.s1, .number-btn.s2, .number-btn.s3 {
+  opacity: 0;
+  transition: opacity 0.8s 1.4s;
+}
+
+.number-btn.s1.animated, .number-btn.s2.animated, .number-btn.s3.animated {
+  opacity: 1;
+}
+
+.fage.s1 .text-box .text-01 {
+  opacity: 0;
+  transition: all 1s 0.5s;
+  transform: translateX(20%);
+}
+
+.fage.s1 .text-box .text-01.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fage.s1 .text-box .text-02 {
+  opacity: 0;
+  transition: all 1s 1.1s;
+  transform: translateY(-24%);
+}
+
+.fage.s1 .text-box .text-02.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fage.s2 .text-box .text-01 {
+  opacity: 0;
+  transition: all 1s 0.5s;
+  transform: translateX(-20%);
+}
+
+.fage.s2 .text-box .text-01.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fage.s2 .text-box .text-02 {
+  opacity: 0;
+  transition: all 1s 1.1s;
+  transform: translateY(-24%);
+}
+
+.fage.s2 .text-box .text-02.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fage.s3 .text-box .text-01 {
+  opacity: 0;
+  transition: all 1s 0.5s;
+  transform: translateX(20%);
+}
+
+.fage.s3 .text-box .text-01.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fage.s3 .text-box .text-02 {
+  opacity: 0;
+  transition: all 1s 1.1s;
+  transform: translateY(-24%);
+}
+
+.fage.s3 .text-box .text-02.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* .fage.s4 */
 
 .fage.s4 {
