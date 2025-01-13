@@ -70,6 +70,7 @@
 
 html > body {
   font-family: "Pretendard Variable", sans-serif;
+  overflow-x:hidden;
 }
 a {
   display: block;
@@ -924,7 +925,6 @@ a {
   color: #555;
 }
 /* footer box3 */
-
 
 
 
