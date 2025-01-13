@@ -1930,7 +1930,18 @@ a {
   color: #555;
 }
 
-/* footer box3 */
+/* top-btn */
+
+.top-btn {
+  display: flex;
+  align-items: center;
+}
+
+.top-btn a {
+  width: 86px;
+  height: 84px;
+  background-color: #47423e;
+}
 
 @media (min-width: 640px){
   .sm\:grid-cols-2{
@@ -1943,6 +1954,4 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
-
 

@@ -924,7 +924,15 @@ a {
   text-decoration: underline;
   color: #555;
 }
-/* footer box3 */
 
-
+/* top-btn */
+.top-btn {
+  display: flex;
+  align-items: center;
+}
+.top-btn a {
+  width: 86px;
+  height: 84px;
+  background-color: #47423e;
+}
 
