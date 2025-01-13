@@ -244,8 +244,8 @@
 .fage.a2 .text-box2 .text-all .main-text .sub-text {
   margin-bottom: 32px;
   opacity: 0;
-  transition: all 1s 1s;
-  transform: translateY(-25%);
+  transition: all 2s 0.8s;
+  transform: translateY(-23%);
 }
 .fage.a2 .text-box2 .text-all .main-text .sub-text.animated {
   opacity: 1;
