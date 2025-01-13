@@ -752,6 +752,7 @@ a {
   height: 100vh;
   background-color: #fdfdfd;
   position: relative;
+  white-space: nowrap;
 }
 .BgImg {
   width: 100%;
@@ -759,6 +760,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+.BgImg img {
+  object-fit: fill;
+  height: 100vh;
 }
 .list-box {
   width: 584px;
@@ -786,6 +791,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s 0.3s;
 }
 .list-box .all-box .text-box .text01 {
   gap: 28px;
@@ -856,7 +863,10 @@ a {
   background-color: white;
   border: 0px;
 }
-
+/* fage s5 wow */
+.fage .list-box .all-box.animated {
+  opacity: 1;
+}
 /* section4 */
 .fage.s8,
 .fage.s9,

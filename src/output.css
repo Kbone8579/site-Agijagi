@@ -1730,6 +1730,7 @@ a {
   height: 100vh;
   background-color: #fdfdfd;
   position: relative;
+  white-space: nowrap;
 }
 
 .BgImg {
@@ -1738,6 +1739,12 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.BgImg img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100vh;
 }
 
 .list-box {
@@ -1768,6 +1775,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s 0.3s;
 }
 
 .list-box .all-box .text-box .text01 {
@@ -1850,6 +1859,12 @@ a {
 .all-box > .number-btn.s6 > li:last-child > div {
   background-color: white;
   border: 0px;
+}
+
+/* fage s5 wow */
+
+.fage .list-box .all-box.animated {
+  opacity: 1;
 }
 
 /* section4 */
