@@ -114,7 +114,7 @@ window.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// about 페이지
+// about .fage.a6 페이지
 $(document).ready(function () {
   // 모든 이미지를 숨기고 검정 필터 적용하는 함수
   function hideAllImages() {
