@@ -607,9 +607,4 @@ document.addEventListener('DOMContentLoaded', function() {
 // 오브젝트 애니메이션 AOS
 $(document).ready(function(){
   new WOW().init();
-
-  setTimeout(function () {
-  
-    $(".sub-text").addClass("animated");
-  }, 1000);
 });
