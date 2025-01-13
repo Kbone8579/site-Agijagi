@@ -286,7 +286,16 @@
   display: block;
   text-align: end;
 }
-
+.fage.a3 .text-box3 .text-all .main-text .sub-text {
+  margin-bottom: 32px;
+  opacity: 0;
+  transition: all 2s 0.8s;
+  transform: translateY(-23%);
+}
+.fage.a3 .text-box3 .text-all .main-text .sub-text.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* fage.a4 */
 .fage.a4 {
   display: flex;

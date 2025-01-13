@@ -611,5 +611,5 @@ $(document).ready(function(){
   setTimeout(function () {
   
     $(".sub-text").addClass("animated");
-  }, 800);
+  }, 1000);
 });
