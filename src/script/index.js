@@ -127,7 +127,7 @@ $(document).ready(function () {
   // 초기 설정
   hideAllImages();
 
-  $(".fage.a6 .section.s1 .circle").hover(function () {
+  $(".fage.a6 .section.s1 .circle").mouseover(function () {
     hideAllImages();
     const img = $(".fage.a6 .img.s1 img");
     img.show();
@@ -136,8 +136,13 @@ $(document).ready(function () {
       img.css("filter", "brightness(1)");
     }, 10);
   });
+  $(".fage.a6 .section.s1 .circle").mouseout(function () {
+    hideAllImages();
+    const img = $(".fage.a6 .img.s1 img");
+    img.hide();
+  });
 
-  $(".fage.a6 .section.s2 .circle").hover(function () {
+  $(".fage.a6 .section.s2 .circle").mouseover(function () {
     hideAllImages();
     const img = $(".fage.a6 .img.s2 img");
     img.show();
@@ -145,14 +150,24 @@ $(document).ready(function () {
       img.css("filter", "brightness(1)");
     }, 10);
   });
+  $(".fage.a6 .section.s2 .circle").mouseout(function () {
+    hideAllImages();
+    const img = $(".fage.a6 .img.s2 img");
+    img.hide();
+  });
 
-  $(".fage.a6 .section.s3 .circle").hover(function () {
+  $(".fage.a6 .section.s3 .circle").mouseover(function () {
     hideAllImages();
     const img = $(".fage.a6 .img.s3 img");
     img.show();
     setTimeout(function () {
       img.css("filter", "brightness(1)");
     }, 10);
+  });
+  $(".fage.a6 .section.s3 .circle").mouseout(function () {
+    hideAllImages();
+    const img = $(".fage.a6 .img.s3 img");
+    img.hide();
   });
 });
 
@@ -613,7 +628,7 @@ $(document).ready(function() {
   // });
   
   // Top 버튼 클릭시 페이지 상단으로 이동
-   $('.box3, .top-btn').click(function(){
+   $('.box, .top-btn').click(function(){
     $('html, body').animate({scrollTop : 0}, 800);
       return false;
   });
