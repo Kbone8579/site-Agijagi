@@ -388,7 +388,7 @@
 .fage.a5 .box1 .text-box span  {
   display: block;
   opacity: 0;
-  transition: all 2s 0.8s;
+  transition: all 1s 0.5s;
   transform: translateY(-20%);
 }
 .fage.a5 .box1 .text-box span.animated {
@@ -398,7 +398,7 @@
 .fage.a5 .box2 .text-box span  {
   display: block;
   opacity: 0;
-  transition: all 2.9s 2.1s;
+  transition: all 1.9s 1.4s;
   transform: translateY(-20%);
 }
 .fage.a5 .box2 .text-box span.animated {
