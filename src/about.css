@@ -455,6 +455,8 @@
 } */
 .section .circle circle {
   transition: all 0.3;
+  fill: white;
+  fill-opacity: 5%;
 }
 .section .circle:hover circle {
   fill: white;
