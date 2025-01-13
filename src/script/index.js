@@ -156,7 +156,7 @@ $(document).ready(function () {
   });
 });
 
-// product kategorie btn
+// product 카테로기 버튼
 $(document).ready(function () {
   $(".kategorie .main-items.s1").click(function () {
     $(".kategorie .sub-items.s1").toggle();
@@ -259,6 +259,7 @@ $(document).ready(function () {
 
 
 // slider 스와이퍼
+// 디폴트 스와이퍼
 // $(document).ready(function(){
 //   const progressCircle = document.querySelector(".autoplay-progress svg");
 //   const progressContent = document.querySelector(".autoplay-progress span");
@@ -288,6 +289,7 @@ $(document).ready(function () {
 //     }
 //   });
 // });
+// 적용 스와이퍼
 $(document).ready(function(){
   const progressCircle = document.querySelector(".autoplay-progress svg");
   const playButton = document.querySelector(".play");
@@ -604,3 +606,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+// 오브젝트 애니메이션 AOS
+$(document).ready(function(){
+  AOS.init();
+});
