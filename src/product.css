@@ -471,9 +471,12 @@ span {
 .top-btn {
   display: flex;
   align-items: center;
+  width: 36px;
 }
-.top-btn a {
-  width: 86px;
-  height: 84px;
-  background-color: #47423e;
+.top-btn a img {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.top-btn a:hover img {
+  opacity: 1;
 }
