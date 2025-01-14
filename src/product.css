@@ -205,14 +205,15 @@ span {
   cursor: pointer;
 }
 .kategorie ul ul > li > .main-items::after {
-  content: "[+]";
+  content: "";
   width: 24px;
   height: 24px;
 }
 .kategorie ul ul > li.active > .main-items::after {
-  content: "[-]";
+  content: "🢓";
   width: 24px;
   height: 24px;
+  font-size: 26px;
 }
 .kategorie > ul ul ul {
   padding-left: 20px;
@@ -258,14 +259,15 @@ span {
   font-weight: 500;
 }
 .product .content-box .title-box .dropdown .dropbtn::after {
-  content: "[+]";
+  content: "";
   width: 24px;
   height: 24px;
 }
 .product .content-box .title-box .dropdown.active .dropbtn::after {
-  content: "[-]";
+  content: "🢓";
   width: 24px;
   height: 24px;
+  font-size: 32px;
 }
 .product .dropdown-content {
   position: absolute;
@@ -402,7 +404,7 @@ span {
   font-size: 24px;
   font-weight: 300;
 }
-.product .content-box .page-btn > .page.on {
+.product .content-box .page-btn .page.on {
   border: 1px solid #C6B49C;
   color: #B9A891;
 }

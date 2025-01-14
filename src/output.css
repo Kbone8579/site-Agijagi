@@ -1881,6 +1881,7 @@ a {
   background-color: #fdfdfd;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 /* section4 fage s8, s9, s10 */

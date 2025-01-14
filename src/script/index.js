@@ -171,6 +171,7 @@ $(document).ready(function () {
   });
 });
 
+
 // product 카테로기 버튼
 $(document).ready(function () {
   $(".kategorie .main-items.s1").click(function () {
@@ -186,8 +187,6 @@ $(document).ready(function () {
 
     // 클릭된 요소의 형제의 후손중에서 활성화된 li 요소들 비활성화
     $this.siblings(".active").find(".active").removeClass("active");
-    // 클릭된 요소의 형제를 비활성화
-    $this.siblings(".active").removeClass("active");
 
     // 현재(클릭된) li가 활성화 되었다면
     if ($this.hasClass("active")) {
@@ -209,8 +208,19 @@ $(document).ready(function () {
 
 //dropbtn
 $(document).ready(function () {
-  $(".dropbtn").click(function () {
+  $(".dropbtn").click(function (e) {
+    e.stopPropagation(); // 이벤트 버블링 방지
+    $(".dropdown").addClass("active");
     $(".dropdown-content").toggle();
+  });
+
+  $(document).click(function () {
+    $(".dropdown-content").hide(); // 문서의 다른 곳을 클릭하면 숨김
+    $(".dropdown").removeClass("active");
+  });
+
+  $(".dropdown-content").click(function (e) {
+    e.stopPropagation(); // 드롭다운 내부를 클릭해도 닫히지 않도록 방지
   });
 });
 
@@ -220,7 +230,7 @@ $(document).ready(function () {
 
   $(".page-btn > .page").click(function () {
     // active 클래스 전환 로직
-    $(".page-btn > .page").removeClass("on");
+    $(this).siblings().removeClass("on");
     $(this).addClass("on");
     // 페이지 전환 로직
     const pageNum = $(this).hasClass("b1") ? "1" : "2";
@@ -271,6 +281,7 @@ $(document).ready(function () {
     showItems("s8");
   });
 });
+
 
 
 // slider 스와이퍼
