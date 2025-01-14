@@ -932,6 +932,7 @@ video {
 html > body {
   font-family: "Pretendard Variable", sans-serif;
   overflow-x:hidden;
+  white-space: nowrap;
 }
 
 a {

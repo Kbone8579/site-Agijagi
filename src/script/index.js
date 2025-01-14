@@ -226,11 +226,10 @@ $(document).ready(function () {
 
 // kategorie page
 $(document).ready(function () {
-  $(".page-btn > .page.b1").addClass("on");
 
   $(".page-btn > .page").click(function () {
     // active 클래스 전환 로직
-    $(this).siblings().removeClass("on");
+    $(".page-btn .page").removeClass("on");
     $(this).addClass("on");
     // 페이지 전환 로직
     const pageNum = $(this).hasClass("b1") ? "1" : "2";
@@ -650,3 +649,4 @@ $(document).ready(function() {
 $(document).ready(function(){
   new WOW().init();
 });
+
