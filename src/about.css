@@ -587,12 +587,11 @@
   align-items: end;
 }
 .fage.a7 .sns-box ul li a {
-  width: 26px;
-  height: 26px;
-  background-color: #47423e;
-  border-radius: 100%;
+  opacity: 0.6;
 }
-
+.fage.a7 .sns-box > ul > li:hover > a {
+  opacity: 1;
+}
 /* top-btn */
 .top-btn {
   display: flex;

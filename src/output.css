@@ -2086,10 +2086,11 @@ a {
 }
 
 .box2 .snsBox > ul > li > a {
-  width: 30px;
-  height: 30px;
-  background-color: black;
-  border-radius: 100%;
+  opacity: 0.7;
+}
+
+.box2 .snsBox > ul > li:hover > a {
+  opacity: 1;
 }
 
 .box2 .serviceBox {
@@ -2118,6 +2119,21 @@ a {
   color: #555;
 }
 
+/* top-btn */
+
+.fage.s12 .top-btn {
+  width: 36px;
+}
+
+.fage.s12 .top-btn a img {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.fage.s12 .top-btn a:hover img {
+  opacity: 1;
+}
+
 @media (min-width: 640px){
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2129,5 +2145,4 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
-
 

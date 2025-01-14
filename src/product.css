@@ -449,6 +449,7 @@ span {
   display: flex;
   gap: 15px;
 }
+
 /* .sns-box */
 .footer .sns-box {
   display: flex;
@@ -460,10 +461,10 @@ span {
   align-items: end;
 }
 .footer .sns-box ul li a {
-  width: 26px;
-  height: 26px;
-  background-color: #47423e;
-  border-radius: 100%;
+  opacity: 0.6;
+}
+.footer .sns-box > ul > li:hover > a {
+  opacity: 1;
 }
 
 /* top-btn */
