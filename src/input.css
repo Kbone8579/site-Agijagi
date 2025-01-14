@@ -764,7 +764,7 @@ a {
 }
 .BgImg img {
   transform: scale(1.2);
-  transition: transform 8s;
+  transition: transform 6s;
 }
 .list-box {
   width: 584px;
@@ -913,6 +913,63 @@ a {
 .s9 .symbol,
 .s10 .symbol {
   opacity: 0.04;
+}
+/* section4 wow */
+.fage.s8 .text-box h1 {
+  opacity: 0;
+  transition: all 1s 0.3s;
+  transform: translateX(10%);
+}
+.fage.s8 .text-box h1.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fage.s8 .text-box span {
+  opacity: 0;
+  transition: all 1s 0.9s;
+  transform: translateY(-24%);
+}
+.fage.s8 .text-box span.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fage.s9 .text-box1 h1 {
+  opacity: 0;
+  transition: all 1s 0.3s;
+  transform: translateY(-24%);
+}
+.fage.s9 .text-box1 h1.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fage.s9 .text-box2 span {
+  opacity: 0;
+  transition: all 1s 0.9s;
+  transform: translateY(24%);
+}
+.fage.s9 .text-box2 span.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fage.s10 .text-box h1 {
+  opacity: 0;
+  transition: all 1s 0.3s;
+  transform: translateX(-10%);
+}
+.fage.s10 .text-box h1.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fage.s10 .text-box span {
+  opacity: 0;
+  transition: all 1s 0.9s;
+  transform: translateY(-24%);
+}
+.fage.s10 .text-box span.animated {
+  opacity: 1;
+  transform: translateY(0);
 }
 /* section5 + footer */
 .fage.s11s12 {
