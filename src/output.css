@@ -1739,11 +1739,12 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
 }
 
 .BgImg img {
-  width: 100%;
-  height: 100vh;
+  transform: scale(1.2);
+  transition: transform 8s;
 }
 
 .list-box {
@@ -1864,6 +1865,10 @@ a {
 
 .fage .list-box .all-box.animated {
   opacity: 1;
+}
+
+.fage .BgImg img.animated {
+  transform: scale(1);
 }
 
 /* section4 */
