@@ -1004,7 +1004,16 @@ a {
   right: 120px;
   transform: translateY(-50%);
 }
-
+/* section5 wow*/
+.fage.s11 .img-holder span {
+  filter: blur(2px);
+  opacity: 0;
+  transition: all 1s 0.3s;
+}
+.fage.s11 .img-holder span.animated {
+  filter: blur(0);
+  opacity: 1;
+}
 /* footer */
 .fage.s12 {
   width: 100%;
