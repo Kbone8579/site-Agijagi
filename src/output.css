@@ -636,6 +636,14 @@ video {
   left: 14px;
 }
 
+.left-\[32px\]{
+  left: 32px;
+}
+
+.left-\[40px\]{
+  left: 40px;
+}
+
 .left-\[41px\]{
   left: 41px;
 }
@@ -654,42 +662,6 @@ video {
 
 .top-\[50\%\]{
   top: 50%;
-}
-
-.left-\[70px\]{
-  left: 70px;
-}
-
-.left-\[60px\]{
-  left: 60px;
-}
-
-.left-\[54px\]{
-  left: 54px;
-}
-
-.left-\[50px\]{
-  left: 50px;
-}
-
-.left-\[46px\]{
-  left: 46px;
-}
-
-.left-\[40px\]{
-  left: 40px;
-}
-
-.left-\[38px\]{
-  left: 38px;
-}
-
-.left-\[36px\]{
-  left: 36px;
-}
-
-.left-\[32px\]{
-  left: 32px;
 }
 
 .mx-auto{
