@@ -115,8 +115,18 @@
   .fage.s7 .list-box .list-box-filter {
     width: 480px;
   }
-  
+
   /* .fage.s8/s9/s10 */
+  .fage.s8 h1,
+  .fage.s9 h1,
+  .fage.s10 h1 {
+    margin-bottom: 20px;
+  }
+  .fage.s8 span,
+  .fage.s9 span,
+  .fage.s10 span {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 1080px) {
 }
