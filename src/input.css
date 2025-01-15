@@ -424,7 +424,6 @@ a {
 }
 .text-box > .number-btn {
   display: flex;
-  width: 100%;
   justify-content: flex-end;
   gap: 24px;
   font-size: 24px;

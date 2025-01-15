@@ -1,15 +1,65 @@
-@media screen and (max-width: 1650px) {}
+@media screen and (max-width: 1650px) {
+}
 
 @media screen and (max-width: 1340px) {
-    .fage.s1, .fage.s2, .fage.s3 {
-        display: none;
-    }
-    .fage.s4 .side-sub {
-        display: none;
-    }
-    .fage.s4 .side-sub-small {
-        display: block;
-    }
+  /* .fage.s1/s2/s3 */
+  .fage.s1 > div,
+  .fage.s2 > div,
+  .fage.s3 > div {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .fage.s1 .img-box,
+  .fage.s2 .img-box,
+  .fage.s3 .img-box {
+    width: 580px;
+    height: 555px;
+  }
+  .fage.s1 h2,
+  .fage.s2 h2,
+  .fage.s3 h2 {
+    font-size: 32px;
+  }
+  .fage.s1 h3,
+  .fage.s2 h3,
+  .fage.s3 h3 {
+    font-size: 16px;
+  }
+  .fage.s1 .text-box > .number-btn.s1 {
+    width: 467px;
+    justify-content: start;
+  }
+  .fage.s1 .line-color {
+    width: 224px;
+    left: 16px;
+  }
+  .fage.s2 .text-box > .number-btn.s2 {
+    width: 500px;
+    justify-content: flex-end;
+  }
+  .fage.s2 .line-color {
+    width: 258px;
+  }
+  .fage.s3 .text-box > .number-btn.s3 {
+    width: 516px;
+    justify-content: start;
+  }
+  .fage.s3 .line-color {
+    width: 328px;
+    left: 16px;
+  }
+
+  /* .fage.s4 */
+  .fage.s4 .side-sub {
+    display: none;
+  }
+  .fage.s4 .side-sub-small {
+    display: block;
+  }
+  
+  /* .fage.s5/s6/s7 */
 }
-@media screen and (max-width: 1080px) {}
-@media screen and (max-width: 960px) {}
+@media screen and (max-width: 1080px) {
+}
+@media screen and (max-width: 960px) {
+}
