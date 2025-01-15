@@ -1,3 +1,4 @@
+/* index */
 @media screen and (max-width: 1650px) {
   /* .fage.s12 */
   .fage.s12 .box2 {
@@ -115,6 +116,9 @@
   .fage.s4 .side-sub-small {
     display: block;
   }
+  .fage.s4 .menu-btn a {
+    display: none;
+  }
 
   /* .fage.s5/s6/s7 */
   .fage.s5 .text01 span,
@@ -177,3 +181,5 @@
 }
 @media screen and (max-width: 960px) {
 }
+
+/* about */
