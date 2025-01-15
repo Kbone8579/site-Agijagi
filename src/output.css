@@ -2044,10 +2044,12 @@ a {
 }
 
 .fage.s12 .textbox {
-  width: 1735px;
+  width: 100%;
   height: 310px;
   display: flex;
-  gap: 165px;
+  justify-content: space-between;
+  padding-right: 120px;
+  padding-left: 120px;
 }
 
 /* footer box1 */
@@ -2060,9 +2062,11 @@ a {
 /* footer box2 */
 
 .fage.s12 .box2 {
-  width: 1143px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-left: 221px;
+  padding-right: 221px;
 }
 
 .box2 .snsBox {

@@ -1,4 +1,9 @@
 @media screen and (max-width: 1650px) {
+  /* .fage.s12 */
+  .fage.s12 .box2 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 @media screen and (max-width: 1560px) {
   /* .fage.s8/s9/s10 */
@@ -144,6 +149,7 @@
   }
 }
 @media screen and (max-width: 1180px) {
+
 }
 @media screen and (max-width: 960px) {
 }
