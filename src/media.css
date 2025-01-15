@@ -21,8 +21,22 @@
   .s10 .box1 {
     width: 1500px;
     height: 620px;
-    margin-left: 40px;
-    margin-right: 40px;
+  }
+  .s9 .symbol {
+    left: -180px;
+  }
+  .s9 .symbol img {
+    width: 615px;
+    height: 580px;
+  }
+  .s8 .box1 .text-box {
+    margin-left: 30px;
+  }
+  .s9 .box1 .text-box1 {
+    margin-left: 30px;
+  }
+  .s10 .box1 .text-box {
+    margin-right: 30px;
   }
   .s8 .box1 .img-box,
   .s9 .box1 .img-box,
@@ -146,6 +160,9 @@
   }
   .fage.s9 .text-box1 {
     width: 220px;
+  }
+  .s9 .symbol {
+    left: -300px;
   }
 }
 @media screen and (max-width: 1180px) {
