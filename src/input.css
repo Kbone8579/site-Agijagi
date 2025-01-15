@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Noto+Serif+KR:wght@200..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-
 /* tailwind */
 @tailwind base;
 @tailwind components;
@@ -30,49 +29,49 @@
 /* side-sub 확대 축소 */
 @keyframes slideInRight {
   from {
-      transform: translateX(-80%);
-      opacity: 0;
+    transform: translateX(-80%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes slideOutLeft {
   from {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
   to {
-      transform: translateX(-80%);
-      opacity: 0;
+    transform: translateX(-80%);
+    opacity: 0;
   }
 }
 @keyframes slideInLeft {
   from {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
   to {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes slideOutRight {
   from {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
   to {
-      transform: translateX(100%);
-      opacity: 0;
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 
 /* reset */
 html > body {
   font-family: "Pretendard Variable", sans-serif;
-  overflow-x:hidden;
+  overflow-x: hidden;
   white-space: nowrap;
 }
 a {
@@ -80,7 +79,8 @@ a {
 }
 
 /* slider */
-.fage.s0 .slide.s1 .text-box h1, .fage.s0 .slide.s2 .text-box h1 {
+.fage.s0 .slide.s1 .text-box h1,
+.fage.s0 .slide.s2 .text-box h1 {
   font-family: "Noto Serif KR", serif;
   font-size: 64px;
   font-weight: 100;
@@ -88,7 +88,8 @@ a {
   letter-spacing: 0.1em;
   line-height: 1.725;
 }
-.fage.s0 .slide.s1 .text-box span, .fage.s0 .slide.s2 .text-box span {
+.fage.s0 .slide.s1 .text-box span,
+.fage.s0 .slide.s2 .text-box span {
   font-family: "Noto Serif KR", serif;
   font-size: 18px;
   font-weight: 100;
@@ -108,7 +109,7 @@ a {
   font-family: "Noto Serif KR", serif;
   font-size: 18px;
   font-weight: 100;
-  color: #E8E8E8;
+  color: #e8e8e8;
   letter-spacing: -0.02em;
   line-height: 1.7;
 }
@@ -309,12 +310,14 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.swiper-slide .text-box img, .swiper-slide .text-box h1 {
+.swiper-slide .text-box img,
+.swiper-slide .text-box h1 {
   visibility: invisible;
   opacity: 0;
   filter: blur(2px);
 }
-.swiper-slide-active .text-box img, .swiper-slide-active .text-box h1 {
+.swiper-slide-active .text-box img,
+.swiper-slide-active .text-box h1 {
   filter: blur(0);
   transition: all 2.5s;
   opacity: 1;
@@ -342,7 +345,7 @@ a {
 .swiper-pagination span {
   width: 14px;
   height: 14px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   opacity: 50%;
 }
 
@@ -391,7 +394,6 @@ a {
 }
 .autoplay-progress:hover .btns {
   background-color: rgba(255, 255, 255, 0.3);
-  
 }
 .autoplay-progress .btns .play {
   color: white;
@@ -424,6 +426,16 @@ a {
   display: flex;
   align-items: center;
   background-color: #ededed;
+}
+.fage.s1 .text-box h2,
+.fage.s2 .text-box h2,
+.fage.s3 .text-box h2 {
+  transition: all 0.3s;
+}
+.fage.s1 .text-box h3,
+.fage.s2 .text-box h3,
+.fage.s3 .text-box h3 {
+  transition: all 0.3s;
 }
 .img-box img {
   height: 100%;
@@ -483,21 +495,29 @@ a {
   border: 0px;
 }
 /* section1 wow */
-.fage.s1 .img-box, .fage.s2 .img-box, .fage.s3 .img-box {
+.fage.s1 .img-box,
+.fage.s2 .img-box,
+.fage.s3 .img-box {
   filter: blur(2px);
   opacity: 0;
   transition: opacity 0.8s 0.3s, filter 0.8s 0.8s;
 }
-.fage.s1 .img-box.animated, .fage.s2 .img-box.animated, .fage.s3 .img-box.animated {
+.fage.s1 .img-box.animated,
+.fage.s2 .img-box.animated,
+.fage.s3 .img-box.animated {
   opacity: 1;
   filter: blur(0);
 }
 
-.number-btn.s1, .number-btn.s2, .number-btn.s3 {
+.number-btn.s1,
+.number-btn.s2,
+.number-btn.s3 {
   opacity: 0;
   transition: opacity 0.8s 1.4s;
 }
-.number-btn.s1.animated, .number-btn.s2.animated, .number-btn.s3.animated {
+.number-btn.s1.animated,
+.number-btn.s2.animated,
+.number-btn.s3.animated {
   opacity: 1;
 }
 
