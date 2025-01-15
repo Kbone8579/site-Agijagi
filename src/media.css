@@ -164,6 +164,13 @@
   .s9 .symbol {
     left: -300px;
   }
+  /* .fage.s12 */
+  .fage.s12 {
+    display: none;
+  }
+  .fage.s-12-sub {
+    display: block;
+  }
 }
 @media screen and (max-width: 1180px) {
 

@@ -216,14 +216,29 @@ a {
   color: #333;
   letter-spacing: -0.04em;
 }
-.serviceBox > ul > li > ul a {
+.fage.s12 .serviceBox > ul > li > ul a {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 20px;
   font-weight: 200;
   color: #959595;
   letter-spacing: -0.04em;
 }
-
+/* fage s-12-sub */
+.fage.s-12-sub span,
+.serviceBox > ul > li > span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: -0.04em;
+}
+.fage.s-12-sub .serviceBox > ul > li > ul a {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: #959595;
+  letter-spacing: -0.04em;
+}
 /* slider(.fage.s0) */
 .fage.s0 {
   position: relative;
@@ -1040,7 +1055,6 @@ a {
   width: 149px;
   height: 36px;
 }
-
 /* footer box2 */
 .fage.s12 .box2 {
   width: 100%;
@@ -1086,7 +1100,6 @@ a {
   text-decoration: underline;
   color: #555;
 }
-
 /* top-btn */
 .fage.s12 .top-btn {
   width: 36px;
@@ -1099,3 +1112,71 @@ a {
   opacity: 1;
 }
 
+/* s-12-sub */
+.fage.s-12-sub {
+  width: 100%;
+  height: 445px;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.fage.s-12-sub .textbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 120px;
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+.fage.s-12-sub .box2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fage.s-12-sub .top-btn {
+  width: 36px;
+}
+.fage.s-12-sub .top-btn a img {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.fage.s-12-sub .top-btn a:hover img {
+  opacity: 1;
+}
+.fage.s-12-sub .textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.fage.s-12-sub > .textbox > .box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.fage.s-12-sub > .textbox > .box1 > img {
+  display: block;
+  width: 149px;
+  height: 36px;
+}
+.fage.s-12-sub > .textbox > .box1 > .top-btn > a {
+  width: 30px;
+  height: 30px;
+}
+.fage.s-12-sub .textbox .box2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.fage.s-12-sub .box2 .serviceBox > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.fage.s-12-sub .box2 .serviceBox > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
