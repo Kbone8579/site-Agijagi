@@ -8,6 +8,9 @@
     font-size: 40px;
     margin-bottom: 40px;
   }
+  .fage.s9 h1 {
+    line-height: 70px;
+  }
   .s8 .box1,
   .s9 .box1,
   .s10 .box1 {
@@ -118,9 +121,13 @@
 
   /* .fage.s8/s9/s10 */
   .fage.s8 h1,
-  .fage.s9 h1,
   .fage.s10 h1 {
+    font-size: 36px;
     margin-bottom: 20px;
+  }
+  .fage.s9 h1 {
+    font-size: 32px;
+    line-height: 60px;
   }
   .fage.s8 span,
   .fage.s10 span {
@@ -131,6 +138,9 @@
   .fage.s9 span {
     font-size: 16px;
     margin-left: 20px;
+  }
+  .fage.s9 .text-box1 {
+    width: 220px;
   }
 }
 @media screen and (max-width: 1180px) {
