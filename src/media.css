@@ -280,13 +280,13 @@
   .fage.s1 .text-box,
   .fage.s2 .text-box, 
   .fage.s3 .text-box {
-    height: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 50;
     height: 460px;
+    gap: 350px;
   }
   .fage.s1 .text-box h3,
   .fage.s2 .text-box h3, 
