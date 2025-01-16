@@ -183,3 +183,15 @@
 }
 
 /* about */
+@media screen and (max-width: 1340px) {
+  .fage.a2 .img-box2, 
+  .fage.a3 .img-box3, 
+  .fage.a4 .img-box4 {
+    width: 760px;
+    height: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

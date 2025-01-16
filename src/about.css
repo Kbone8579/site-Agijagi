@@ -209,17 +209,19 @@
 /* fage a2 */
 .fage.a2 {
   display: flex;
+  background-color: #e8e4df;
 }
 .fage.a2 .img-box2 {
   width: 960px;
   height: 100vh;
-  background-color: #d9d9d9;
-  overflow: hidden;
+  background-image: url(img/about/img-2.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fage.a2 .text-box2 {
   width: 960px;
   height: 100vh;
-  background-color: #e8e4df;
   padding-top: 150px;
   display: flex;
   justify-content: center;
@@ -253,17 +255,19 @@
 /* fage.a3 */
 .fage.a3 {
   display: flex;
+  background-color: #e8e4df;
 }
 .fage.a3 .img-box3 {
   width: 960px;
   height: 100vh;
-  background-color: #d9d9d9;
-  overflow: hidden;
+  background-image: url(img/about/img-3.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fage.a3 .text-box3 {
   width: 960px;
   height: 100vh;
-  background-color: #e8e4df;
   padding-top: 340px;
   display: flex;
   justify-content: center;
@@ -298,17 +302,19 @@
 /* fage.a4 */
 .fage.a4 {
   display: flex;
+  background-color: #e8e4df;
 }
 .fage.a4 .img-box4 {
   width: 960px;
   height: 100vh;
-  background-color: #d9d9d9;
-  overflow: hidden;
+  background-image: url(img/about/img-4.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fage.a4 .text-box4 {
   width: 960px;
   height: 100vh;
-  background-color: #e8e4df;
   padding-top: 250px;
   display: flex;
   justify-content: center;
