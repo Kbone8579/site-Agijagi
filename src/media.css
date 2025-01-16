@@ -186,25 +186,51 @@
     top: 87%;
     right: 36%;
   }
-.fage.s0 .slide.s1 .text-box,
-.fage.s0 .slide.s2 .text-box, 
-.fage.s0 .slide.s3 .text-box {
-  position: absolute;
-  top: 302px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.fage.s1 .img-box,
-.fage.s2 .img-box,
-.fage.s3 .img-box {
-  width: 480px;
-  height: 455px;
-}
-.fage.s1 h2,
+  .fage.s0 .slide.s1 .text-box,
+  .fage.s0 .slide.s2 .text-box,
+  .fage.s0 .slide.s3 .text-box {
+    position: absolute;
+    top: 302px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fage.s1 .img-box,
+  .fage.s2 .img-box,
+  .fage.s3 .img-box {
+    width: 480px;
+    height: 455px;
+  }
+  .fage.s1 h2,
   .fage.s2 h2,
   .fage.s3 h2 {
     font-size: 28px;
   }
+  .fage.s1 .line-color {
+    width: 200px;
+    height: 42px;
+    left: 66px;
+    opacity: 70%;
+  }
+  .fage.s2 .text-box > .number-btn.s2 {
+    width: 500px;
+    justify-content: flex-end;
+  }
+  .fage.s2 .line-color {
+    width: 222px;
+    height: 42px;
+    opacity: 70%;
+  }
+  .fage.s3 .text-box > .number-btn.s3 {
+    width: 516px;
+    justify-content: start;
+  }
+  .fage.s3 .line-color {
+    width: 288px;
+    height: 42px;
+    left: 64px;
+    opacity: 70%;
+  }
+  
 }
 @media screen and (max-width: 960px) {
   .autoplay-progress {
@@ -212,86 +238,164 @@
     right: 36%;
     display: none;
   }
+  .fage.s1 .img-box,
+  .fage.s2 .img-box,
+  .fage.s3 .img-box {
+    /* padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 30px; */
+    width: 100%;
+    height: 100vh;
+  }
+  .fage.s1 h2,
+  .fage.s2 h2,
+  .fage.s3 h2 {
+    font-size: 32px;
+  }
+  .fage.s1 h3,
+  .fage.s2 h3,
+  .fage.s3 h3 {
+    font-size: 16px;
+    color: black;
+  }
+  .fage.s1 .line-color {
+    width: 224px;
+    height: 48px;
+    left: 16px;
+  }
+  .fage.s2 .line-color {
+    width: 258px;
+    height: 48px;
+  }
+  .fage.s3 .line-color {
+    width: 328px;
+    height: 48px;
+    left: 16px;
+  }
+  .fage.s1,
+  .fage.s2, 
+  .fage.s3 {
+    position: relative;
+  }
+  .fage.s1 .text-box,
+  .fage.s2 .text-box, 
+  .fage.s3 .text-box {
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    height: 460px;
+  }
+  .fage.s1 .text-box h3,
+  .fage.s2 .text-box h3, 
+  .fage.s3 .text-box h3 {
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .fage.s1 > div,
+  .fage.s2 > div,
+  .fage.s3 > div {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .fage.s1 .text-box > .number-btn.s1 {
+    width: 500px;
+    justify-content: center;
+  }
+  .fage.s2 .text-box > .number-btn.s2 {
+    width: 500px;
+    justify-content: center;
+  }
+  .fage.s3 .text-box > .number-btn.s3 {
+    width: 500px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 864px) {
-.fage.s0 .top-bar {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.fage.s0 .slide.s1 .text-box h1,
-.fage.s0 .slide.s2 .text-box h1,
-.fage.s0 .slide.s3 .text-box h1 {
-  font-size: 54px;
-}
-.fage.s0 .slide.s1 .text-box img {
-  position: absolute;
-  top: 95px;
-  left: 14px;
-  width: 190px;
-}
-.fage.s0 .slide.s2 .text-box img {
-  position: absolute;
-  top: 1px;
-  left: 14px;
-  width: 190px;
-}
-.fage.s0 .slide.s3 .text-box img {
-  position: absolute;
-  top: 1px;
-  right: 50px;
-  width: 66px;
-}
-.slide.s1 {
-  background-image: url(img/slide/img-1.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .fage.s0 .top-bar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .fage.s0 .slide.s1 .text-box h1,
+  .fage.s0 .slide.s2 .text-box h1,
+  .fage.s0 .slide.s3 .text-box h1 {
+    font-size: 54px;
+  }
+  .fage.s0 .slide.s1 .text-box img {
+    position: absolute;
+    top: 95px;
+    left: 14px;
+    width: 190px;
+  }
+  .fage.s0 .slide.s2 .text-box img {
+    position: absolute;
+    top: 1px;
+    left: 14px;
+    width: 190px;
+  }
+  .fage.s0 .slide.s3 .text-box img {
+    position: absolute;
+    top: 1px;
+    right: 50px;
+    width: 66px;
+  }
+  .slide.s1 {
+    background-image: url(img/slide/img-1.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .fage.s4 .side-sub-small {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
-.fage.s0 .slide.s1 .text-box h1,
-.fage.s0 .slide.s2 .text-box h1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-.fage.s0 .slide.s3 .text-box h1 {
-  font-size: 34px;
-  margin-bottom: 20px;
-}
-.fage.s0 .slide.s1 .text-box span,
-.fage.s0 .slide.s2 .text-box span,
-.fage.s0 .slide.s3 .text-box span {
-  display: none;
-}
-.fage.s0 .slide.s1 .text-box p1,
-.fage.s0 .slide.s2 .text-box p1, 
-.fage.s0 .slide.s3 .text-box p1 {
-  display: block;
-}
-.fage.s0 .slide.s1 .text-box img {
-  display: none;
-}
-.fage.s0 .slide.s2 .text-box img {
-  display: none;
-}
-.fage.s0 .slide.s3 .text-box img {
-  display: none;
-}
-.fage.s0 .slide.s1 .text-box {
-  top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.fage.s0 .slide.s2 .text-box {
-  top: 300px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.fage.s0 .slide.s3 .text-box {
-  top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  .fage.s0 .slide.s1 .text-box h1,
+  .fage.s0 .slide.s2 .text-box h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .fage.s0 .slide.s3 .text-box h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .fage.s0 .slide.s1 .text-box span,
+  .fage.s0 .slide.s2 .text-box span,
+  .fage.s0 .slide.s3 .text-box span {
+    display: none;
+  }
+  .fage.s0 .slide.s1 .text-box p1,
+  .fage.s0 .slide.s2 .text-box p1,
+  .fage.s0 .slide.s3 .text-box p1 {
+    display: block;
+  }
+  .fage.s0 .slide.s1 .text-box img {
+    display: none;
+  }
+  .fage.s0 .slide.s2 .text-box img {
+    display: none;
+  }
+  .fage.s0 .slide.s3 .text-box img {
+    display: none;
+  }
+  .fage.s0 .slide.s1 .text-box {
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fage.s0 .slide.s2 .text-box {
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .fage.s0 .slide.s3 .text-box {
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* about */
@@ -344,11 +448,11 @@
   .fage.a1 span {
     font-size: 18px;
   }
-  .fage.a2 .sub-title h2, 
-  .fage.a3 .sub-title h2, 
+  .fage.a2 .sub-title h2,
+  .fage.a3 .sub-title h2,
   .fage.a4 .sub-title h2 {
     font-size: 32px;
-  } 
+  }
   .fage.a2 .sub-text span,
   .fage.a3 .sub-text span,
   .fage.a4 .sub-text span {
@@ -416,5 +520,4 @@
   }
 }
 @media screen and (max-width: 960px) {
-
 }
