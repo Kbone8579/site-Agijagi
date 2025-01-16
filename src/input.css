@@ -940,6 +940,13 @@ a {
 .fage .BgImg img.animated {
   transform: scale(1);
 }
+/* fage m1 */
+.fage.m1 {
+  display: none;
+}
+.content-1-mobile {
+  display: none;
+}
 /* section4 */
 .fage.s8,
 .fage.s9,

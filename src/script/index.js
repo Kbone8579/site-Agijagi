@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
   
   // 클릭시 해당 페이지로 이동
   // 페이지1
+  
   document
     .querySelector(".number-btn.s1 .btn2")
     .addEventListener("click", (e) => {
@@ -384,6 +385,16 @@ $(document).ready(function(){
     }
     
     isPlaying = !isPlaying;
+  });
+
+  var swiper = new Swiper(".swiper3 .swiper", {
+    slidesPerView: 2,
+    spaceBetween: 16,
+    // loop: true,
+    pagination: {
+      // el: ".swiper3 .swiper-pagination",
+      clickable: true
+    }
   });
 });
 
