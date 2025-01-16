@@ -219,6 +219,15 @@
   }
 }
 @media screen and (max-width: 1240px) {
+  .fage.s0 .swiper-pagination {
+    flex-direction: row;
+    top: 85%;
+    left: 47%;
+  }
+  .autoplay-progress {
+    top: 87%;
+    right: 36%;
+  }
   .fage.a5 .text-box h1 {
     font-size: 32px;
     transition: all 0.3s;
