@@ -123,6 +123,15 @@ a {
   letter-spacing: -0.02em;
   line-height: 1.7;
 }
+.fage.s0 .slide.s3 .text-box p1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #e8e8e8;
+  letter-spacing: -0.02em;
+  line-height: 1.7;
+  display: none;
+}
 /* section1 font */
 .fage.s1 h2,
 .fage.s2 h2,
@@ -333,15 +342,13 @@ a {
   opacity: 1;
   visibility: visible;
 }
-.swiper-slide .text-box span,
-.swiper-slide .text-box p1 {
+.swiper-slide .text-box span {
   display: block;
   transform: translateY(-40%);
   visibility: invisible;
   opacity: 0;
 }
-.swiper-slide .text-box span,
-.swiper-slide .text-box p1 {
+.swiper-slide-active .text-box span {
   transition: all 2s;
   opacity: 1;
   visibility: visible;
