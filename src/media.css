@@ -177,21 +177,133 @@
   }
 }
 @media screen and (max-width: 1180px) {
-
 }
 @media screen and (max-width: 960px) {
+}
+@media screen and (max-width: 768px) {
 }
 
 /* about */
 @media screen and (max-width: 1340px) {
-  .fage.a2 .img-box2, 
-  .fage.a3 .img-box3, 
+  .fage.a2 .img-box2,
+  .fage.a3 .img-box3,
   .fage.a4 .img-box4 {
     width: 760px;
-    height: 600px;
+    height: 700px;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: auto;
     margin-bottom: auto;
   }
+  .fage.a5 .all-box {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .fage.a5 .all-box .box1 .img-box {
+    width: 510px;
+    height: 330px;
+  }
+  .fage.a5 .all-box .box2 {
+    width: 400px;
+  }
+  .fage.a5 .all-box .box2 .img-box {
+    width: 400px;
+    height: 400px;
+  }
+  .fage.a5 .main-title {
+    left: 150px;
+  }
+  .fage.a7 .all-box {
+    margin-left: 47px;
+    margin-right: 47px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .fage.a5 .text-box h1 {
+    font-size: 32px;
+    transition: all 0.3s;
+  }
+  .fage.a5 .text-box span {
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+  .fage.a1 h1 {
+    font-size: 42px;
+  }
+  .fage.a1 span {
+    font-size: 18px;
+  }
+  .fage.a2 .sub-title h2, 
+  .fage.a3 .sub-title h2, 
+  .fage.a4 .sub-title h2 {
+    font-size: 32px;
+  } 
+  .fage.a2 .sub-text span,
+  .fage.a3 .sub-text span,
+  .fage.a4 .sub-text span {
+    font-size: 16px;
+  }
+  .fage.a1 .text-box1 {
+    position: absolute;
+    top: 280px;
+    left: 160px;
+  }
+  .fage.a2 .img-box2,
+  .fage.a3 .img-box3,
+  .fage.a4 .img-box4 {
+    width: 760px;
+    height: 500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .fage.a2 .main-title,
+  .fage.a4 .main-title {
+    margin-right: 50px;
+  }
+  .fage.a3 .main-title {
+    margin-left: 50px;
+  }
+  .fage.a5 .all-box .box1 .text-box h1 {
+    margin-bottom: 20px;
+  }
+  .fage.a5 .all-box .box2 .text-box h1 {
+    margin-bottom: 20px;
+  }
+  .fage.a5 .all-box {
+    margin-top: 200px;
+  }
+  .fage.a5 .all-box .box1 .img-box {
+    width: 460px;
+    height: 330px;
+  }
+  .fage.a5 .all-box .box1 {
+    margin-left: 50px;
+  }
+  .fage.a5 .all-box .box2 {
+    width: 400px;
+    margin-right: 0;
+    margin-left: 50px;
+  }
+  .fage.a5 .all-box .box2 .img-box {
+    width: 350px;
+    height: 400px;
+  }
+  .fage.a5 .main-title {
+    left: 150px;
+  }
+  .fage.a6 .all-box {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .fage.a6 .section .text-box h2 {
+    margin-top: 32px;
+  }
+  .fage.a6 .section .text-box span {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 960px) {
+
 }

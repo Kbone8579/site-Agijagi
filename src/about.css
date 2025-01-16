@@ -128,6 +128,15 @@
   color: white;
   opacity: 80%;
 }
+.fage.a6 .section .text-box h2 {
+  display: block;
+  margin-top: 38px;
+}
+.fage.a6 .section .text-box span {
+  display: block;
+  margin-top: 16px;
+  text-align: center;
+}
 /* fage a7 */
 .fage.a7 .text-box .content01 {
   font-family: "Pretendard Variable", sans-serif;
@@ -361,22 +370,28 @@
   justify-content: space-between;
 }
 .fage.a5 .all-box .box1 {
-  width: 610px;
   padding-top: 120px;
 }
 .fage.a5 .all-box .box1 .img-box {
-  height: 430px;
+  width: 610px;
   margin-bottom: 25px;
+  height: 430px;
+  background-image: url(img/about/img-5.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fage.a5 .all-box .box1 .text-box h1 {
   margin-bottom: 30px;
 }
-.fage.a5 .all-box .box2 {
-  width: 500px;
-}
 .fage.a5 .all-box .box2 .img-box {
   height: 500px;
+  width: 500px;
   margin-bottom: 25px;
+  background-image: url(img/about/img-6.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fage.a5 .all-box .box2 .text-box h1 {
   margin-bottom: 30px;
@@ -516,19 +531,11 @@
   flex-direction: column;
   align-items: center;
 }
-.section .text-box h2 {
-  display: block;
-  margin-top: 38px;
-}
-.section .text-box span {
-  display: block;
-  margin-top: 16px;
-  text-align: center;
-}
 .fage.a6 .img-box .img {
   position: absolute;
   top: 0;
   left: 0;
+  height: 108vh;
 }
 .fage.a6 .img-box .img img {
   width: 100%;
@@ -551,6 +558,8 @@
   width: 1705px;
   display: flex;
   justify-content: space-between;
+  margin-left: 67px;
+  margin-right: 67px;
 }
 /* .text-box */
 .fage.a7 .all-box .text-box {
