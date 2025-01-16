@@ -952,6 +952,17 @@ a {
   line-height: 1.7;
 }
 
+.fage.s0 .slide.s1 .text-box p1,
+.fage.s0 .slide.s2 .text-box p1 {
+  font-family: "Noto Serif KR", serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #3a3a3a;
+  letter-spacing: -0.02em;
+  line-height: 1.7;
+  display: none;
+}
+
 .fage.s0 .slide.s3 .text-box h1 {
   font-family: "Noto Serif KR", serif;
   font-size: 64px;
@@ -1220,14 +1231,11 @@ a {
   visibility: visible;
 }
 
-.swiper-slide .text-box span {
+.swiper-slide .text-box span,
+.swiper-slide .text-box p1 {
   display: block;
   transform: translateY(-40%);
   visibility: invisible;
-  opacity: 0;
-}
-
-.swiper-slide-active .text-box span {
   transition: all 2s;
   opacity: 1;
   visibility: visible;
