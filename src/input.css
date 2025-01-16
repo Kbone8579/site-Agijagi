@@ -354,6 +354,18 @@ a {
   visibility: visible;
   transform: translateY(0);
 }
+.swiper-slide .text-box p1 {
+  display: block;
+  transform: translateY(-40%);
+  visibility: invisible;
+  opacity: 0;
+}
+.swiper-slide-active .text-box p1 {
+  transition: all 2s;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 .swiper-pagination {
   display: flex;
   flex-direction: column;

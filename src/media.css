@@ -214,6 +214,10 @@
   }
 }
 @media screen and (max-width: 864px) {
+.fage.s0 .top-bar {
+  padding-left: 50px;
+  padding-right: 50px;
+}
 .fage.s0 .slide.s1 .text-box h1,
 .fage.s0 .slide.s2 .text-box h1,
 .fage.s0 .slide.s3 .text-box h1 {
@@ -260,7 +264,8 @@
   display: none;
 }
 .fage.s0 .slide.s1 .text-box p1,
-.fage.s0 .slide.s2 .text-box p1 {
+.fage.s0 .slide.s2 .text-box p1, 
+.fage.s0 .slide.s3 .text-box p1 {
   display: block;
 }
 .fage.s0 .slide.s1 .text-box img {
