@@ -402,8 +402,8 @@ $(document).ready(function(){
   });
 
   var swiper = new Swiper(".swiper3 .swiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
+    slidesPerView: 1.3,
+    spaceBetween: 20,
     // loop: true,
     pagination: {
       // el: ".swiper3 .swiper-pagination",
