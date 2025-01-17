@@ -287,6 +287,25 @@ a {
   color: #959595;
   letter-spacing: -0.04em;
 }
+/* .fage.m3 */
+.fage.m3 .text-box h1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #959595;
+}
+.fage.m3 .text-box span {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #959595;
+}
+.fage.m3 .text-box p1 {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #959595;
+}
 /* slider(.fage.s0) */
 .fage.s0 {
   position: relative;
@@ -1334,4 +1353,36 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+/* fage m3 */
+.fage.m3 {
+  height: 445px;
+  background-color: #f4f4f4;
+}
+.fage.m3 .textbox .img-box {
+  width: 200px;
+  opacity: 60%;
+}
+.fage.m3 .textbox {
+  margin-top: 80px;
+  margin-left: 76px;
+  margin-right: 76px;
+  gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.fage.m3 .text-box .div {
+  display: flex;
+  flex-direction: column;
+}
+.fage.m3 .text-box h1 {
+  margin-bottom: 9px;
+}
+.fage.m3 .text-box .text-1 > span {
+  display: block;
+}
+.fage.m3 .textbox p1 {
+  display: block;
+  margin-top: 18px;
 }

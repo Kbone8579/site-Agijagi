@@ -230,7 +230,10 @@
     left: 64px;
     opacity: 70%;
   }
-  
+  .fage.s11 .img-holder span {
+    font-size: 24px;
+    right: 50px;
+  }
 }
 @media screen and (max-width: 960px) {
   .autoplay-progress {
@@ -362,6 +365,12 @@
     height: 40px;
     left: 70px;
   }
+  .fage.s-12-sub {
+    display: none;
+  }
+  .fage.m3 {
+    display: block;
+  }
 }
 @media screen and (max-width: 864px) {
   .fage.s0 .top-bar {
@@ -412,6 +421,10 @@
     width: 288px;
     height: 40px;
     left: 40px;
+  }
+  .fage.s11 .img-holder span {
+    font-size: 20px;
+    right: 50px;
   }
 }
 @media screen and (max-width: 768px) {
