@@ -1359,7 +1359,7 @@ a {
   height: 445px;
   background-color: #f4f4f4;
 }
-.fage.m3 .textbox .img-box {
+.fage.m3 .textbox .img-box img {
   width: 200px;
   opacity: 60%;
 }
@@ -1369,7 +1369,6 @@ a {
   margin-right: 76px;
   gap: 50px;
   display: flex;
-  justify-content: space-between;
   align-items: end;
 }
 .fage.m3 .text-box .div {
