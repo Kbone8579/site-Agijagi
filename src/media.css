@@ -242,7 +242,7 @@
   .fage.s2 .img-box,
   .fage.s3 .img-box {
     position: absolute;
-    width: 580px;
+    width: 100%;
     height: 550px;
     top: 0;
     left: 50%;
@@ -321,11 +321,19 @@
   }
   .fage.s4 .side-sub-small {
     display: none;
-    
   }
   .content-1-mobile {
     display: block;
   }
+  .fage.s5,
+  .fage.s6,
+  .fage.s7 {
+    display: none;
+  }
+  .fage.m1 {
+    display: block;
+  }
+  
 }
 @media screen and (max-width: 864px) {
   .fage.s0 .top-bar {

@@ -2,6 +2,8 @@ window.addEventListener("DOMContentLoaded", function () {
   // 한 페이지씩 이동
   const elm = document.querySelectorAll(".fage");
   const elmCount = elm.length;
+  
+  // 각 요소에 휠 이벤트 리스너 추가
   elm.forEach(function (item, index) {
     item.addEventListener("mousewheel", function (event) {
       event.preventDefault();
@@ -20,9 +22,15 @@ window.addEventListener("DOMContentLoaded", function () {
       if (delta < 0) {
         if (elmSelector !== elmCount - 1) {
           try {
-            moveTop =
-              window.pageYOffset +
-              elmSelector.nextElementSibling.getBoundingClientRect().top;
+            // 다음 요소 찾기
+            let nextElement = elmSelector.nextElementSibling;
+            // display: none인 요소를 건너뛰고 다음 보이는 요소 찾기
+            while (nextElement && window.getComputedStyle(nextElement).display === 'none') {
+              nextElement = nextElement.nextElementSibling;
+            }
+            if (nextElement) {
+              moveTop = window.pageYOffset + nextElement.getBoundingClientRect().top;
+            }
           } catch (e) {}
         }
       }
@@ -30,9 +38,15 @@ window.addEventListener("DOMContentLoaded", function () {
       else {
         if (elmSelector !== 0) {
           try {
-            moveTop =
-              window.pageYOffset +
-              elmSelector.previousElementSibling.getBoundingClientRect().top;
+            // 이전 요소 찾기
+            let prevElement = elmSelector.previousElementSibling;
+            // display: none인 요소를 건너뛰고 이전 보이는 요소 찾기
+            while (prevElement && window.getComputedStyle(prevElement).display === 'none') {
+              prevElement = prevElement.previousElementSibling;
+            }
+            if (prevElement) {
+              moveTop = window.pageYOffset + prevElement.getBoundingClientRect().top;
+            }
           } catch (e) {}
         }
       }
@@ -388,7 +402,7 @@ $(document).ready(function(){
   });
 
   var swiper = new Swiper(".swiper3 .swiper", {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 16,
     // loop: true,
     pagination: {

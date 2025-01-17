@@ -941,12 +941,38 @@ a {
   transform: scale(1);
 }
 /* fage m1 */
+
 .fage.m1 {
-  display: none;
+  width: 100%;
+  height: 100vh;
 }
-.content-1-mobile {
-  display: none;
+.fage.m1 > .title {
+  padding-top: 100px;
+  margin-bottom: 40px;
 }
+.fage.m1 .swiper3 {
+  height: 540px;
+}
+.fage.m1 .swiper3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #989898;
+}
+.fage.m1 .swiper3 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.fage.m1 .swiper3 .swiper {
+  width: 100%;
+  height: 700px;
+}
+
 /* section4 */
 .fage.s8,
 .fage.s9,
