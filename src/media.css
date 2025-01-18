@@ -20,8 +20,10 @@
   .s8 .box1,
   .s9 .box1,
   .s10 .box1 {
-    width: 1500px;
+    width: 100%;
     height: 620px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .s9 .symbol {
     left: -180px;
@@ -59,6 +61,49 @@
   }
   .s9 .box1 .text-box1 {
     width: 280px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .fage.s8 .box1,
+  .fage.s9 .box1,
+  .fage.s10 .box1 {
+    width: 1100px;
+  }
+  .s8 .box1,
+  .s9 .box1,
+  .s10 .box1 {
+    width: 100%;
+    height: 520px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .s8 .box1 .img-box,
+  .s9 .box1 .img-box,
+  .s10 .box1 .img-box {
+    width: 500px;
+    height: 100%;
+  }
+  .s8 .box1 .img-box img,
+  .s9 .box1 .img-box img,
+  .s10 .box1 .img-box img {
+    width: 500px;
+    height: 100%;
+  }
+  .s8 .box1 .text-box,
+  .s9 .box1 .text-box,
+  .s10 .box1 .text-box {
+    width: 600px;
+    height: 100%;
+  }
+  .s8 .box1 .text-box h1,
+  .s9 .box1 .text-box h1,
+  .s10 .box1 .text-box h1 {
+    width: 600px;
+  }
+  .s8 .box1 .text-box span,
+  .s9 .box1 .text-box span,
+  .s10 .box1 .text-box span {
+    width: 600px;
   }
 }
 @media screen and (max-width: 1340px) {
@@ -234,6 +279,73 @@
     font-size: 24px;
     right: 50px;
   }
+  /* .fage.s8/s9/s10 */
+  .fage.s8 h1,
+  .fage.s10 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .fage.s9 h1 {
+    font-size: 32px;
+    line-height: 60px;
+  }
+  .fage.s8 span,
+  .fage.s10 span {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .fage.s9 span {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+  .fage.s9 .text-box1 {
+    width: 220px;
+  }
+  .s9 .symbol {
+    left: -300px;
+  }
+  .s8 .box1,
+  .s9 .box1,
+  .s10 .box1 {
+    width: 100%;
+    height: 420px;
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
+  .fage.s8 .box1,
+  .fage.s9 .box1,
+  .fage.s10 .box1 {
+    width: 1000px;
+  }
+  .s8 .box1 .img-box,
+  .s9 .box1 .img-box,
+  .s10 .box1 .img-box {
+    width: 400px;
+    height: 420px;
+  }
+  .s8 .box1 .img-box img,
+  .s9 .box1 .img-box img,
+  .s10 .box1 .img-box img {
+    width: 400px;
+    height: 420px;
+  }
+  .s8 .box1 .text-box,
+  .s9 .box1 .text-box,
+  .s10 .box1 .text-box {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .s8 .box1 .text-box h1,
+  .s9 .box1 .text-box h1,
+  .s10 .box1 .text-box h1 {
+    width: 500px;
+  }
+  .s8 .box1 .text-box span,
+  .s9 .box1 .text-box span,
+  .s10 .box1 .text-box span {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 960px) {
   .autoplay-progress {
@@ -290,12 +402,12 @@
     left: 70px;
   }
   .fage.s1,
-  .fage.s2, 
+  .fage.s2,
   .fage.s3 {
     position: relative;
   }
   .fage.s1 .text-box,
-  .fage.s2 .text-box, 
+  .fage.s2 .text-box,
   .fage.s3 .text-box {
     position: absolute;
     bottom: 30px;
@@ -306,12 +418,12 @@
     gap: 90px;
   }
   .fage.s1 .text-box .text-01,
-  .fage.s2 .text-box .text-01, 
+  .fage.s2 .text-box .text-01,
   .fage.s3 .text-box .text-01 {
     gap: 30px;
   }
   .fage.s1 .text-box h3,
-  .fage.s2 .text-box h3, 
+  .fage.s2 .text-box h3,
   .fage.s3 .text-box h3 {
     font-size: 18px;
     text-align: center;
@@ -401,7 +513,7 @@
     width: 66px;
   }
   .fage.s1 .text-box h3,
-  .fage.s2 .text-box h3, 
+  .fage.s2 .text-box h3,
   .fage.s3 .text-box h3 {
     font-size: 16px;
     display: block;
