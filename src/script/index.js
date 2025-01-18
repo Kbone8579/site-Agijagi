@@ -370,6 +370,7 @@ $(document).ready(function(){
       }
     }
   });
+  
 
   playButton.addEventListener('click', function() {
     if (isPlaying) {
@@ -401,18 +402,19 @@ $(document).ready(function(){
     isPlaying = !isPlaying;
   });
 
-  var swiper = new Swiper(".swiper3 .swiper", {
-    slidesPerView: 1.3,
-    spaceBetween: 20,
-    // loop: true,
-    pagination: {
-      // el: ".swiper3 .swiper-pagination",
-      clickable: true
-    }
-  });
+  
 });
-
-
+$(document).ready(function(){
+var swiper = new Swiper(".swiper3 .swiper", {
+  slidesPerView: 1.3,
+  spaceBetween: 20,
+  // loop: true,
+  pagination: {
+    // el: ".swiper3 .swiper-pagination",
+    clickable: true
+  }
+});
+});
 
 
 // .fage.s4 비디오 플레이어 초기화 및 설정
