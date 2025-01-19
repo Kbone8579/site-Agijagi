@@ -806,6 +806,10 @@
     display: flex;
     align-items: center;
   }
+  .fage.s10 > .symbol > img {
+    width: 400px;
+    height: 378px;
+  }
   .s9 .symbol img {
     width: 290px;
     height: 265px;
@@ -822,19 +826,27 @@
 }
 @media screen and (max-width: 568px) {
   .s8 .box1 .text-box h1,
-  .s9 .box1 .text-box1 h1,
-  .s10 .box1 .text-box h1 {
+  .s9 .box1 .text-box1 h1{
     font-size: 26px;
   }
+  .s9 .symbol {
+    left: -200px;
+    top: 660px;
+  }
+  .s10 .box1 .text-box h1 {
+    font-size: 24px;
+  }
   .s8 .box1 .text-box span,
-  .s9 .box1 .text-box1 span,
-  .s10 .box1 .text-box span {
+  .s9 .box1 .text-box1 span {
     font-size: 18px;
+  }
+  .s10 .box1 .text-box span {
+    font-size: 16px;
   }
   .s8 .box1 .text-box,
   .s9 .box1 .text-box1,
   .s10 .box1 .text-box {
-    width: 100%;
+    width: 320px;
     margin-left: 0;
     white-space: wrap;
     text-align: center;
@@ -887,6 +899,9 @@
     width: 244px;
     height: 36px;
     left: 12px;
+  }
+  body, html {
+    white-space: wrap;
   }
 }
 @media screen and (max-width: 320px) {
