@@ -500,6 +500,14 @@
   .fage.s9 h1,
   .fage.s10 h1 {
     font-size: 32px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .fage.s9 h1 {
+    text-align: end;
+  }
+  .fage.s9 span {
+    text-align: end;
   }
   .fage.s8 .p2,
   .fage.s9 .p2,
@@ -517,19 +525,19 @@
   .fage.s9 .box1 .text-box1 .p2 {
     margin-left: 0;
   }
-  .fage.s8 .symbol,
+  /* .fage.s8 .symbol,
   .fage.s9 .symbol,
   .fage.s10 .symbol {
     display: none;
-  }
+  } */
   .s8 .box1,
   .s9 .box1,
   .s10 .box1 {
     width: 100%;
     height: 320px;
     gap: 50px;
-    margin-left: 20px;
-    margin-right: 20px; 
+    margin-left: 50px;
+    margin-right: 50px; 
     white-space: wrap;
   }
   .s8 .box1 .img-box,
@@ -539,7 +547,7 @@
     height: 420px;
   }
   .s9 .box1 .text-box1 {
-    width: 280px;
+    width: 300px;
   }
   
   .s10 .box1 .text-box {
@@ -562,8 +570,17 @@
   }
   .s8 .box1 .text-box span,
   .s9 .box1 .text-box1 span,
-  .s10 .box1 .text-box span {
+  .s10 .box1 .text-box span { 
     width: 100%;
+    font-size: 18px;
+  }
+  .s9 .symbol {
+    left: 100px;
+    top: 550px;
+  }
+  .s10 .symbol img {
+    width: 575px;
+    height: 550px;
   }
 }
 @media screen and (max-width: 864px) {
@@ -616,6 +633,7 @@
     height: 40px;
     left: 40px;
   }
+  
   .fage.s11 .img-holder span {
     font-size: 20px;
     right: 50px;
@@ -717,7 +735,7 @@
     align-items: start;
     margin-right: 0;
   }
-  .s10 .box1 .text-box {
+  .fage.s10 .box1 .text-box {
     align-items: end;
   }
   .s8 .box1 .text-box span,
@@ -731,6 +749,7 @@
     margin-left: 0;
     margin-right: 0;
     text-align: end;
+    font-size: 16px;
   }
   .s8 .box1 .text-box h1,
   .s10 .box1 .text-box h1 {
@@ -752,24 +771,128 @@
     width: 300px;
     height: 320px;
   }
+  .s9 .symbol img {
+    width: 335px;
+    height: 310px;
+  }
+  .s9 .symbol {
+    left: 50px;
+    top: 500px;
+  }
   .fage.s11 .img-holder span {
     font-size: 18px;
     right: 10px;
   }
+  .fage.m3 .textbox {
+    margin-left: 100px;
+    margin-right: 100px;
+    white-space: wrap;
+  }
+  .fage.m3 .textbox .img-box {
+    display: none;
+  }
 }
+
 @media screen and (max-width: 680px) {
   .s8 .box1 .img-box,
   .s9 .box1 .img-box,
   .s10 .box1 .img-box {
     width: 250px;
     height: 270px;
-    
   }
   .s8 .box1,
   .s9 .box1,
   .s10 .box1 {
     display: flex;
     align-items: center;
+  }
+  .s9 .symbol img {
+    width: 290px;
+    height: 265px;
+  }
+  .s9 .symbol {
+    left: 60px;
+    top: 500px;
+  }
+  .fage.m3 .textbox {
+    margin-left: 40px;
+    margin-right: 40px;
+    white-space: wrap;
+  } 
+}
+@media screen and (max-width: 568px) {
+  .s8 .box1 .text-box h1,
+  .s9 .box1 .text-box1 h1,
+  .s10 .box1 .text-box h1 {
+    font-size: 26px;
+  }
+  .s8 .box1 .text-box span,
+  .s9 .box1 .text-box1 span,
+  .s10 .box1 .text-box span {
+    font-size: 18px;
+  }
+  .s8 .box1 .text-box,
+  .s9 .box1 .text-box1,
+  .s10 .box1 .text-box {
+    width: 100%;
+    margin-left: 0;
+    white-space: wrap;
+    text-align: center;
+  }
+  .fage.s8 > .symbol > img {
+    width: 400px;
+    height: 378px;
+  }
+  .fage.s8 .box1,
+  .fage.s9 .box1,
+  .fage.s10 .box1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .s8 .box1 .img-box,
+  .s9 .box1 .img-box,
+  .s10 .box1 .img-box {
+    width: 320px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fage.s1 h2,
+  .fage.s2 h2,
+  .fage.s3 h2 {
+    font-size: 24px;
+  }
+  .fage.s1 .text-box h3,
+  .fage.s2 .text-box h3,
+  .fage.s3 .text-box h3 {
+    font-size: 13px;
+    white-space: wrap;
+  }
+  .fage.m1 .title .text-box span  {
+    font-size: 26px;
+  }
+  .fage.m1 .title .text-box span {
+    margin-bottom: 0;
+  }
+  .fage.s1 .line-color {
+    width: 170px;
+    height: 36px;
+    left: 10px;
+  }
+  .fage.s2 .line-color {
+    width: 190px;
+    height: 36px;
+  }
+  .fage.s3 .line-color {
+    width: 244px;
+    height: 36px;
+    left: 12px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fage.s8 > .symbol > img {
+    width: 300px;
+    height: 278px;
   }
 }
 /* about */
