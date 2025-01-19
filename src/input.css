@@ -1145,7 +1145,15 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
-
+.fage.s9 .text-box1 span {
+  opacity: 0;
+  transition: all 1s 0.9s;
+  transform: translateY(24%);
+}
+.fage.s9 .text-box1 span.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
 .fage.s10 .text-box h1 {
   opacity: 0;
   transition: all 1s 0.3s;

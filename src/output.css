@@ -661,11 +661,6 @@ video {
   margin-right: auto;
 }
 
-.mx-\[20px\]{
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
 .mb-\[70px\]{
   margin-bottom: 70px;
 }
@@ -2265,6 +2260,17 @@ a {
 }
 
 .fage.s9 .text-box2 span.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fage.s9 .text-box1 span {
+  opacity: 0;
+  transition: all 1s 0.9s;
+  transform: translateY(24%);
+}
+
+.fage.s9 .text-box1 span.animated {
   opacity: 1;
   transform: translateY(0);
 }
