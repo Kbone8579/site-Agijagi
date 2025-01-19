@@ -327,11 +327,6 @@
     margin-left: 20px;
     margin-right: 20px; 
   }
-  /* .fage.s8 .box1,
-  .fage.s9 .box1,
-  .fage.s10 .box1 {
-    width: 1000px;
-  } */
   .s8 .box1 .img-box,
   .s9 .box1 .img-box,
   .s10 .box1 .img-box {
@@ -526,6 +521,45 @@
   .fage.s9 .symbol,
   .fage.s10 .symbol {
     display: none;
+  }
+  .s8 .box1,
+  .s9 .box1,
+  .s10 .box1 {
+    width: 100%;
+    height: 320px;
+    gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    white-space: wrap;
+  }
+  /* s */
+  .s8 .box1 .img-box,
+  .s9 .box1 .img-box,
+  .s10 .box1 .img-box {
+    width: 300px;
+    height: 320px;
+  }
+  .s8 .box1 .text-box,
+  .s9 .box1 .text-box,
+  .s10 .box1 .text-box  {
+    width: 400px;
+  }
+  .s8 .box1 .text-box h1,
+  .s9 .box1 .text-box1 h1,
+  .s10 .box1 .text-box h1 {
+    width: 100%;
+    font-size: 28px;
+  }
+  .s9 .box1 .text-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .s8 .box1 .text-box span,
+  .s9 .box1 .text-box1 span,
+  .s10 .box1 .text-box span {
+    width: 400px;
   }
 }
 @media screen and (max-width: 864px) {
