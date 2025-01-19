@@ -538,9 +538,11 @@
     width: 400px;
     height: 420px;
   }
+  .s9 .box1 .text-box1 {
+    width: 280px;
+  }
   
-  .s9 .box1 .text-box,
-  .s10 .box1 .text-box  {
+  .s10 .box1 .text-box {
     width: 400px;
   }
   .s8 .box1 .text-box {
@@ -707,11 +709,11 @@
     gap: 20px;
   }
   .s8 .box1 .text-box {
-    width: 320px;
+    width: 270px;
     align-items: start;
   }
   .s9 .box1 .text-box1 {
-    width: 280px;
+    width: 270px;
     align-items: start;
     margin-right: 0;
   }
@@ -720,25 +722,25 @@
   }
   .s8 .box1 .text-box span,
   .s10 .box1 .text-box span {
-    width: 320px;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
   .s9 .box1 .text-box1 span {
-    width: 280px;
+    width: 100%;
     margin-left: 0;
     margin-right: 0;
     text-align: end;
   }
   .s8 .box1 .text-box h1,
   .s10 .box1 .text-box h1 {
-    width: 280px;
+    width: 100%;
     font-size: 24px;
     line-height: 1.7;
     margin-bottom: 10px;
   }
   .s9 .box1 .text-box1 h1 {
-    width: 280px;
+    width: 100%;
     font-size: 24px;
     line-height: 1.7;
     margin-bottom: 10px;
@@ -750,8 +752,26 @@
     width: 300px;
     height: 320px;
   }
+  .fage.s11 .img-holder span {
+    font-size: 18px;
+    right: 10px;
+  }
 }
-
+@media screen and (max-width: 680px) {
+  .s8 .box1 .img-box,
+  .s9 .box1 .img-box,
+  .s10 .box1 .img-box {
+    width: 250px;
+    height: 270px;
+    
+  }
+  .s8 .box1,
+  .s9 .box1,
+  .s10 .box1 {
+    display: flex;
+    align-items: center;
+  }
+}
 /* about */
 @media screen and (max-width: 1340px) {
   .fage.a2 .img-box2,
