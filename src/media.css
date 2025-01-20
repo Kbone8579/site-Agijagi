@@ -1107,9 +1107,19 @@
   .fage.a3 .text-box3 {
     padding-top: 540px;
   }
+  .fage.a4 .main-title {
+    position: relative;
+  }
+  .fage.a4 .main-title h1 {
+    position: absolute;
+    top: -100px;
+    left: 20px;
+    font-size: 110px;
+  }
   .fage.a4 .text-box4 {
     padding-top: 530px;
   }
+  
   
   .fage.a2 .sub-title h2,
   .fage.a3 .sub-title h2,
