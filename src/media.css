@@ -5,6 +5,9 @@
     padding-left: 100px;
     padding-right: 100px;
   }
+  .sub-top-bar {
+    display: none;
+  }
 }
 @media screen and (max-width: 1560px) {
   /* .fage.s8/s9/s10 */
@@ -582,6 +585,15 @@
     width: 575px;
     height: 550px;
   }
+  .top-bar > ul > li:last-child {
+    display: block;
+  } 
+  .top-bar > ul > li {
+    display: none;
+  }
+  .sub-top-bar {
+    display: block;
+  }
 }
 @media screen and (max-width: 864px) {
   .fage.s0 .top-bar {
@@ -637,6 +649,10 @@
   .fage.s11 .img-holder span {
     font-size: 20px;
     right: 50px;
+  }
+  .sub-top-bar main {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media screen and (max-width: 768px) {

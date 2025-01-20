@@ -997,8 +997,8 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.opacity-\[0\.7\]{
-  opacity: 0.7;
+.opacity-0{
+  opacity: 0;
 }
 
 .filter{
@@ -1274,7 +1274,7 @@ a {
   font-family: "Pretendard Variable", sans-serif;
   font-size: 18px;
   letter-spacing: 0.02em;
-  color: #BDBDBD;
+  color: #bdbdbd;
 }
 
 /* section4 font */
@@ -1386,13 +1386,16 @@ a {
 }
 
 .fage.s0 .top-bar {
+  position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  background: transparent;
+  z-index: 1002;
+  /* sub-top-bar보다 높은 z-index 값 */
 }
 
 .fage.s0 .slide.s1 .text-box {
@@ -2214,7 +2217,7 @@ a {
 }
 
 .fage.m1 .img-box.s1::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2228,7 +2231,7 @@ a {
 }
 
 .fage.m1 .img-box.s2::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2242,7 +2245,7 @@ a {
 }
 
 .fage.m1 .img-box.s3::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2666,7 +2669,20 @@ a {
 /* sub-top-bar */
 
 .sub-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100vh;
+  background-color: #715c4b;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sub-top-bar.active {
+  transform: translateY(0);
 }
 
 .sub-top-bar main section a span {
@@ -2685,6 +2701,69 @@ a {
 
 .sub-top-bar main .icon a:hover i {
   opacity: 100%;
+}
+
+.top-bar > ul > li:last-child {
+  display: none;
+}
+
+.top_menu_icon {
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+
+.top_menu_icon > div {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  background-color: white;
+  transition: width 0.3s, top 0.3s, transform 0.3s;
+}
+
+.top_menu_icon > div:nth-child(1) {
+  top: 10%;
+}
+
+.top_menu_icon > div:nth-child(2) {
+  top: 45%;
+}
+
+.top_menu_icon > div:nth-child(3) {
+  top: 80%;
+}
+
+.top_menu_icon.active > div:nth-child(2) {
+  width: 0;
+}
+
+.top_menu_icon.active > div:nth-child(1),
+.top_menu_icon.active > div:nth-child(3) {
+  top: 45%;
+  transform: rotate(-45deg);
+}
+
+.top_menu_icon.active > div:nth-child(3) {
+  transform: rotate(45deg);
+}
+
+.top_menu_icon:hover > div:nth-child(2) {
+  width: 0;
+}
+
+.top_menu_icon:hover > div:nth-child(1),
+.top_menu_icon:hover > div:nth-child(3) {
+  top: 45%;
+  transform: rotate(45deg);
+}
+
+.top_menu_icon:hover > div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.sub-menu-btn {
+  position: relative;
+  z-index: 1001;
 }
 
 .hover\:border-\[2px\]:hover{

@@ -676,3 +676,68 @@ $(document).ready(function() {
 $(document).ready(function(){
   new WOW().init();
 });
+
+// top_menu_icon
+$(document).ready(function(){
+  $(".top_menu_icon").click(function () {
+    const $this = $(this);
+  
+    if ($this.hasClass("active")) {
+      $this.removeClass("active");
+    } else {
+      $this.addClass("active");
+    }
+  });
+});
+
+// sub-top-bar 열기/닫기
+$(document).ready(function(){
+  // Get necessary DOM elements
+const subMenuBtn = document.querySelector('.sub-menu-btn');
+const topMenuIcon = document.querySelector('.top_menu_icon');
+const subTopBar = document.querySelector('.sub-top-bar');
+const closeBtn = document.querySelector('.close-btn');
+
+// Function to open menu
+function openMenu() {
+    subTopBar.classList.add('active');
+    topMenuIcon.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+}
+
+// Function to close menu
+function closeMenu() {
+    subTopBar.classList.remove('active');
+    topMenuIcon.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+}
+
+// Add click event listeners
+subMenuBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (subTopBar.classList.contains('active')) {
+        closeMenu();
+    } else {
+        openMenu();
+    }
+});
+
+// Close menu when close button is clicked
+closeBtn.addEventListener('click', closeMenu);
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (subTopBar.classList.contains('active') && 
+        !subTopBar.contains(e.target) && 
+        !subMenuBtn.contains(e.target)) {
+        closeMenu();
+    }
+});
+
+// Close menu when pressing Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && subTopBar.classList.contains('active')) {
+        closeMenu();
+    }
+});
+});
