@@ -1080,6 +1080,24 @@
   
 }
 @media screen and (max-width: 960px) {
+  .fage.a5 .all-box {
+    white-space: wrap;
+  }
+  .fage.a5 .all-box .box1 {
+    margin-left: 0px;
+  }
+  .fage.a5 .all-box .box1 .img-box {
+    width: 400px;
+    height: 280px;
+  }
+  .fage.a5 .all-box .box2 .img-box {
+    width: 300px;
+    height: 350px;
+  }
+  .fage.a5 .all-box .box2 {
+    width: 100%;
+    margin-left: 20px;
+  }
 }
 @media screen and (max-width: 864px) {
   .fage.a2 .main-title {
@@ -1112,15 +1130,13 @@
   }
   .fage.a4 .main-title h1 {
     position: absolute;
-    top: -100px;
+    top: -90px;
     left: 20px;
     font-size: 110px;
   }
   .fage.a4 .text-box4 {
     padding-top: 530px;
   }
-  
-  
   .fage.a2 .sub-title h2,
   .fage.a3 .sub-title h2,
   .fage.a4 .sub-title h2 {
@@ -1163,6 +1179,26 @@
   }
   .fage.a1 span {
     font-size: 14px;
+  }
+  .fage.a5 .text-box h1 {
+    font-size: 28px;
+  }
+  .fage.a5 .main-title {
+    top: 760px;
+    left: 50px;
+    
+  }
+  .fage.a5 .all-box .box1 .img-box {
+    width: 300px;
+    height: 180px;
+  }
+  .fage.a5 .all-box .box2 .img-box {
+    width: 200px;
+    height: 250px;
+  }
+  .fage.a5 .all-box .box2 {
+    width: 100%;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 568px) {
