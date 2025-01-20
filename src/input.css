@@ -325,7 +325,7 @@ a {
   left: 0;
   z-index: 10;
   background: transparent;
-  z-index: 1002; /* sub-top-bar보다 높은 z-index 값 */
+  z-index: 1004; /* sub-top-bar보다 높은 z-index 값 */
 }
 .fage.s0 .slide.s1 .text-box {
   position: absolute;
@@ -1432,7 +1432,16 @@ a {
 .sub-top-bar main .icon a:hover i {
   opacity: 100%;
 }
+.sub-menu-btn {
+  position: relative;
+  z-index: 1001;
+}
+.sub-top-bar main {
+  height: calc(100vh - 113px); /* header 높이(113px)를 뺀 높이 */
+  overflow: hidden;
+}
 
+/* top-bar */
 .top-bar > ul > li:last-child {
   display: none;
 }
@@ -1481,8 +1490,4 @@ a {
 }
 .top_menu_icon:hover > div:nth-child(3) {
   transform: rotate(-45deg);
-}
-.sub-menu-btn {
-  position: relative;
-  z-index: 1001;
 }

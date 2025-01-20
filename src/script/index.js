@@ -693,6 +693,7 @@ $(document).ready(function(){
 // sub-top-bar 열기/닫기
 $(document).ready(function(){
   // Get necessary DOM elements
+// Get necessary DOM elements
 const subMenuBtn = document.querySelector('.sub-menu-btn');
 const topMenuIcon = document.querySelector('.top_menu_icon');
 const subTopBar = document.querySelector('.sub-top-bar');
@@ -702,14 +703,14 @@ const closeBtn = document.querySelector('.close-btn');
 function openMenu() {
     subTopBar.classList.add('active');
     topMenuIcon.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+    document.body.style.overflow = 'hidden'; // 전체 페이지 스크롤 방지
 }
 
 // Function to close menu
 function closeMenu() {
     subTopBar.classList.remove('active');
     topMenuIcon.classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
+    document.body.style.overflow = ''; // 전체 페이지 스크롤 복원
 }
 
 // Add click event listeners

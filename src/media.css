@@ -5,9 +5,6 @@
     padding-left: 100px;
     padding-right: 100px;
   }
-  .sub-top-bar {
-    display: none;
-  }
 }
 @media screen and (max-width: 1560px) {
   /* .fage.s8/s9/s10 */
@@ -591,8 +588,11 @@
   .top-bar > ul > li {
     display: none;
   }
+  
+}
+@media screen and (min-width: 960px) {
   .sub-top-bar {
-    display: block;
+    display: none;
   }
 }
 @media screen and (max-width: 864px) {
@@ -926,6 +926,8 @@
     height: 278px;
   }
 }
+
+
 /* about */
 @media screen and (max-width: 1340px) {
   .fage.a2 .img-box2,
@@ -1048,4 +1050,8 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .fage.a1 .top-bar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

@@ -190,6 +190,7 @@
   position: relative;
 }
 .fage.a1 .top-bar {
+  position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -197,6 +198,8 @@
   top: 0;
   left: 0;
   z-index: 10;
+  background: transparent;
+  z-index: 1004; /* sub-top-bar보다 높은 z-index 값 */
 }
 .fage.a1 .img-box1 {
   width: 100%;
