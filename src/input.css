@@ -306,6 +306,12 @@ a {
   font-weight: 400;
   color: #959595;
 }
+.sub-top-bar h2 {
+  font-family: "EB Garamond", Italic;
+  font-weight: 600;
+}
+
+
 /* slider(.fage.s0) */
 .fage.s0 {
   position: relative;
@@ -1392,4 +1398,23 @@ a {
 .fage.m3 .textbox p1 {
   display: block;
   margin-top: 18px;
+}
+
+/* sub-top-bar */
+.sub-top-bar {
+  height: 100vh;
+}
+.sub-top-bar main section a span {
+  transition: all 0.3s;
+  font-weight: 200;
+}
+.sub-top-bar main section a:hover span {
+  font-weight: 400;
+}
+.sub-top-bar main .icon a i {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+.sub-top-bar main .icon a:hover i {
+  opacity: 100%;
 }
