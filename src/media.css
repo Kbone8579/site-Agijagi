@@ -719,6 +719,9 @@
   .fage.s3 .img-box .second-img {
     display: none;
   }
+  .fage.m1 .title {
+    padding-top: 130px;
+  }
   .fage.m1 .title .text-box span {
     font-weight: 600;
     font-size: 30px;
@@ -841,6 +844,12 @@
   } 
 }
 @media screen and (max-width: 568px) {
+  .sub-top-bar h2 {
+    font-size: 20px;
+  }
+  .sub-top-bar span {
+    font-size: 14px;
+  }
   .s8 .box1 .text-box h1,
   .s9 .box1 .text-box1 h1{
     font-size: 26px;
