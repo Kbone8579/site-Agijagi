@@ -1259,3 +1259,110 @@
     left: 20px;
   }
 }
+
+
+
+/*  */
+@media screen and (max-width: 1560px) {
+  .product .banner span {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  .product .banner span p1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .product .banner span p2 {
+    font-size: 29px;
+    font-weight: 500;
+  }
+  .product .banner span p3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .product .banner span p4 {
+    font-size: 27px;
+    font-weight: 500;
+  }
+  .product .banner span p5 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .product .banner span p6 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .product .banner span p6 {
+    font-weight: 300;
+  }
+  .product .banner span {
+    left: 180px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .product .banner span {
+    font-size: 23px;
+    font-weight: 100;
+  }
+  .product .banner span p1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .product .banner span p2 {
+    font-size: 27px;
+    font-weight: 500;
+  }
+  .product .banner span p3 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .product .banner span p4 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .product .banner span p5 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .product .banner span p6 {
+    font-size: 23px;
+    font-weight: 400;
+  }
+  .product .banner span p6 {
+    font-weight: 300;
+  }
+  .product .banner span {
+    left: 80px;
+  }
+  
+}
+@media screen and (max-width: 1180px) {
+  .product .footer .sns-box,
+  .product .footer .top-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {}
+@media screen and (max-width: 864px) {
+  .product .top-bar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .product .content-box {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .product .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .product .banner span {
+    left: 14px;
+  }
+  .product .footer .text-box .content02 {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

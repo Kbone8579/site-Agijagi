@@ -420,13 +420,15 @@ span {
 .footer {
   width: 100%;
   height: 150px;
+  padding-left: 110px;
+  padding-right: 110px;
   background-color: #fdfdfd;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer .all-box {
-  width: 1705px;
+  width:100%;
   display: flex;
   justify-content: space-between;
 }
