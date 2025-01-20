@@ -1058,9 +1058,122 @@
     margin-top: 10px;
   }
 }
+@media screen and (max-width: 1080px) {
+  .fage.a2 .img-box2,
+  .fage.a3 .img-box3,
+  .fage.a4 .img-box4 {
+    width: 660px;
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .fage.a4 .text-box4 {
+    padding-top: 325px;
+  }
+  .fage.a2 .text-box2 .text-all,
+  .fage.a3 .text-box3 .text-all,
+  .fage.a4 .text-box4 .text-all {
+    width: 500px;
+  }
+  
+}
 @media screen and (max-width: 960px) {
+}
+@media screen and (max-width: 864px) {
+  .fage.a2 .main-title {
+    position: relative;
+  }
+  .fage.a2 .main-title h1 {
+    position: absolute;
+    top: 350px;
+    left: 180px;
+    font-size: 110px;
+  }
+  .fage.a2 .text-box2 {
+    padding-top: 460px;
+    width: 100%;
+  }
+  .fage.a3 .main-title {
+    position: relative;
+  }
+  .fage.a3 .main-title h1 {
+    position: absolute;
+    top: -100px;
+    left: -76px;
+    font-size: 110px;
+  }
+  .fage.a3 .text-box3 {
+    padding-top: 540px;
+  }
+  .fage.a4 .text-box4 {
+    padding-top: 530px;
+  }
+  
+  .fage.a2 .sub-title h2,
+  .fage.a3 .sub-title h2,
+  .fage.a4 .sub-title h2 {
+    font-size: 34px;
+  }
+  .fage.a2 .sub-text span,
+  .fage.a3 .sub-text span,
+  .fage.a4 .sub-text span {
+    font-size: 16px;
+  }
+  .fage.a2 .img-box2,
+  .fage.a3 .img-box3,
+  .fage.a4 .img-box4 {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+  }
+  .fage.a2 .text-box2 .text-all,
+  .fage.a3 .text-box3 .text-all,
+  .fage.a4 .text-box4 .text-all {
+    width: 460px;
+    z-index: 10;
+  }
   .fage.a1 .top-bar {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  .fage.a1 .text-box1 {
+    left: 50px;
+    white-space: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fage.a1 h1 {
+    font-size: 40px;
+  }
+  .fage.a1 span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .fage.a1 .sub-top-bar h2 {
+    font-size: 20px;
+  }
+  .fage.a1 .sub-top-bar span {
+    font-size: 14px;
+  }
+  .fage.a1 h1 {
+    font-size: 34px;
+  }
+  .fage.a1 span {
+    font-size: 12px;
+  }
+  .fage.a1 .text-box1 {
+    left: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fage.a1 .text-box1 {
+    left: 20px;
   }
 }
