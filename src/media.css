@@ -1119,8 +1119,8 @@
   .fage.a3 .main-title h1 {
     position: absolute;
     top: -100px;
-    left: -76px;
-    font-size: 110px;
+    left: -70px;
+    font-siz: 110px;
   }
   .fage.a3 .text-box3 {
     padding-top: 540px;
@@ -1160,7 +1160,7 @@
   .fage.a2 .text-box2 .text-all,
   .fage.a3 .text-box3 .text-all,
   .fage.a4 .text-box4 .text-all {
-    width: 460px;
+    width: 494px;
     z-index: 10;
   }
   .fage.a1 .top-bar {
@@ -1216,6 +1216,42 @@
   }
   .fage.a1 .text-box1 {
     left: 50px;
+  }
+  .fage.a2 .sub-title h2,
+  .fage.a3 .sub-title h2,
+  .fage.a4 .sub-title h2 {
+    font-size: 32px;
+  }
+  .fage.a2 .sub-text span,
+  .fage.a3 .sub-text span,
+  .fage.a4 .sub-text span {
+    font-size: 14px;
+  }
+  .fage.a2 .main-title h1,
+  .fage.a3 .main-title h1,
+  .fage.a4 .main-title h1,
+  .fage.a5 .main-title h1 {
+    font-size: 100px;
+  }
+  .fage.a5 .text-box h1 {
+    font-size: 24px;
+  }
+  .fage.a3 .main-title h1 {
+    left: -50px;
+  }
+  .fage.a2 .text-box2 .text-all,
+  .fage.a3 .text-box3 .text-all,
+  .fage.a4 .text-box4 .text-all {
+    width: 440px;
+    z-index: 10;
+  }
+  .fage.a5 .all-box .box1 .img-box {
+    width: 260px;
+    height: 140px;
+  }
+  .fage.a5 .all-box .box2 .img-box {
+    width: 160px;
+    height: 210px;
   }
 }
 @media screen and (max-width: 480px) {
