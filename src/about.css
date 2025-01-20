@@ -197,7 +197,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
   background: transparent;
   z-index: 1004; /* sub-top-bar보다 높은 z-index 값 */
 }

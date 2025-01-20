@@ -132,9 +132,17 @@ span {
 /* /font/ */
 
 /* css */
+.product .top_menu_icon > div {
+ background-color: #000;
+}
 .product .top-bar {
+  position: relative;
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1004; /* sub-top-bar보다 높은 z-index 값 */
 }
 .product .banner {
   height: 580px;
