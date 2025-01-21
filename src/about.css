@@ -537,10 +537,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 108vh;
+  height: 100vh;
 }
 .fage.a6 .img-box .img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: none;
 }
 .fage.a6 .img img {
