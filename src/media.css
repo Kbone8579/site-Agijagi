@@ -719,7 +719,7 @@
   .fage.s3 .img-box .second-img {
     display: none;
   }
-  .fage.m1 .title {
+  .fage.m1 > .title {
     padding-top: 130px;
   }
   .fage.m1 .title .text-box span {
