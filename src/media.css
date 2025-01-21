@@ -1120,7 +1120,7 @@
     position: absolute;
     top: -100px;
     left: -70px;
-    font-siz: 110px;
+    font-size: 110px;
   }
   .fage.a3 .text-box3 {
     padding-top: 540px;
@@ -1262,7 +1262,7 @@
 
 
 
-/*  */
+/* product, about */
 @media screen and (max-width: 1560px) {
   .product .banner span {
     font-size: 25px;
@@ -1337,21 +1337,62 @@
   
 }
 @media screen and (max-width: 1180px) {
+  .fage.a7 .sns-box,
+  .fage.a7 .top-btn,
   .product .footer .sns-box,
   .product .footer .top-btn {
     display: none;
   }
 }
-@media screen and (max-width: 960px) {}
+@media screen and (max-width: 960px) {
+  /* about */
+
+}
 @media screen and (max-width: 864px) {
+  /* about */
+  .fage.a6 .all-box {
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+  .fage.a6 .section {
+    width: 100%;
+    display: flex;
+  }
+  .fage.a6 .circle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .fage.a6 .circle-box {
+    width: 242px;
+    position: relative;
+  }
+  .section .circle .title {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section.s1 .circle .text-box {
+    width: 251px;
+  }
+  .section .circle .text-box {
+    justify-content: center;
+  }
+  .fage.a6 .section .text-box h2 {
+    margin-top: 0;
+  }
+  /* product */
   .product .top-bar {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .product .content-box {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .fage.a7
   .product .footer {
     padding-left: 50px;
     padding-right: 50px;
@@ -1361,8 +1402,21 @@
   .product .banner span {
     left: 14px;
   }
+  
   .product .footer .text-box .content02 {
     flex-direction: column;
     gap: 10px;
+  }
+  .fage.a7 .all-box .text-box .content02 {
+    flex-direction: column;
+    gap: 0px
+  }
+}
+@media screen and (max-width: 568px) {
+  .section .text-box span  {
+    font-size: 16px;
+  }
+  .section.s1 .circle .text-box {
+    width: 210px;
   }
 }
