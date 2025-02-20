@@ -1,0 +1,88 @@
+/* process font */
+/* page p1 */
+.page.p1 .box1 span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    opacity: 60%;
+    letter-spacing: -0.04em;
+}
+.page.p1 .main-box h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+.page.p1 .main-box .text-box1 span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    opacity: 50%;
+}
+.page.p1 .main-box .text-box2 span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    opacity: 50%;
+}
+/* reset */
+span {
+    display: block;
+}
+
+/* page p1 */
+.page.p1 {
+    width: 100%;
+    height: 1080px;
+    background-image: url(img/process/img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.page.p1 .text-box {
+    width: 100%;
+    height: 217px;
+    background-color: #1A1511;
+    display: flex;
+    align-items: center;
+}
+.page.p1 .main-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.page.p1 .main-box .box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.page.p1 .main-box .box2 {
+    display: flex;
+}
+.page.p1 .main-box .box2 .text-box1 {
+    display: flex;
+    gap: 40px;
+}
+.page.p1 .main-box .box2 .text-box1 .contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.page.p1 .main-box .box2 .text-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.page.p1 .main-box .box2 .text-box2 .text {
+    display: flex;
+    gap: 40px;
+}

@@ -693,12 +693,12 @@ video {
   display: flex;
 }
 
-.hidden{
-  display: none;
+.contents{
+  display: contents;
 }
 
-.h-\[100vh\]{
-  height: 100vh;
+.hidden{
+  display: none;
 }
 
 .h-\[160px\]{
