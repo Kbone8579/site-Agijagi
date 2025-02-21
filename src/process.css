@@ -66,15 +66,23 @@ span {
     flex-direction: column;
     align-items: start;
     gap: 30px;
-    padding-right: 125px;
+    padding-right: 165px;
 }
 .page.p1 .main-box .box2 {
     display: flex;
+    align-items: center;
+}
+.page.p1 .main-box .box2 .line {
+    width: 1px;
+    height: 41px;
+    background-color: #fff;
+    opacity: 20%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .page.p1 .main-box .box2 .text-box1 {
     display: flex;
     gap: 40px;
-    padding-right: 80px;
 }
 .page.p1 .main-box .box2 .text-box1 .contents {
     display: flex;
@@ -84,10 +92,9 @@ span {
 .page.p1 .main-box .box2 .text-box2,
 .page.p1 .main-box .box2 .text-box3 {
     display: flex;
+    height: 81px;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 .page.p1 .main-box .box2 .text-box2 .text.s1,
 .page.p1 .main-box .box2 .text-box3 .text.s1 {
@@ -100,4 +107,40 @@ span {
     display: flex;
     align-items: center;
     gap: 46px;
+}
+
+/* page p2 */
+.page.p2 {
+    width: 100%;
+    background-image: url(img/process/img-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.page.p2 .filter {
+    width: 100%;
+    height: 1133px;
+    background-color: #2D241E;
+    opacity: 50%;
+}
+
+/* page p3 */
+.page.p3 {
+    width: 100%;
+    background-image: url(img/process/im.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.page.p3 .filter {
+    width: 100%;
+    height: 1400px;
+    background-color: #2D241E;
+    opacity: 50%;
 }
