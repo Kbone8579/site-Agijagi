@@ -30,6 +30,45 @@
     color: #fff;
     opacity: 50%;
 }
+/* page p2 */
+.page.p2 .text-box .box1 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #E1D9D3;
+    opacity: 90%;
+    letter-spacing: 0.01em;
+    margin-bottom: 57px;
+}
+.page.p2 .text-box .box2 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: #E1D9D3;
+    opacity: 90%;
+    letter-spacing: 0.01em;
+    margin-bottom: 42px;
+}
+.page.p2 .text-box h2 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: 0.01em;
+    margin-bottom: 31px;
+}
+.page.p2 .text-box span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #FFFFFF;
+    opacity: 80%;
+    letter-spacing: -0.04em;
+    line-height: 1.5;
+}
+.page.p2 .text-box span p1 {
+    font-weight: 400;
+}
 /* reset */
 span {
     display: block;
@@ -119,6 +158,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: end;
+    position: relative;
 }
 .page.p2 .filter {
     width: 100%;
@@ -126,11 +166,26 @@ span {
     background-color: #2D241E;
     opacity: 50%;
 }
-
+.page.p2 .gradient {
+    width: 100%;
+    height: 394px;
+    background: rgb(34,30,28);
+    background: linear-gradient(0deg, rgba(34,30,28,1) 8%, rgba(37,33,30,0.74) 32%, rgba(35,30,26,0.46) 58%, rgba(33,27,23,0.26) 76%, rgba(30,24,19,0) 100%);
+    opacity: 80%;
+    position: absolute;
+}
+.page.p2 .text-box {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+}
 /* page p3 */
 .page.p3 {
     width: 100%;
-    background-image: url(img/process/im.jpg);
+    background-image: url(img/process/img-3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
