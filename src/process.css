@@ -69,6 +69,58 @@
 .page.p2 .text-box span p1 {
     font-weight: 400;
 }
+.page.p2 .text-box .sub_box h2 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    line-height: 1.415;
+    letter-spacing: 0.03em;
+}
+.page.p2 .text-box .sub_box span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 80%;
+    line-height: 1.325;
+}
+.page.p2 .text-box .ceramic_contents .content h3 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #EEEAE9;
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+}
+/* page p3 */
+.page.p3 .box.s1 h2 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #EEEAE9;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    margin-bottom: 11px;
+    opacity: 90%;
+}
+.page.p3 .box.s1 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 68px;
+    font-weight: 600;
+    color: #EEEAE9;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+.page.p3 .box.s1 span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #EEEAE9;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
 /* reset */
 span {
     display: block;
@@ -162,7 +214,7 @@ span {
 }
 .page.p2 .filter {
     width: 100%;
-    height: 1133px;
+    height: 1200px;
     background-color: #2D241E;
     opacity: 50%;
 }
@@ -181,6 +233,41 @@ span {
     display: flex;
     flex-direction: column;
     gap: 170px;
+    margin-top: 89px;
+}
+.page.p2 .text-box .box2 {
+    width: 1108px;
+}
+.page.p2 .text-box .sub_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.page.p2 .text-box .sub_box .sub_title.c1,
+.page.p2 .text-box .sub_box .sub_title.c2, 
+.page.p2 .text-box .sub_box .sub_title.c3 {
+    width: 250px;
+}
+.page.p2 .text-box .line_art {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.page.p2 .text-box .ceramic_contents {
+    display: flex;
+    justify-content: space-between;
+}
+.page.p2 .text-box .ceramic_contents .content {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.page.p2 .text-box .ceramic_contents .content h3 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* page p3 */
 .page.p3 {
@@ -192,10 +279,25 @@ span {
     display: flex;
     justify-content: center;
     align-items: end;
+    position: relative;
 }
 .page.p3 .filter {
     width: 100%;
     height: 1400px;
     background-color: #2D241E;
     opacity: 50%;
+}
+.page.p3 .text-box {
+    position: absolute;
+    width: 1599px;
+    display: flex;
+    flex-direction: column;
+    gap: 378px;
+    top: 227px;
+}
+.page.p3 .text-box .box.s2 {
+    margin-left: 631px;
+}
+.page.p3 .text-box .box.s2 span {
+    
 }
