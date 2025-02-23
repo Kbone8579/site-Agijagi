@@ -216,6 +216,28 @@
     font-weight: 500;
 }
 /* .page p6 */
+.page.p6 .content.s1 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #E1D9D3;
+    opacity: 90%;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    margin-bottom: 50px;
+}
+.page.p6 .content.s1 span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #E1D9D3;
+    line-height: 1.795;
+    letter-spacing: -0.04em;
+    margin-bottom: 94px;
+}
+.page.p6 .content.s1 span p1 {
+    font-weight: 500;
+}
 .page.p6 .content.s2 h1 {
     font-family: "Pretendard Variable", sans-serif;
     font-size: 26px;
@@ -476,10 +498,41 @@ span {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 .page.p6 .content.s1 {
     width: 100%;
     height: 1321px;
+    position: relative;
+}
+.page.p6 .content.s1 .content-box {
+    width: 1683px;
+    height: 898px;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page.p6 .content.s1 .content-box .box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page.p6 .content.s1 .content-box .box2 {
+    position: absolute;
+    bottom: 0;
+    right: 14px;
+}
+.page.p6 .content.s1 .content-box .box2 img:first-child {
+    margin-bottom: 114px;
+}
+.page.p6 .content.s1 .logo-story {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+}
+.page.p6 .content.s1 .logo-story img:nth-child(2) {
+    margin-bottom: 60px;
 }
 .page.p6 .content.s2 {
     width: 100%;
@@ -517,3 +570,4 @@ span {
     background-position: center;
     background-size: cover;
 }
+/* page p* */
