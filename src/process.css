@@ -215,6 +215,17 @@
 .page.p5 span p1 {
     font-weight: 500;
 }
+/* .page p6 */
+.page.p6 .content.s2 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #47423E;
+    opacity: 90%;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    margin-bottom: 71px;
+}
 /* reset */
 span {
     display: block;
@@ -461,8 +472,47 @@ span {
 /* page p6 */
 .page.p6 {
     width: 100%;
-    height: 1989px;
     background-image: url(img/process/img-6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.page.p6 .content.s1 {
+    width: 100%;
+    height: 1321px;
+}
+.page.p6 .content.s2 {
+    width: 100%;
+    height: 668px;
+    position: relative;
+}
+.page.p6 .content.s2 .content-box {
+    width: 1617px;
+    position: absolute;
+    top: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page.p6 .content.s2 .logo-box {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 250px;
+}
+/* page p7 */
+.page.p7 {
+    width: 100%;
+    height: 960px;
+    background-image: url(img/process/img-7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* page p8 */
+.page.p8 {
+    width: 100%;
+    height: 1285px;
+    background-image: url(img/process/img-8.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
