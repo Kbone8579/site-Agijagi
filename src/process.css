@@ -248,6 +248,37 @@
     letter-spacing: 0.01em;
     margin-bottom: 71px;
 }
+/* .page p9 */
+.page.p9 .text-box h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #EEEAE9;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    margin-bottom: 25px;
+}
+.page.p9 .text-box span {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #EEEAE9;
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+}
+.page.p9 .text-box span p1 {
+    font-weight: 500;
+}
+/* page p10 */
+.page.p10 h1 {
+    font-family: "Pretendard Variable", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #EEEAE9;
+    opacity: 80%;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+}
 /* reset */
 span {
     display: block;
@@ -570,4 +601,169 @@ span {
     background-position: center;
     background-size: cover;
 }
-/* page p* */
+/* page p9 */
+.page.p9 {
+    width: 100%;
+    height: 1080px;
+    background-image: url(img/process/img-9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.page.p9 .text-box {
+    width: 1718px;
+    position: absolute;
+    top: 258px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: start;
+}
+.page.p9 .text-box h1 {
+    display: block;
+    width: 472px;
+}
+.page.p9 .gradient {
+    width: 100%;
+    height: 342px;
+    background: rgb(78,68,60);
+    background: linear-gradient(0deg, rgba(78,68,60,1) 6%, rgba(105,92,81,0.8) 37%, rgba(137,119,105,0.5) 66%, rgba(180,157,138,0) 100%);
+}
+/* page p10 */
+.page.p10 {
+    width: 100%;
+    height: 1200px;
+    background-image: url(img/process/main-page-info-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.page.p10 h1 {
+    width: 1604px;
+    position: absolute;
+    top: 84px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: end;
+}
+.page.p10 .contents-box {
+    width: 1622px;
+    height: 1020px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page.p10 .contents-box .list.l1 {
+    position: absolute;
+    left: 983px;
+    top: 132px;
+}
+.page.p10 .contents-box .list.l2 {
+    position: absolute;
+    left: 1231px;
+    top: 245px;
+}
+.page.p10 .contents-box .list.l3 {
+    position: absolute;
+    left: 0px;
+    top: 573px;
+}
+.page.p10 .contents-box .list.l4 {
+    position: absolute;
+    left: 1045px;
+    top: 868px;
+}
+
+/* page p11 */
+.page.p11 {
+    width: 100%;
+    height: 1098px;
+    background-image: url(img/process/main-page-info-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.page.p11 .contents-box {
+    width: 1622px;
+    height: 1098px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page.p11 .contents-box .list.l5 {
+    position: absolute;
+    left: 1156px;
+    top: 90px;
+}
+.page.p11 .contents-box .list.l6 {
+    position: absolute;
+    left: 26px;
+    top: 294px;
+}
+.page.p11 .contents-box .list.l7 {
+    position: absolute;
+    left: 1240px;
+    top: 525px;
+}
+.page.p11 .contents-box .list.l8 {
+    position: absolute;
+    left: 1026px;
+    top: 718px;
+}
+.page.p11 .contents-box .list.l9 {
+    position: absolute;
+    left: 26px;
+    top: 916px;
+}
+
+/* page p12 */
+.page.p12 {
+    width: 100%;
+    height: 1200px;
+    background-image: url(img/process/main-page-info-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.page.p12 .contents-box {
+    width: 1622px;
+    height: 1036px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.page.p12 .contents-box .list.l10 {
+    position: absolute;
+    left: 837px;
+    top: 115px;
+}
+.page.p12 .contents-box .list.l11 {
+    position: absolute;
+    left: 1060px;
+    top: 554px;
+}
+.page.p12 .contents-box .list.l12 {
+    position: absolute;
+    left: 1212px;
+    top: 818px;
+}
+.page.p12 .contents-box .list.l13 {
+    position: absolute;
+    left: 90px;
+    top: 822px;
+}
