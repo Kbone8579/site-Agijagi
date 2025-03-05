@@ -675,6 +675,7 @@ $(document).ready(function() {
 // 오브젝트 애니메이션 AOS
 $(document).ready(function(){
   new WOW().init();
+  
 });
 
 // top_menu_icon
