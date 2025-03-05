@@ -35,7 +35,7 @@
     font-family: "Pretendard Variable", sans-serif;
     font-weight: 600;
     font-size: 26px;
-    color: #E1D9D3;
+    color: #CDC5C0;
     opacity: 90%;
     letter-spacing: 0.01em;
     margin-bottom: 57px;
@@ -44,7 +44,7 @@
     font-family: "Pretendard Variable", sans-serif;
     font-weight: 600;
     font-size: 26px;
-    color: #E1D9D3;
+    color: #CDC5C0;
     opacity: 90%;
     letter-spacing: 0.01em;
     margin-bottom: 42px;
@@ -61,7 +61,7 @@
     font-family: "Pretendard Variable", sans-serif;
     font-weight: 200;
     font-size: 20px;
-    color: #FFFFFF;
+    color: #D1D0CF;
     opacity: 80%;
     letter-spacing: -0.04em;
     line-height: 1.5;
@@ -77,11 +77,17 @@
     line-height: 1.415;
     letter-spacing: 0.03em;
 }
+.page.p2 .text-box .box1 p1, 
+.page.p2 .text-box .box1 p2 {
+    font-family: "Prata", serif;
+    margin-left: 8px;
+    margin-right: 8px;
+} 
 .page.p2 .text-box .sub_box span {
     font-family: "Pretendard Variable", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #D1D0CF;
     opacity: 80%;
     line-height: 1.325;
 }
@@ -102,7 +108,6 @@
     line-height: 1.1;
     letter-spacing: 0.01em;
     margin-bottom: 11px;
-    opacity: 90%;
 }
 .page.p3 .box.s1 h1 {
     font-family: "Pretendard Variable", sans-serif;
@@ -359,7 +364,14 @@
 span {
     display: block;
 }
-
+/* page p1 wow */
+.page.p1 .main-box {
+    opacity: 0;
+    transition: opacity 0.8s 0.3s;
+}
+.page.p1 .main-box.animated {
+    opacity: 1;
+}
 /* page p1 */
 .page.p1 {
     width: 100%;
@@ -432,6 +444,43 @@ span {
     display: flex;
     align-items: center;
     gap: 46px;
+}
+/* page p1 wow */
+.page.p2 .text-box .box1 h1,
+.page.p2 .text-box .box2 h1 {
+    opacity: 0;
+    transition: opacity 0.8s 0.3s;
+}
+.page.p2 .text-box .box1 h1.animated,
+.page.p2 .text-box .box2 h1.animated {
+    opacity: 1;
+}
+.page.p2 .text-box .box1 h2,
+.page.p2 .text-box .box1 span,
+.page.p2 .text-box .box2 .sub_box {
+    opacity: 0;
+    transition: all 1s 0.6s;
+    transform: translateY(-24%);
+}
+.page.p2 .text-box .box1 h2.animated,
+.page.p2 .text-box .box1 span.animated,
+.page.p2 .text-box .box2 .sub_box.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+.page.p2 .text-box .box2 .line_art {
+    opacity: 0;
+    transition: all 1s 0.8s;
+}
+.page.p2 .text-box .box2 .line_art.animated {
+    opacity: 1;
+}
+.page.p2 .text-box .box2 .ceramic_contents {
+    opacity: 0;
+    transition: all 1s 1.0s;
+}
+.page.p2 .text-box .box2 .ceramic_contents.animated {
+    opacity: 1;
 }
 /* page p2 */
 .page.p2 {
@@ -519,6 +568,34 @@ span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+/* page p3 wow */
+.page.p3 .text-box .box.s1 h2 {
+    opacity: 0;
+    transition: opacity 0.8s 0.3s;
+}
+.page.p3 .text-box .box.s1 h2.animated {
+    opacity: 0.9;
+}
+.page.p3 .text-box .box.s1 h1,
+.page.p3 .text-box .box.s1 span {
+    opacity: 0;
+    transition: all 1s 0.6s;
+    transform: translateX(4%);
+}
+.page.p3 .text-box .box.s1 h1.animated,
+.page.p3 .text-box .box.s1 span.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+.page.p3 .text-box .box.s2 {
+    opacity: 0;
+    transition: all 1s 0.6s;
+    transform: translateY(-10%);
+}
+.page.p3 .text-box .box.s2.animated {
+    opacity: 1;
+    transform: translateY(0);
 }
 /* page p3 */
 .page.p3 {
