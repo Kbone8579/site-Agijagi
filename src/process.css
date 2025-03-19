@@ -1816,14 +1816,21 @@ span {
   }
   #AGIJAGI-process .controller {
     width: 100%;
+    height: 535px;
     gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: rgba(84, 62, 47, 0.61);
+    background-color: rgba(165, 165, 165, 0.4);
     border-radius: 30px 0 0 30px;
+    overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+  }
+  #AGIJAGI-process .controller::-webkit-scrollbar {
+    display: none;
   }
   #AGIJAGI-process .controller .box {
     display: flex;
@@ -1846,7 +1853,7 @@ span {
   #AGIJAGI-process .remote-control {
     width: 68px;
     height: 68px;
-    background-color: #ae8970;
+    background-color: #D9C7A9;
     opacity: 60%;
     border-radius: 100%;
     position: relative;
@@ -1887,7 +1894,7 @@ span {
   #AGIJAGI-process .top-btn {
     width: 68px;
     height: 68px;
-    background-color: #ae8970;
+    background-color: #D9C7A9;
     opacity: 60%;
     border-radius: 100%;
     transition: all 0.3s;
@@ -1904,7 +1911,7 @@ span {
   #AGIJAGI-process .content-btn {
     width: 68px;
     height: 68px;
-    background-color: #ae8970;
+    background-color: #D9C7A9;
     opacity: 60%;
     border-radius: 100%;
     transition: all 0.3s;
@@ -1912,4 +1919,9 @@ span {
   }
   #AGIJAGI-process .content-btn:hover {
     opacity: 100%;
+  }
+  #AGIJAGI-process .content-btn i {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
