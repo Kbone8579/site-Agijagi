@@ -743,3 +743,63 @@ document.addEventListener('keydown', (e) => {
     }
 });
 });
+
+
+// 컨트롤러 애니매이션션
+$(document).ready(function(){
+  // contents-navigation 보임/숨김김
+  $(".contents-navigation").hide();
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 500){$(".contents-navigation").fadeIn();}
+    else{$(".contents-navigation").fadeOut();}
+  });
+
+  // 탑버튼 이동동
+  $('.top-btn').click(function(){
+    $('html, body').animate({scrollTop : 0}, 800);
+      return false;
+  });
+
+  // remote-control 아이콘 변화
+  $(".remote-control").click(function () {
+    const $this = $(this);
+  
+    if ($this.hasClass("active")) {
+      $this.removeClass("active");
+    } else {
+      $this.addClass("active");
+    }
+  });
+});
+
+// remote-control 스크립트
+// JavaScript for animating the controller
+document.addEventListener('DOMContentLoaded', function() {
+  const remoteControl = document.querySelector('.remote-control');
+  const controller = document.querySelector('.controller');
+  
+  // Initially hide the controller off-screen
+  controller.style.transform = 'translateX(100%)';
+  controller.style.transition = 'transform 0.5s ease-in-out';
+  controller.style.visibility = 'hidden';
+  
+  let isControllerVisible = false;
+  
+  remoteControl.addEventListener('click', function() {
+    if (!isControllerVisible) {
+      // Show controller
+      controller.style.visibility = 'visible';
+      setTimeout(() => {
+        controller.style.transform = 'translateX(0)';
+      }, 10); // Small delay to ensure visibility is applied first
+    } else {
+      // Hide controller
+      controller.style.transform = 'translateX(100%)';
+      setTimeout(() => {
+        controller.style.visibility = 'hidden';
+      }, 500); // Wait for the animation to complete
+    }
+    
+    isControllerVisible = !isControllerVisible;
+  });
+});
