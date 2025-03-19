@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function () {
   // 한 페이지씩 이동
-  const elm = document.querySelectorAll(".fage");
+  const elm = document.querySelectorAll(".fage, .page.p0");
   const elmCount = elm.length;
   
   // 각 요소에 휠 이벤트 리스너 추가
