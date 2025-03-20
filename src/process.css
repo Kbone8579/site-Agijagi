@@ -576,18 +576,6 @@ span {
     display: block;
 }
 /* page p0 */
-/* .page.p0 .process-bg {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-  }
-  .page.p0 .process-bg img {
-    transform: scale(1.04);
-    transition: transform 5s;
-  } */
 .page.p0 {
     height: 100vh;
     display: flex;
