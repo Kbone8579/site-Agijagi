@@ -560,6 +560,7 @@
     opacity: 100%;
     letter-spacing: -0.04em;
     transition: all 0.2s;
+    text-align: center;
   }
   #AGIJAGI-process .controller .box:hover span:nth-child(1) {
     opacity: 100%;
