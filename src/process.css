@@ -108,6 +108,7 @@
 }
 /* process font */
 /* page p0 */
+
 .page.p0 .text-box .title-box h3 {
     font-family: "Yu Gothic UI", "YuGothic", sans-serif;
     font-weight: 400;
@@ -574,16 +575,34 @@ span {
     display: block;
 }
 /* page p0 */
-.page.p0 {
+/* .page.p0 .process-bg {
     width: 100%;
-    height: 1080px;
-    background-image: url(img/process/img-0.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .page.p0 .process-bg img {
+    transform: scale(1.04);
+    transition: transform 5s;
+  } */
+.page.p0 {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: start;
+    position: relative;
+    background-image: url(img/process/img-0.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-size 5s ease;
+    -moz-transition: background-size 5s ease;
+    -web-kit-transition: background-size 5s ease;
+}
+.page.p0.animated {
+    background-size: 106%;
 }
 .page.p0 .text-box {
     width: 1767px;
