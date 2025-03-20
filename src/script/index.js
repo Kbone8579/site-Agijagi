@@ -803,3 +803,50 @@ document.addEventListener('DOMContentLoaded', function() {
     isControllerVisible = !isControllerVisible;
   });
 });
+
+
+
+// process 
+$(document).ready(function(){
+  // controller
+  document
+  .querySelector(".box.b1")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p2").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b2")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p3").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b3")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p4").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b4")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p5").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b5")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p6").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b6")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p9").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b7")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p15").scrollIntoView({ behavior: "smooth" });
+  });
+  document
+  .querySelector(".box.b8")
+  .addEventListener("click", (e) => {
+    document.querySelector(".page.p16").scrollIntoView({ behavior: "smooth" });
+  });
+});
